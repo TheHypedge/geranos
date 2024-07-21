@@ -45,36 +45,18 @@ export default function NavigationMenuDemo() {
 
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-[#EB1D25] hover:text-[#EB1D25]">Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-               
-                    <div className="text-[#EB1D25] mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
+      <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={"uppercase tracking-wider" + navigationMenuTriggerStyle()}>
+              Home
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>        
 
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-[#EB1D25] hover:text-[#EB1D25]">Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="uppercase tracking-wider">Locations</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="text-[#EB1D25] hover:text-[#EB1D25] grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -88,12 +70,50 @@ export default function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
+          <NavigationMenuTrigger className="uppercase tracking-wider">Experiences</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {components.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="uppercase tracking-wider">About</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
+              <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <a
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    href="/"
+                  >
+               
+                    <div className=" mb-2 mt-4 text-lg font-medium">
+                    γερανός (geranós)
+                    </div>
+                    <p className="text-sm leading-tight text-muted-foreground">
+                    The rich Indian culture is best symbolised by the traditional Indian folk art of 'rangolis' made across the length and breadth of the country. The rangoli represents the happiness, positivity and liveliness of a household.
+                    </p>
+                    <div className="text-slate-800 mb-2 mt-4 text-md font-medium width-auto">
+                    Read More
+                    </div>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
       </NavigationMenuList>
     </NavigationMenu>
 
