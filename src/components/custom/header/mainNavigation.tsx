@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainNavigation = () => {
   return (
-    <div>MainNavigation</div>
+    <div className="flex align-middle my-auto">MainNavigation</div>
   )
 }
 

@@ -5,7 +5,6 @@ import { HTMLAttributes, useEffect, useState } from "react";
 import WaveReveal from "@/components/animata/text/wave-reveal";
 import { cn } from "@/lib/utils";
 
-
 interface ImageProps extends HTMLAttributes<HTMLDivElement> {
   item: { image: string; title: string };
   index: number;
@@ -40,8 +39,8 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
       {index === activeItem && (
         <div className="absolute bottom-4 left-4 min-w-fit text-white md:bottom-8 md:left-8">
           <WaveReveal
-            duration="500ms"
-            className="items-start justify-start text-xl sm:text-2xl md:text-6xl font-semibold px-0"
+            duration="1000ms"
+            className="items-start justify-start text-xl sm:text-2xl md:text-6xl font-semibold"
             text={item.title}
             direction="up"
           />
@@ -55,18 +54,14 @@ const items = [
   {
     image:
       "https://images.unsplash.com/photo-1652604244093-1a06aca55929?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Golden Temple",
+    title: "Punjab",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1718027808460-7069cf0ca9ae?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Great Wall of China",
+      "https://live.staticflickr.com/5714/21120527395_9c7f96cfa3_h.jpg",
+    title: "Uttarakahand",
   },
-  {
-    image:
-      "https://images.unsplash.com/photo-1584968173934-bc0b588eb806?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Texture & Patterns",
-  },
+
 ];
 
 export default function Expandable({ list = items, autoPlay = true, className }: ExpandableProps) {
