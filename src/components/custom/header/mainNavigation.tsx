@@ -20,21 +20,15 @@ import {
 const components: { title: string; href: string; description: string }[] = [
  
   {
-    title: "Scroll-area",
+    title: "Punjab",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
   },
   {
-    title: "Tabs",
+    title: "Uttarakhand",
     href: "/docs/primitives/tabs",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
   },
 ]
 
