@@ -13,9 +13,9 @@ const Footer = () => {
 
         </div>
         <Separator className="mb-12"/>
-        <div className="flex flex-row">        
+        <div className="flex flex-row justify-between">        
 
-        <p className="text-2xl">The Travel Compnay: We are great planners!</p>
+        <p className="text-2xl">Contact</p>
         <p className="text-2xl">WhatsApp</p>
         </div>
     </div>
