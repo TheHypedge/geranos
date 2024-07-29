@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Separator } from "@/components/ui/separator"
-
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -15,7 +15,10 @@ const Footer = () => {
         <Separator className="mb-12"/>
         <div className="flex flex-row justify-between">        
 
+        <Link href="/contact">
         <p className="text-2xl">Contact</p>
+        </Link>
+
         <p className="text-2xl">WhatsApp</p>
         </div>
     </div>
