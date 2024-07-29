@@ -1,7 +1,7 @@
 
 
 import Image from "next/image";
-import HeroBanner from '@/components/custom/heroBanner/heroBanner'
+import HeroBanner from '@/components/custom/HeroBanner/heroBanner'
 
 export default function Home() {
   return (
