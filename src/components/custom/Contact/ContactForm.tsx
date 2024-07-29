@@ -14,7 +14,7 @@ const initialFields = [
         type: 'text', 
         name: 'full-name',
         id: 'name',
-        validation_eror: false, 
+        validation_error: false, 
         validation_message: '',
     },
     {
@@ -23,7 +23,7 @@ const initialFields = [
         type: 'email', 
         name: 'email',
         id: 'email',
-        validation_eror: false, 
+        validation_error: false, 
         validation_message: '',        
     }, 
     {
@@ -32,7 +32,7 @@ const initialFields = [
         type: 'phone', 
         name: 'phone',
         id: 'phone',
-        validation_eror: false, 
+        validation_error: false, 
         validation_message: '',        
     },     
     {
@@ -41,7 +41,7 @@ const initialFields = [
         type: 'text', 
         name: 'message',
         id: 'message',
-        validation_eror: false, 
+        validation_error: false, 
         validation_message: '',        
     },   
 
@@ -54,7 +54,7 @@ const ContactForm = () => {
 
 
     const [fields, setFields] = useState(initialFields);
-
+    const [finalMsg, setFinalMsg] = useState('');
     const handleSubmit = async(event:any) => {
         event.preventDefault(); 
 
@@ -77,7 +77,7 @@ const ContactForm = () => {
         if(!response) return alert('An unexpected error'); 
 
         if(response.invalid_fields && response.invalid_fields.length>0) {
-            setFields(fields.map(field => {
+            return setFields(fields.map(field => {
                 const error = response.invalid_fields.find(x => x.field === field.name);
 
                 return{
@@ -89,7 +89,7 @@ const ContactForm = () => {
             }));
         }
 
-        console.log("Response", response);
+        setFinalMsg("Your message has been sent! Thanks..."); 
 
     }
 
@@ -111,6 +111,8 @@ const ContactForm = () => {
             <Input type="hidden" className="hidden" name="_wpcf7_unit_tag" value="wpcf7-f784-p785-o1"/>
 
             <Button type="submit" className="max-w-min">Submit</Button>
+
+            {finalMsg && <div className="text-lg bg-green-700 text-white p-2 rounded">{finalMsg}</div>}
         </form>
 
     </div>
