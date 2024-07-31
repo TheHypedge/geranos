@@ -90,6 +90,9 @@ const ContactForm = () => {
         }
 
         setFinalMsg("Your message has been sent! Thanks..."); 
+        setTimeout(function(){
+            window.location.reload();
+         }, 5000);
 
     }
 
@@ -112,7 +115,7 @@ const ContactForm = () => {
 
             <Button type="submit" className="max-w-min">Submit</Button>
 
-            {finalMsg && <div className="text-lg bg-green-700 text-white p-2 rounded">{finalMsg}</div>}
+            {finalMsg && <div className="text-md bg-green-700 text-white p-2 rounded">{finalMsg}</div>}
         </form>
 
     </div>

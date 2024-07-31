@@ -17,7 +17,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const components: { title: string; href: string; description: string }[] = [
+const locations: { title: string; href: string; description: string }[] = [
  
   {
     title: "Punjab",
@@ -31,6 +31,24 @@ const components: { title: string; href: string; description: string }[] = [
       "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
   },
 ]
+
+
+const experiences: { title: string; href: string; description: string }[] = [
+ 
+  {
+    title: "Punjab",
+    href: "/docs/primitives/scroll-area",
+    description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
+  },
+  {
+    title: "Uttarakhand",
+    href: "/docs/primitives/tabs",
+    description:
+      "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
+  },
+]
+
+
 
 export default function NavigationMenuDemo() {
   return (
@@ -51,13 +69,13 @@ export default function NavigationMenuDemo() {
           <NavigationMenuTrigger className="uppercase tracking-wider">Locations</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {locations.map((location) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={location.title}
+                  title={location.title}
+                  href={location.href}
                 >
-                  {component.description}
+                  {location.description}
                 </ListItem>
               ))}
             </ul>
@@ -67,13 +85,13 @@ export default function NavigationMenuDemo() {
           <NavigationMenuTrigger className="uppercase tracking-wider">Experiences</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {experiences.map((location) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={location.title}
+                  title={location.title}
+                  href={location.href}
                 >
-                  {component.description}
+                  {location.description}
                 </ListItem>
               ))}
             </ul>

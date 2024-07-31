@@ -26,13 +26,18 @@ const Footer = () => {
 
         </div>
         <Separator className="mb-12"/>
-        <div className="flex flex-row justify-between">        
+        <div className="flex gap-4 text-xl">        
 
         <Link href="/contact">
-        <p className="text-xl">Contact</p>
+        <p>Contact</p>
         </Link>
+        <p className="text-[#ffaaae]">|</p>
+        <Link href="/contact">
+        <p>Contact</p>
+        </Link> 
+        <p className="text-[#ffaaae]">|</p>
 
-        <p className="text-2xl">WhatsApp</p>
+
         </div>
     </div>
  
