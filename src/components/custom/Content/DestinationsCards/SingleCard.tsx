@@ -16,16 +16,16 @@ const SingleCard = (props:any) => {
 
   return (
  
-    <CarouselItem key={props.indexId} className=" md:basis-1/2 lg:basis-1/3 ">
-    <div className="p-1">
-      <Card className="bg-[url('/global/destinations/uttarakhand-tracking.png')] bg-blend-darken bg-cover ">
+    <CarouselItem key={props.indexId} className=" md:basis-1/2 lg:basis-1/3  ">
+    <div className="p-1 ">
+      <Card className="rounded-2xl bg-[url('/global/destinations/uttarakhand-tracking.png')] bg-blend-darken bg-cover ">
 
-        <div className="bg-[rgba(0,0,0,0.5)] w-full height-full">
+        <div className=" w-full height-full rounded-2xl">
 
         <CardContent className="flex flex-col align-bottom justify-end aspect-square p-6">
    <div className="flex flex-col gap-4">
-    <div className="text-white font-semibold bottom-4 w-full tracking-widest uppercase">Simple Budget Chandigarh Tour</div>
-    <div className="text-white  bottom-4 w-full text-sm ">the great Amritsar, Punjab</div>
+    <div className="text-slate-50 font-semibold bottom-4 w-full tracking-widest uppercase">Simple Budget Chandigarh Tour</div>
+    <div className="text-slate-50  bottom-4 w-full text-sm ">Amritsar • Punjab • IN</div>
     </div>
 
     </CardContent>

@@ -10,7 +10,12 @@ import {
 } from "@/components/ui/carousel"
 import SingleCard from "./SingleCard"
 
+import DataBase from '../../../../../public/data/HomeDestinationsCard.json'
+
 export default function CarouselSize() {
+
+  console.log(DataBase);
+
   return (
     <Carousel
       opts={{
