@@ -28,9 +28,9 @@ const Footer = () => {
             </p>
 
         </div>
-        <Separator className="mb-12 border-b-black"/>
+        <Separator className="mb-12"/>
 
-        <div className="flex flex-row justify-between mb-12 border-b-black">
+        <div className="flex flex-row justify-between mb-12 ">
      
         <div className="flex flex-col gap-8">
 
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-8">
 
-          test
+          contact@gerenosgeaways.com
 
         </div>
         </div>
