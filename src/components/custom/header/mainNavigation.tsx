@@ -36,16 +36,27 @@ const locations: { title: string; href: string; description: string }[] = [
 const experiences: { title: string; href: string; description: string }[] = [
  
   {
-    title: "Punjab",
+    title: "Cultural",
     href: "/docs/primitives/scroll-area",
     description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
   },
   {
-    title: "Uttarakhand",
+    title: "Farmstay",
     href: "/docs/primitives/tabs",
     description:
       "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
   },
+  {
+    title: "Village life",
+    href: "/docs/primitives/scroll-area",
+    description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
+  },
+  {
+    title: "Nature Trails",
+    href: "/docs/primitives/tabs",
+    description:
+      "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
+  },  
 ]
 
 
@@ -66,7 +77,7 @@ export default function NavigationMenuDemo() {
         </NavigationMenuItem>        
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="uppercase tracking-wider">Locations</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="uppercase tracking-wider">Destinations</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {locations.map((location) => (
