@@ -5,7 +5,7 @@ const DestinationsMenu = () => {
   return (
 <div className="flex gap-4 text-md">
 
-        <p className="text-[#EB1F25]">Destinations : </p>
+        <p className="text-[#246BEB]">Destinations : </p>
         <Link href="/contact">
         <p>Punjab</p>
         </Link>

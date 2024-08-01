@@ -90,9 +90,7 @@ const ContactForm = () => {
         }
 
         setFinalMsg("Your message has been sent! Thanks..."); 
-        setTimeout(function(){
-            window.location.reload();
-         }, 5000);
+
 
     }
 

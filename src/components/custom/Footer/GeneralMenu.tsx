@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const GeneralMenu = () => {
   return (
-    <div className="flex gap-4 text-sm">
+    <div className="flex gap-4 text-md">
 
 
 <Link href="/contact">
