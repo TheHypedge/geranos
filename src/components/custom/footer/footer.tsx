@@ -38,7 +38,7 @@ const Footer = () => {
           <ExperiencesMenu/>
           <GeneralMenu/>          
         </div>
-        <div className="flex flex-col gap-8  font-semibold">
+        <div className="flex flex-col gap-8  ">
           <div>
           contact@gerenosgeaways.com
           </div>

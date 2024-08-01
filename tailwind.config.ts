@@ -10,6 +10,8 @@ const config = {
 	],
   prefix: "",
   theme: {
+ 
+ 
     container: {
       center: true,
       padding: "2rem",
@@ -17,10 +19,18 @@ const config = {
         "2xl": "1400px",
       },
     },
+
+    fontFamily: {
+      myFont: ["var(--font-myFont)"]
+    },
+
+
+
+
+
+
+
     extend: {
-
-
-
       transitionTimingFunction: {
         "minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",
       },
