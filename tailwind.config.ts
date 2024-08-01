@@ -11,7 +11,6 @@ const config = {
   prefix: "",
   theme: {
  
- 
     container: {
       center: true,
       padding: "2rem",
@@ -20,14 +19,10 @@ const config = {
       },
     },
 
+
     fontFamily: {
       myFont: ["var(--font-myFont)"]
     },
-
-
-
-
-
 
 
     extend: {
