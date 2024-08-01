@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import SingleCard from "./SingleCard"
 
 export default function CarouselSize() {
   return (
@@ -19,18 +20,12 @@ export default function CarouselSize() {
     >
       <CarouselContent>
         {Array.from({ length: 8 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+
                   
 
-                test
+                    <SingleCard indexId={index} backgroundImg="/global/destinations/uttarakhand-tracking.png"/>
 
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
+
         ))}
       </CarouselContent>
       <CarouselPrevious />
