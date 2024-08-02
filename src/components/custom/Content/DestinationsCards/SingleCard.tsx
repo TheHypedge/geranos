@@ -27,7 +27,7 @@ const SingleCard = (props:any) => {
         <CardContent className="flex flex-col align-bottom justify-end aspect-square p-6">
    <div className="flex flex-col gap-4">
     <div className="text-slate-50 font-semibold bottom-4 w-full tracking-widest uppercase">{props.cardImageTitle}</div>
-    <div className="text-slate-50  bottom-4 w-full text-sm ">Amritsar • Punjab • IN</div>
+    <div className="text-slate-50  bottom-4 w-full text-sm ">{props.cardImageSubTitle}</div>
     </div>
 
     </CardContent>

@@ -40,6 +40,7 @@ export default function CarouselSize() {
           key={data.prefId}  
           backgroundImg={data.backgroundImg}
           cardImageTitle={data.cardImageTitle}
+          cardImageSubTitle={data.cardImageSubTitle}
           />
    
           )

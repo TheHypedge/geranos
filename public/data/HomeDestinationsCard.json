@@ -2,6 +2,7 @@
     {
         "prefId": 1,        
         "cardImageTitle": "test",
+        "cardImageSubTitle": "Amritsar • Punjab • IN",
         "description": "test",
         "price": 10,
         "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
@@ -10,6 +11,7 @@
       
         "prefId": 2,     
         "cardImageTitle": "test",
+        "cardImageSubTitle": "Kullu • Himachal • IN",        
         "description": "test",
         "price": 10,
         "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
@@ -17,21 +19,7 @@
     {
         "prefId": 2,     
         "cardImageTitle": "test",
-        "description": "test",
-        "price": 10,
-        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
-    },
-    {
-      
-        "prefId": 2,     
-        "cardImageTitle": "test",
-        "description": "test",
-        "price": 10,
-        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
-    },
-    {
-        "prefId": 2,     
-        "cardImageTitle": "test",
+        "cardImageSubTitle": "Amritsar • Punjab • IN",        
         "description": "test",
         "price": 10,
         "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
@@ -40,6 +28,7 @@
       
         "prefId": 2,     
         "cardImageTitle": "test",
+        "cardImageSubTitle": "Amritsar • Punjab • IN",        
         "description": "test",
         "price": 10,
         "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
@@ -47,21 +36,7 @@
     {
         "prefId": 2,     
         "cardImageTitle": "test",
-        "description": "test",
-        "price": 10,
-        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
-    },
-    {
-      
-        "prefId": 2,     
-        "cardImageTitle": "test",
-        "description": "test",
-        "price": 10,
-        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
-    },
-    {
-        "prefId": 2,     
-        "cardImageTitle": "test",
+        "cardImageSubTitle": "Amritsar • Punjab • IN",        
         "description": "test",
         "price": 10,
         "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
