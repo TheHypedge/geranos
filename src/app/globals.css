@@ -76,3 +76,8 @@
   list-style-type: initial;
   margin-left: 16px;
 }
+
+.postContParaFixCstm h2 {
+  font-size:28px;
+  color: #246BEB; 
+}
