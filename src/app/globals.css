@@ -71,6 +71,9 @@
 .postContParaFixCstm p {
   margin-bottom:20px;
 }
+.postContParaFixCstm ul{
+  margin-bottom: 16px;
+}
 
 .postContParaFixCstm li {
   list-style-type: initial;
@@ -78,6 +81,13 @@
 }
 
 .postContParaFixCstm h2 {
-  font-size:28px;
-  color: #246BEB; 
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:22px; 
+}
+
+.postContParaFixCstm a {
+  color:#246BEB;
+  font-weight:bold;
+  text-decoration: underline;
 }
