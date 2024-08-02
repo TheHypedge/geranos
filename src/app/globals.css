@@ -67,3 +67,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+.postContParaFixCstm p {
+  margin-bottom:20px;
+}
+
+.postContParaFixCstm li {
+  list-style-type: initial;
+  margin-left: 16px;
+}

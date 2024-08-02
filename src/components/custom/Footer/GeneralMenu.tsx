@@ -10,7 +10,7 @@ const GeneralMenu = () => {
         <p>Home</p>
         </Link>
         <p className="text-[#f2f2f2]">|</p>
-        <Link href="/contact">
+        <Link href="/about">
         <p>About</p>
         </Link> 
         <p className="text-[#f2f2f2]">|</p>
@@ -18,11 +18,11 @@ const GeneralMenu = () => {
         <p>Contact</p>
         </Link>         
         <p className="text-[#f2f2f2]">|</p>
-        <Link href="/contact">
+        <Link href="/terms-of-use">
         <p>T&C</p>
         </Link> 
         <p className="text-[#f2f2f2]">|</p>
-        <Link href="/contact">
+        <Link href="/privacy-policy">
         <p>Privacy Policy</p>
         </Link> 
         <p className="text-[#f2f2f2]">|</p>
