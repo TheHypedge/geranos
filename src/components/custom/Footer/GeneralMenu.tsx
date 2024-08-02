@@ -6,7 +6,7 @@ const GeneralMenu = () => {
     <div className="flex gap-4 text-md">
 
 
-<Link href="/contact">
+        <Link href="/">
         <p>Home</p>
         </Link>
         <p className="text-[#f2f2f2]">|</p>
@@ -25,6 +25,10 @@ const GeneralMenu = () => {
         <Link href="/contact">
         <p>Privacy Policy</p>
         </Link> 
+        <p className="text-[#f2f2f2]">|</p>
+        <Link href="/404/404">
+        <p>404</p>
+        </Link>         
 
     </div>
   )

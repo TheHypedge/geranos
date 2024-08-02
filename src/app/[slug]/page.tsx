@@ -8,8 +8,8 @@ const Pages = async({ params } : {params:any}) => {
 
   return (
     <div className="max-w-[800px] m-auto">
-        <div className="text-4xl text-center font-semibold py-[80px]">{page.title.rendered}</div>
-        <div dangerouslySetInnerHTML={{__html: page.content.rendered}}/>    
+        <div className="text-4xl text-left font-bold py-[80px]">{page.title.rendered}</div>
+        <div className="postContParaFixCstm mb-2 text-lg font-semibold text-slate-900" dangerouslySetInnerHTML={{__html: page.content.rendered}}/>    
     </div>    
   )
 }
