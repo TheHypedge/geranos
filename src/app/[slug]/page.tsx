@@ -15,9 +15,21 @@ const Pages = async({ params } : {params:any}) => {
   return (
     <div className="max-w-[800px] m-auto px-2">
 
+    {
+    page.title.rendered>0 ? ( 
+
+     
+      <div className="text-4xl text-left font-bold py-[80px]">{page.title.rendered}</div>
+      <div className="postContParaFixCstm mb-2 text-lg text-slate-900" dangerouslySetInnerHTML={{__html: page.content.rendered}}/>
+    ) : (
+      <p>etst</p>
+    )
  
-            <div className="text-4xl text-left font-bold py-[80px]">{page.title.rendered}</div>
-            <div className="postContParaFixCstm mb-2 text-lg text-slate-900" dangerouslySetInnerHTML={{__html: page.content.rendered}}/>
+    }
+
+
+  
+
 
               
   
