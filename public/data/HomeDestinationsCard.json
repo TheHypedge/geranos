@@ -1,20 +1,69 @@
 [
     {
-        "title": "test",
+        "prefId": 1,        
+        "cardImageTitle": "test",
         "description": "test",
         "price": 10,
-        "image": "https://picsum.photos/200/300"
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
     },
     {
-        "title": "test",
+      
+        "prefId": 2,     
+        "cardImageTitle": "test",
         "description": "test",
         "price": 10,
-        "image": "https://picsum.photos/200/300"
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
     },
     {
-        "title": "test",
+        "prefId": 2,     
+        "cardImageTitle": "test",
         "description": "test",
         "price": 10,
-        "image": "https://picsum.photos/200/300"
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
+    },
+    {
+      
+        "prefId": 2,     
+        "cardImageTitle": "test",
+        "description": "test",
+        "price": 10,
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
+    },
+    {
+        "prefId": 2,     
+        "cardImageTitle": "test",
+        "description": "test",
+        "price": 10,
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
+    },
+    {
+      
+        "prefId": 2,     
+        "cardImageTitle": "test",
+        "description": "test",
+        "price": 10,
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
+    },
+    {
+        "prefId": 2,     
+        "cardImageTitle": "test",
+        "description": "test",
+        "price": 10,
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
+    },
+    {
+      
+        "prefId": 2,     
+        "cardImageTitle": "test",
+        "description": "test",
+        "price": 10,
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
+    },
+    {
+        "prefId": 2,     
+        "cardImageTitle": "test",
+        "description": "test",
+        "price": 10,
+        "backgroundImg": "/global/destinations/uttarakhand-tracking.png"
     }
 ]
