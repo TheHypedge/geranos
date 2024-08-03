@@ -14,8 +14,8 @@ const SingleCard = (props:any) => {
 
 
   return (
- 
-    <CarouselItem key={props.indexId} className=" md:basis-1/2 lg:basis-1/4">
+
+    <CarouselItem  key={props.indexId} className=" md:basis-1/2 lg:basis-1/3">
     <div className="p-1 ">
       <Card className={`rounded-3xl bg-[#246BEB] bg-cover https://geranosgetaways.com/wp-content/uploads/2024/08/${props.thumbnailImage}`} >
 
