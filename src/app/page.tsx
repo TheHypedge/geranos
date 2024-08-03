@@ -10,7 +10,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <HeroBanner/>
-      <TextAndImage/>     
+      <TextAndImage/>  
+      <div className="mb-8">   
+      <DestinationsCards/>
+      </div>
+      <div className="mb-8">   
+      <DestinationsCards/>
+      </div>
+
       <DestinationsCards/>
     </main>
   );

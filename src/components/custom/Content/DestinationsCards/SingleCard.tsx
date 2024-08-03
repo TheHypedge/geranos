@@ -15,15 +15,18 @@ const SingleCard = (props:any) => {
 
   return (
  
-    <CarouselItem key={props.indexId} className=" md:basis-1/2 lg:basis-1/3">
+    <CarouselItem key={props.indexId} className=" md:basis-1/2 lg:basis-1/4">
     <div className="p-1 ">
-      <Card className="rounded-2xl bg-[url('/global/destinations/uttarakhand-tracking.png')] bg-blend-darken bg-cover ">
+      <Card className={`rounded-3xl bg-[#246BEB] bg-cover https://geranosgetaways.com/wp-content/uploads/2024/08/${props.thumbnailImage}`} >
 
-        <div className=" w-full height-full rounded-2xl">
+        <div className=" w-full height-full rounded-2xl ">
 
-        <CardContent className="flex flex-col align-bottom justify-end aspect-square p-6">
-   <div className="flex flex-col gap-4">
-    <div className="text-slate-50 font-semibold bottom-4 w-full tracking-widest uppercase">{props.cardImageTitle}</div>
+        <CardContent className="flex flex-col align-bottom justify-end aspect-square p-0">
+
+        <Image className="rounded-3xl w-full" src={props.thumbnailImage} alt="test" width="1000" height="1000"/>
+
+   <div className="flex flex-col gap-4 relative p-4">
+    <div className="text-slate-50 text-sm font-semibold bottom-4 w-full tracking-widest uppercase">{props.cardImageTitle}</div>
     <div className="text-slate-50  bottom-4 w-full text-sm ">{props.cardImageSubTitle}</div>
     </div>
 
@@ -32,7 +35,8 @@ const SingleCard = (props:any) => {
     </div>
 
               </Card>
-              <p className="mt-6 font-semibold">The land of templates</p>
+           
+              <p className="mt-6 font-semibold">Another Tour package</p>
               <p className="mt-2">Starting from ₹ 28,000</p>
               <p className="mt-2 text-sm">1 Day to 7 Days tours</p>
             </div>
