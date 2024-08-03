@@ -1,40 +1,28 @@
-
-
-import { Button } from '@/components/ui/button';
 import React, { useEffect } from 'react'
+import PageRenderModule from './PageRenderModule'
+import { Button } from '@/components/ui/button';
+import PageNotFound from '@/components/custom/Global/PageNotFound'
 
-export const revalidate = 1
+export const revalidate = 10
 
 const Pages = async({ params } : {params:any}) => {
 
-    const req = await fetch(`https://grhealthy.in/wp-json/wp/v2/pages?_fields=id,slug,title,content&slug=${params.slug}`); 
+
+
+    const req = await fetch(`https://geranosgetaways.com/wp-json/wp/v2/pages?_fields=id,slug,title,content&slug=${params.slug}`); 
     const pages = await req.json(); 
     const page = pages[0];
 
-
-  return (
-    <div className="max-w-[800px] m-auto px-2">
-
-    {
-    page.title.rendered>0 ? ( 
-
-     
-      <div className="text-4xl text-left font-bold py-[80px]">{page.title.rendered}</div>
-      <div className="postContParaFixCstm mb-2 text-lg text-slate-900" dangerouslySetInnerHTML={{__html: page.content.rendered}}/>
-    ) : (
-      <p>etst</p>
-    )
- 
+    if(page != undefined){
+      return <PageRenderModule pageData={page}/> 
+    }
+    else {
+      return <PageNotFound/>
     }
 
 
-  
 
 
-              
-  
-    </div>    
-  )
 }
 
 export default Pages

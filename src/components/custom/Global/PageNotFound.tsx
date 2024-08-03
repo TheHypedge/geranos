@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-
 const NotFound = () => {
   return (
     <div className="min-h-[440px] flex flex-col text-center align-center justify-center">
