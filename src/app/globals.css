@@ -76,6 +76,10 @@
   margin-bottom: 16px;
 }
 
+.postContParaFixCstm img{
+  margin-bottom: 26px;
+}
+
 .postContParaFixCstm li {
   list-style-type: initial;
   margin-left: 16px;

@@ -16,8 +16,8 @@ const PageRenderModule = (props: any) => {
 
         <div className="max-w-[800px] m-auto px-2">
 
-        <div className="text-4xl text-left font-bold py-[80px]">test</div>
-        <div className="postContParaFixCstm text-left" dangerouslySetInnerHTML={{__html: "<h1>test</h1>"}}/>
+        <div className="text-4xl text-left font-bold py-[80px]">{props.pageData.title.rendered}</div>
+        <div className="postContParaFixCstm text-left" dangerouslySetInnerHTML={{__html: props.pageData.content.rendered}}/>
 
  
     </div>
