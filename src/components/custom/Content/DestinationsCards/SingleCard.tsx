@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
@@ -12,9 +12,6 @@ import Image from 'next/image'
 const SingleCard = (props:any) => {
 
 
-  useEffect(() => {
-    console.log("Inside a card");
-  }, []);
 
   return (
  
