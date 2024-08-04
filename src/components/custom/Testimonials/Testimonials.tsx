@@ -49,7 +49,7 @@ export default function Component() {
             </Avatar>
             <div>
               <h4 className="text-lg font-semibold">Shu Ding</h4>
-              <p className="text-sm text-muted-foreground">CEO, Acme Inc.</p>
+              <p className="text-sm text-muted-foreground">CEO, Acme Inc asd.</p>
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
