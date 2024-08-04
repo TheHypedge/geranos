@@ -1,7 +1,7 @@
 
 
 import Image from "next/image";
-import HeroBanner from '@/components/custom/HeroBanner/heroBanner'
+import HeroBanner from '@/components/custom/HeroBanner/HeroBanner'
 import TextReveal from "@/components/custom/TextReveal/TextReveal";
 import TextAndImage from "@/components/custom/Content/TextAndImage/TextAndImage";
 import DestinationsCards from "@/components/custom/Content/DestinationsCards/DestinationsCards";
