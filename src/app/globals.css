@@ -96,3 +96,8 @@
   font-weight:bold;
   text-decoration: underline;
 }
+
+
+.postContParaFixCstm .ring-offset-background {
+  background: #0EA2E9;
+}

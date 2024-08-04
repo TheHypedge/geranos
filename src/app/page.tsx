@@ -11,14 +11,11 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <HeroBanner/>
       <TextAndImage/>  
-      <div className="mb-8">   
-      <DestinationsCards/>
-      </div>
-      <div className="mb-8">   
-      <DestinationsCards/>
+      <div className="mb-8">  
+
+        <DestinationsCards acfPostTypeSlug="" cardTitle="Destinations 2" />
       </div>
 
-      <DestinationsCards/>
     </main>
   );
 }

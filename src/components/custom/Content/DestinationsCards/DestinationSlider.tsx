@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/carousel"
 import SingleCard from "./SingleCard"
 
-
+export const revalidate = 10
 
 export default async function CarouselSize() {
 
@@ -32,7 +32,9 @@ export default async function CarouselSize() {
           thumbnailImage={destination.acf.thumbnail.url}
           cardImageTitle={destination.acf.thumbnail_title_1}
           cardImageSubTitle={destination.acf.thumbnail_title_2}
-
+          cardTitleMedium={destination.acf.slider_title_medium}
+          cardTitleLarge={destination.acf.slider_title_large}
+          cardTitleSmall={destination.acf.slider_title_small}
           />
    
           )
