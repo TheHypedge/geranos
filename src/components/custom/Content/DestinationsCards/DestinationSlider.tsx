@@ -19,9 +19,9 @@ export default async function CarouselSize(props) {
       opts={{
         align: "start",
       }}
-      className="w-full cstmClass"
+      className="w-full"
     >
-      <CarouselContent>
+      <CarouselContent className="pt-8">
  
       {
       pages && pages.map((destination:any) => {
