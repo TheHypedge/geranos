@@ -8,18 +8,19 @@ const DestinationsCards = (props) => {
     <div className="max-w-[1400px] flex m-auto w-full">
         <div className="flex gap-4 flex-col justify-between w-full xl:flex-row p-4">
             <div className="w-full flex flex-col align-middle justify-center gap-8">
+
+              <div className="mb-4">
                 <Heading className="text-[#246BEB]" content={props.cardTitle}/>
+              </div>
 
-                  <DestinationSlider/>
+                <DestinationSlider acfPostTypeSlug={props.acfPostTypeSlug} />
                 
-
-                <div>
-                <AlgoliaBlueButton/>
-                </div>
+              <div>
+                  <AlgoliaBlueButton ctaText="All Destinations" ctaLink="/"/>
+              </div>
 
 
             </div>
-
         </div>
     </div>
   )

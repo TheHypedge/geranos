@@ -13,7 +13,7 @@ export default function Home() {
       <TextAndImage/>  
       <div className="mb-8">  
 
-        <DestinationsCards acfPostTypeSlug="" cardTitle="Destinations 2" />
+        <DestinationsCards acfPostTypeSlug="destinations" cardTitle="Destinations" />
       </div>
 
     </main>

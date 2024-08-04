@@ -12,7 +12,7 @@ const TextAndImage = () => {
                 <Heading className="text-[#246BEB]" content="Gerenos Getaways"/>
                 <p>Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!</p>
                 <div>
-                <AlgoliaBlueButton/>
+                <AlgoliaBlueButton ctaText="Learn More" ctaLink="/"/>
                 </div>
 
 

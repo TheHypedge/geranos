@@ -141,7 +141,7 @@ export default function NavigationMenuDemo() {
     </NavigationMenu>
 
    <div className="mt-2">
-   <AlgoliaBlueButton/>
+   <AlgoliaBlueButton ctaText="Plan A Trip !" ctaLink="/"/>
    </div>
 
 
