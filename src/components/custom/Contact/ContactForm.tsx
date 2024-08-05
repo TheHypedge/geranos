@@ -78,7 +78,7 @@ const ContactForm = () => {
 
         if(response.invalid_fields && response.invalid_fields.length>0) {
             return setFields(fields.map(field => {
-                const error = response.invalid_fields.find(x => x.field === field.name);
+                const error = response.invalid_fields.find((x:any) => x.field === field.name);
 
                 return{
                     ...field, 
@@ -103,8 +103,8 @@ const ContactForm = () => {
         {fields.map(field => (
             <fieldset key={field.id}>
                 <Label htmlFor={field.id}>{field.label}</Label>
-                {field.component === "INPUT" && <Input type={field.type} required={field.required} id={field.id} name={field.name}/>}
-                {field.component === "TEXTAREA" && <Textarea required={field.required} id={field.id} name={field.name}/>}
+                {field.component === "INPUT" && <Input type={field.type}  id={field.id} name={field.name}/>}
+                {field.component === "TEXTAREA" && <Textarea id={field.id} name={field.name}/>}
                 {field.validation_error && <div className="text-sm text-red-700">{field.validation_message}</div>}
             </fieldset>
 

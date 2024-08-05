@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         <div className="mb-8 w-full">  
-          <Testimonials/>
+     
         </div>
 
     </main>

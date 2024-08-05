@@ -1,8 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/SblkuaiPzdY
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 export default function Component() {
@@ -21,8 +17,7 @@ export default function Component() {
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
-            "The team at Acme has been incredible to work with. They really\n understand our needs and have helped us
-            streamline our processes."
+            test
           </blockquote>
         </div>
         <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -37,8 +32,7 @@ export default function Component() {
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
-            "I've been using Acme's products for years and they've always\n exceeded my expectations. The support team
-            is top-notch."
+            test
           </blockquote>
         </div>
         <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -53,8 +47,7 @@ export default function Component() {
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
-            "Acme has been a game-changer for our business. Their pr has been a game-changer for our business. Their pr oducts are\n reliable, and their team is always
-            there to support us."
+            test
           </blockquote>
         </div>
         <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -69,8 +62,7 @@ export default function Component() {
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
-            "Acme's products have made my job so much easier. The design\n quality made my job so much easier. The design\n quality is top-notch, and the customization
-            options are endless."
+            test
           </blockquote>
         </div>
         <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -85,8 +77,7 @@ export default function Component() {
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
-            "The team at Acme has been incredible to work with. They really\n understand our needs and have helped us
-            streamline our processes."
+            test
           </blockquote>
         </div>
         <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -101,8 +92,7 @@ export default function Component() {
             </div>
           </div>
           <blockquote className="mt-4 text-md leading-relaxed">
-            "I've been using Acme's products for year "I've been using Acme's products for years and they've always\n exceeded my expectations. The support team
-            is top-notch."
+            test
           </blockquote>
         </div>
       </div>
