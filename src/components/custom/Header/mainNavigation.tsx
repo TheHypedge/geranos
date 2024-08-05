@@ -124,7 +124,7 @@ export default function NavigationMenuDemo() {
                     γερανός (geranós)
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                    The rich Indian culture is best symbolised by the traditional Indian folk art of 'rangolis' made across the length and breadth of the country. The rangoli represents the happiness, positivity and liveliness of a household.
+                    test
                     </p>
                     <div className="text-slate-800 mb-2 mt-4 text-md font-medium width-auto">
                     Read More

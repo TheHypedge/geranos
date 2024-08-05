@@ -27,7 +27,8 @@ export default async function CarouselSize(props:any) {
       pages && pages.map((destination:any) => {
         return (
     
-          <SingleCard 
+          <SingleCard
+          key={destination.id}
           indexId={destination.id}
           thumbnailImage={destination.acf.thumbnail.url}
           cardImageTitle={destination.acf.thumbnail_title_1}
