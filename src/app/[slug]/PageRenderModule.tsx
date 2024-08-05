@@ -7,9 +7,6 @@ const PageRenderModule = (props: any) => {
 
  let test = props.pageData
 
-  useEffect(() => {
-    console.log(test); 
-  }, []);
 
 
   return (       

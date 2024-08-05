@@ -10,7 +10,12 @@ import {
 } from "@/components/ui/carousel"
 import TestimonialCard from "./TestimonialCard"
 
-export default function CarouselDemo() {
+export default async function CarouselDemo() {
+
+  const res = await fetch('https://geranosgetaways.com/wp-json/wp/v2/testimonials?acf_format=standard');
+  const testimonials = await res.json();
+
+
   return (
 
     <div className="max-w-[1500px] px-[64px] flex m-auto w-full">
@@ -24,16 +29,23 @@ export default function CarouselDemo() {
     
     >
       <CarouselContent>
-        {Array.from({ length: 15 }).map((_, index) => (
-          <CarouselItem key={index} className="basis-1/1 md:basis-1/3">
-            <div className="p-1">
-              <Card className="rounded-3xl">
+        {testimonials && testimonials.map((testimonial:any) => (
+
+          <CarouselItem key={testimonial.id} className="basis-1/1 md:basis-1/3">
+            <div className="p-1 h-full">
+              <Card className="rounded-3xl h-full">
                 <CardContent className="flex items-center justify-center p-6">
-                  <TestimonialCard/>
+                  <TestimonialCard 
+                    testimnlName={testimonial.title.rendered}
+                    testimnlDesignation={testimonial.acf.designation}
+                    testimnlTestimonial={testimonial.acf.testimonial}
+                    testimnlPersonImage={testimonial.acf.personimage}
+                  />
                 </CardContent>
               </Card>
             </div>
           </CarouselItem>
+
         ))}
       </CarouselContent>
       <CarouselPrevious/>

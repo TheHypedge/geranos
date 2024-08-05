@@ -7,19 +7,22 @@ import { Card } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import Image from 'next/image'
 
-export default function Component() {
+export default function Component(props:any) {
   return (
     <Card className="border-none shadow-none w-full grid gap-6">
       <div className="flex items-center gap-4">
-        <Image src="/global/social/x.png" className="rounded-full shadow-sm bg-red-700" alt="Testimonial Image" width="80" height="80"/> 
+        <Image src={props.testimnlPersonImage} className="rounded-full shadow-sm bg-[#246BEB]" alt="Testimonial Image" width="80" height="80"/> 
         <div className="grid gap-2">
-          <div className="font-semibold">John Doe</div>
-          <div className="text-sm text-muted-foreground">CEO, Acme Inc.</div>
+          <div className="font-semibold">{props.testimnlName}</div>
+          <div className="text-sm text-muted-foreground">{props.testimnlDesignation}</div>
         </div>
       </div>
       <blockquote className="text-md leading-relaxed md:text-md">
-        &ldquo;The service and support I received from this company was exceptional. They went above and beyond to
-        ensure my needs were met.&rdquo;
+     
+    <div
+      dangerouslySetInnerHTML={{__html: props.testimnlTestimonial}}
+    />
+        
       </blockquote>
     </Card>
   )
