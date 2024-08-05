@@ -1,101 +1,45 @@
 
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
-export default function Component() {
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import TestimonialCard from "./TestimonialCard"
+
+export default function CarouselDemo() {
   return (
-    <section className="w-full ">
-      <div className="container grid grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:grid-cols-3 md:px-6">
-        <div className="rounded-lg border bg-background p-6 shadow-sm">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-16 w-16">
-              <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-            <div>
-              <h4 className="text-lg font-semibold">Cathy Nguyen</h4>
-              <p className="text-sm text-muted-foreground">Product Manager, Acme Inc.</p>
+
+    <div className="max-w-[1500px] px-[64px] flex m-auto w-full">
+
+    <Carousel
+    
+    opts={{
+      align: "start",
+    }}
+    className="w-full"    
+    
+    >
+      <CarouselContent>
+        {Array.from({ length: 15 }).map((_, index) => (
+          <CarouselItem key={index} className="basis-1/1 md:basis-1/3">
+            <div className="p-1">
+              <Card className="rounded-3xl">
+                <CardContent className="flex items-center justify-center p-6">
+                  <TestimonialCard/>
+                </CardContent>
+              </Card>
             </div>
-          </div>
-          <blockquote className="mt-4 text-md leading-relaxed">
-            test
-          </blockquote>
-        </div>
-        <div className="rounded-lg border bg-background p-6 shadow-sm">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-16 w-16">
-              <AvatarImage src="/placeholder-user.jpg" alt="@jaredpalmer" />
-              <AvatarFallback>JP</AvatarFallback>
-            </Avatar>
-            <div>
-              <h4 className="text-lg font-semibold">Jared Palmer</h4>
-              <p className="text-sm text-muted-foreground">CTO, Acme Inc.</p>
-            </div>
-          </div>
-          <blockquote className="mt-4 text-md leading-relaxed">
-            test
-          </blockquote>
-        </div>
-        <div className="rounded-lg border bg-background p-6 shadow-sm">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-16 w-16">
-              <AvatarImage src="/placeholder-user.jpg" alt="@shuding_" />
-              <AvatarFallback>SD</AvatarFallback>
-            </Avatar>
-            <div>
-              <h4 className="text-lg font-semibold">Shu Ding</h4>
-              <p className="text-sm text-muted-foreground">CEO, Acme Inc asd.</p>
-            </div>
-          </div>
-          <blockquote className="mt-4 text-md leading-relaxed">
-            test
-          </blockquote>
-        </div>
-        <div className="rounded-lg border bg-background p-6 shadow-sm">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-16 w-16">
-              <AvatarImage src="/placeholder-user.jpg" alt="@maxleiter" />
-              <AvatarFallback>ML</AvatarFallback>
-            </Avatar>
-            <div>
-              <h4 className="text-lg font-semibold">Max Leiter</h4>
-              <p className="text-sm text-muted-foreground">Designer, Acme Inc.</p>
-            </div>
-          </div>
-          <blockquote className="mt-4 text-md leading-relaxed">
-            test
-          </blockquote>
-        </div>
-        <div className="rounded-lg border bg-background p-6 shadow-sm">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-16 w-16">
-              <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-            <div>
-              <h4 className="text-lg font-semibold">Cathy Nguyen</h4>
-              <p className="text-sm text-muted-foreground">Product Manager, Acme Inc.</p>
-            </div>
-          </div>
-          <blockquote className="mt-4 text-md leading-relaxed">
-            test
-          </blockquote>
-        </div>
-        <div className="rounded-lg border bg-background p-6 shadow-sm">
-          <div className="flex items-center gap-4">
-            <Avatar className="h-16 w-16">
-              <AvatarImage src="/placeholder-user.jpg" alt="@jaredpalmer" />
-              <AvatarFallback>JP</AvatarFallback>
-            </Avatar>
-            <div>
-              <h4 className="text-lg font-semibold">Jared Palmer</h4>
-              <p className="text-sm text-muted-foreground">CTO, Acme Inc.</p>
-            </div>
-          </div>
-          <blockquote className="mt-4 text-md leading-relaxed">
-            test
-          </blockquote>
-        </div>
-      </div>
-    </section>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious/>
+      <CarouselNext />
+    </Carousel>
+
+    </div>
   )
 }

@@ -6,6 +6,7 @@ import TextReveal from "@/components/custom/TextReveal/TextReveal";
 import TextAndImage from "@/components/custom/Content/TextAndImage/TextAndImage";
 import DestinationsCards from "@/components/custom/Content/DestinationsCards/DestinationsCards";
 import Testimonials from '@/components/custom/Testimonials/Testimonials'
+import TestimonialCard from "@/components/custom/Testimonials/TestimonialCard";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
         </div>
 
         <div className="mb-8 w-full">  
-     
+          <Testimonials/>
         </div>
 
     </main>

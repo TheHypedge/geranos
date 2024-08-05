@@ -20,7 +20,7 @@ const SingleCard = (props:any) => {
     <CarouselItem  key={props.indexId} className=" md:basis-1/2 lg:basis-1/4">
     <div className="p-1 ">
     <Link href="/">
-      <Card className={`rounded-3xl transition duration-500 border-b-8 border-t-0 border-r-0 border-l-0 hover:border-[#FFE818] border-white bg-[#246BEB] bg-cover https://geranosgetaways.com/wp-content/uploads/2024/08/${props.thumbnailImage}`} >
+      <Card className={`rounded-3xl transition duration-500 border-b-8 border-t-0 border-r-0 border-l-0 hover:border-[#FFE818] border-white bg-[#246BEB] bg-cover`} >
 
         <div className=" w-full height-full ">
 
