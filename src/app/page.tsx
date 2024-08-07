@@ -7,11 +7,14 @@ import TextAndImage from "@/components/custom/Content/TextAndImage/TextAndImage"
 import DestinationsCards from "@/components/custom/Content/DestinationsCards/DestinationsCards";
 import Testimonials from '@/components/custom/Testimonials/Testimonials'
 import TestimonialCard from "@/components/custom/Testimonials/TestimonialCard";
-
+import HomeHeroSlider from '@/components/custom/Global/HeroHomeSlider/HeroHomeSlider'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <HeroBanner/>
+
+    <HomeHeroSlider/>
+
+
       <TextAndImage/>  
       <div className="mb-8">  
 
