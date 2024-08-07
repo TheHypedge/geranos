@@ -101,3 +101,17 @@
 .aCstmClass .overflow-hidden {
   height:100%; 
 }
+
+.aCstmClass .PrevNextBtnCstmCls button {
+  background:none !important; 
+  width: 50px !important; 
+  height:50px !important; 
+}
+.aCstmClass .PrevNextBtnCstmCls button:hover {
+  background:white !important; 
+}
+.aCstmClass .PrevNextBtnCstmCls button svg{
+  width: 30px !important; 
+  height:30px !important; 
+}
+
