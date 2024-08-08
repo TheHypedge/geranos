@@ -66,7 +66,7 @@ export default function NavigationMenuDemo() {
     <>
 
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="flex flex-row">
        
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase tracking-wider">Destinations</NavigationMenuTrigger>
@@ -84,6 +84,8 @@ export default function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
+
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase tracking-wider">Experiences</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -100,6 +102,29 @@ export default function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
+
+        <NavigationMenuItem>
+          <Link href="/docs" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <p className="uppercase tracking-wider">
+                Blogs
+              </p>
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+
+        <NavigationMenuItem>
+          <Link href="/docs" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <p className="uppercase tracking-wider">
+                Contact us
+              </p>
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
 
 
       </NavigationMenuList>

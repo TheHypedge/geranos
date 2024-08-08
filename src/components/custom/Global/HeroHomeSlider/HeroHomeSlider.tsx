@@ -45,15 +45,6 @@ export default function SimpleSlider() {
         cardLink="/destinations/punjab"
       />
 
-
-      <HeroHomeSlide
-        title="Uttarakhand"
-        subTitle="The scenic beauty of the Heaven.  "
-        bgImage="/global/banners/punjab.jpg"
-        cardLink="/destinations/punjab"
-      />
-
-
       <HeroHomeSlide
         title="Rajasthan"
         subTitle="Where Heritage Meets the Golden Sands"
