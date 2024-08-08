@@ -11,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import HamburgerIcon from './hamburger.webp'
 
 import { Button } from '@/components/ui/button';
 import MobileNavigation from './MobileNavigation';
@@ -19,7 +20,7 @@ const Header = () => {
     <div className="border-t-[10px] border-[#246BEB] fixed top-0 z-50 w-full bg-white min-h-[90px] flex flex-row align-middle justify-between px-2 sm:px-6 py-2">
     
     <Link href="/" className="xl:min-w-[200px] flex flex-col align-start justify-center">
-    <Image src="/global/logo.png" width="200" height="200" alt="logo"/>        
+    <Image src="/global/logo.png" width="200" height="200" alt="logo" className=""/>        
     </Link>
 
 
@@ -51,7 +52,10 @@ const Header = () => {
 
 
    <Sheet>
-  <SheetTrigger>Open</SheetTrigger>
+  <SheetTrigger>
+    <Image src={HamburgerIcon} width="40" height="40" alt="Hamburger Menu Icon"/>
+
+  </SheetTrigger>
   <SheetContent className="overflow-y-scroll">
     <SheetHeader className="mb-8">
       <SheetTitle className="text-left mt-4">Gerenos Getaways</SheetTitle>
