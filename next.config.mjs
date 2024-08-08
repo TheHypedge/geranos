@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
 
 
-        domains: ['geranosgetaways.com'],
+        domains: ['geranosgetaways.com', 'images.pexels.com'],
 
       },    
 

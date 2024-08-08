@@ -1,18 +1,15 @@
-
-
-import Image from "next/image";
-import HeroBanner from '@/components/custom/HeroBanner/HeroBanner'
-import TextReveal from "@/components/custom/TextReveal/TextReveal";
 import TextAndImage from "@/components/custom/Content/TextAndImage/TextAndImage";
 import DestinationsCards from "@/components/custom/Content/DestinationsCards/DestinationsCards";
 import Testimonials from '@/components/custom/Testimonials/Testimonials'
-import TestimonialCard from "@/components/custom/Testimonials/TestimonialCard";
-import HomeHeroSlider from '@/components/custom/Global/HeroHomeSlider/HeroHomeSlider'
+import HeroSlickSlider from '@/components/custom/Global/HeroHomeSlider/HeroHomeSlider'
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
 
-    <HomeHeroSlider/>
+    
+
+    <HeroSlickSlider/>
 
 
       <TextAndImage/>  
