@@ -5,7 +5,6 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
-import AlgoliaBlueButton from "@/components/animata/text/button/algolia-blue-button";
 
 import {
   NavigationMenu,
@@ -68,14 +67,7 @@ export default function NavigationMenuDemo() {
 
     <NavigationMenu>
       <NavigationMenuList>
-      <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={"uppercase tracking-wider" + navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>        
-
+       
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase tracking-wider">Destinations</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -109,40 +101,11 @@ export default function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="uppercase tracking-wider">About</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-               
-                    <div className=" mb-2 mt-4 text-lg font-medium">
-                    γερανός (geranós)
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                    test
-                    </p>
-                    <div className="text-slate-800 mb-2 mt-4 text-md font-medium width-auto">
-                    Read More
-                    </div>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
 
       </NavigationMenuList>
     </NavigationMenu>
 
-   <div className="mt-2">
-   <AlgoliaBlueButton ctaText="Plan A Trip !" ctaLink="/"/>
-   </div>
+
 
 
     </>

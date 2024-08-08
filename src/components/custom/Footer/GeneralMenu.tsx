@@ -10,10 +10,6 @@ const GeneralMenu = () => {
         <p>Home</p>
         </Link>
         <p className="text-[#f2f2f2]">|</p>
-        <Link href="/about">
-        <p>About</p>
-        </Link> 
-        <p className="text-[#f2f2f2]">|</p>
         <Link href="/contact">
         <p>Contact</p>
         </Link>         
