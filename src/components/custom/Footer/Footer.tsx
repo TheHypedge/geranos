@@ -9,7 +9,7 @@ import ExperiencesMenu from './ExperiencesMenu'
 const Footer = () => {
   return (
     <>
-    <div className="border-b-[10px]  border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-6 py-8 pt-12 pb-4">
+    <div className=" border-b-[10px]  border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-6 py-8 pt-12 pb-4">
         <div className="flex flex-row justify-between mb-12">
             <p className="text-md mt-2 ">© Gerenos Getaways 2024</p>
             <p className="flex gap-2">

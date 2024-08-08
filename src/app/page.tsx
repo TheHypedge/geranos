@@ -12,11 +12,21 @@ export default function Home() {
     <HeroSlickSlider/>
 
 
-      <TextAndImage/>  
-      <div className="mb-8">  
+      <TextAndImage 
+      imagePostion="right"
+      titleText="About Gerenos"
+      />  
+      <TextAndImage 
+      imagePostion="left"
+      titleText="What We Offer?"
+      />  
+      <TextAndImage 
+      imagePostion="right"
+      titleText="Why Us?"
+      />   
 
-        <DestinationsCards acfPostTypeSlug="destinations" cardTitle="Destinations" />
-        </div>
+
+   
 
         <div className="mb-12">  
         <DestinationsCards acfPostTypeSlug="experiences" cardTitle="Experiences" />
