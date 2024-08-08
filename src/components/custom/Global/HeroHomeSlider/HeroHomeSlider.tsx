@@ -19,9 +19,6 @@ export default function SimpleSlider() {
 
 
 
-
-
-
   var settings = {
     dots: false,
     buttons:true,
