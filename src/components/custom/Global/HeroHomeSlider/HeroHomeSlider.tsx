@@ -19,8 +19,6 @@ export default function SimpleSlider() {
 
 
 
-    let sliderRef = useRef(null);
-
 
 
 
@@ -43,9 +41,7 @@ export default function SimpleSlider() {
     <>
 
     <Slider 
-    ref={slider => {
-        sliderRef = slider;
-      }}
+
     {...settings}>
 
 
