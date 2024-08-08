@@ -41,30 +41,17 @@ export default function SimpleSlider() {
       <HeroHomeSlide
         title="Punjab"
         subTitle="The Land of Timeless Heritage"
-        bgImage="https://images.pexels.com/photos/12656946/pexels-photo-12656946.jpeg"
-        cardLink="/destinations/punjab"
-      />
-     
-     <HeroHomeSlide
-        title="Uttarakhand"
-        subTitle="Nature's Haven, Spiritual Journey"
-        bgImage="https://images.pexels.com/photos/789380/pexels-photo-789380.jpeg"
+        bgImage="/global/banners/punjab.jpg"
         cardLink="/destinations/punjab"
       />
 
       <HeroHomeSlide
         title="Rajasthan"
         subTitle="Where Heritage Meets the Golden Sands"
-        bgImage="https://images.pexels.com/photos/925069/pexels-photo-925069.jpeg"
+        bgImage="/global/banners/rajasthan.jpg"
         cardLink="/destinations/punjab"
       />
 
-      <HeroHomeSlide
-        title="Kerala"
-        subTitle="Nature's Own Paradise, Scenic Splendor"
-        bgImage="https://images.pexels.com/photos/5007356/pexels-photo-5007356.jpeg"
-        cardLink="/destinations/punjab"
-      />
 
 
 
