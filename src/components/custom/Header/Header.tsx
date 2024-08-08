@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet"
 
 import { Button } from '@/components/ui/button';
+import MobileNavigation from './MobileNavigation';
 const Header = () => {
   return (
     <div className="border-t-[10px] border-[#246BEB] fixed top-0 z-50 w-full bg-white min-h-[90px] flex flex-row align-middle justify-between px-2 sm:px-6 py-2">
@@ -51,15 +52,17 @@ const Header = () => {
 
    <Sheet>
   <SheetTrigger>Open</SheetTrigger>
-  <SheetContent>
-    <SheetHeader>
-      <SheetTitle className="text-left mt-4">Are you absolutely sure?</SheetTitle>
-      <SheetDescription className="text-left mb-4">
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+  <SheetContent className="overflow-y-scroll">
+    <SheetHeader className="mb-8">
+      <SheetTitle className="text-left mt-4">Gerenos Getaways</SheetTitle>
+      <SheetDescription className="text-left mb-8">
+      your guide to its rich heritage and scenic beauty. Explore the top tourist attractions!
       </SheetDescription>
-      <MainNavigation/>
+
     </SheetHeader>
+
+    <MobileNavigation/>
+
   </SheetContent>
 </Sheet>
 
