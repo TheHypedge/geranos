@@ -17,7 +17,7 @@ const HeroHomeSlickSlide = (props:any) => {
         z-50 bg-[rgba(10,26,36,0.5)] min-h-[90vh] flex flex-col align-middle justify-center gap-8
         ">
             <h2
-            className="text-white font-bold text-6xl text-center z-50"
+            className="text-white font-semibold text-5xl text-center z-50"
             >
                 {props.title}
             </h2>
