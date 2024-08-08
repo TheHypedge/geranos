@@ -107,6 +107,8 @@
   width: 50px !important; 
   height:50px !important; 
 }
+
+
 .aCstmClass .PrevNextBtnCstmCls button:hover {
   background:white !important; 
 }
@@ -115,4 +117,16 @@
   height:30px !important; 
 }
 
+@media(max-width:620px) {
+  .slick-prev
+  {
+      top: 90% !important;
+      left: 12% !important;
+  }  
+  .slick-next
+  {
+      top: 90% !important;
+      right: 12% !important;
+  }
+}
  
