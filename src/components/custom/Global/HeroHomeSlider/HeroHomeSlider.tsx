@@ -40,7 +40,7 @@ export default function SimpleSlider() {
 
       <HeroHomeSlide
         title="Punjab"
-        subTitle="The Land of Timeless Heritage"
+        subTitle="The Land of Timeless Heritage living Forever"
         bgImage="/global/banners/punjab.jpg"
         cardLink="/destinations/punjab"
       />
