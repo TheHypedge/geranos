@@ -26,7 +26,7 @@ const SingleCard = (props:any) => {
 
         <CardContent className="flex flex-col align-bottom justify-end aspect-square p-0">
 
-        <Image className="rounded-3xl w-full" src={props.thumbnailImage} alt="test" width="1000" height="1000"/>
+        <Image className="rounded-2xl w-full" src={props.thumbnailImage} alt="test" width="1000" height="1000"/>
 
 
         { (props.cardImageTitle || props.cardImageSubTitle) && 

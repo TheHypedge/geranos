@@ -42,7 +42,7 @@ export default function Home() {
    
 
         <div className="mb-12">  
-        <DestinationsCards acfPostTypeSlug="experiences" cardTitle="Experiences" />
+        <DestinationsCards acfPostTypeSlug="experiences" cardTitle="Rediscover Yourself Like a Local" />
         </div>
 
         <div className="mb-8 w-full">  
