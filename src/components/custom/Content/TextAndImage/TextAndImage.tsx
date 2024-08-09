@@ -15,7 +15,13 @@ const TextAndImage = (props:any) => {
               <TextAndImageImage/>
         }    
         
-        <TextAndImageText titleText={props.titleText}/>
+        <TextAndImageText 
+        titleText={props.titleText} 
+        subHeading={props.subHeading} 
+        content={props.content}
+        ctaText={props.ctaText}
+        ctaLink={props.ctaLink}
+        />
 
         {
           ((props.imagePostion) === "right") &&

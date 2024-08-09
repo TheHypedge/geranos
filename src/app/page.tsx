@@ -15,14 +15,27 @@ export default function Home() {
       <TextAndImage 
       imagePostion="right"
       titleText="About Gerenos"
-      />  
+      subHeading="our Motto"
+      content="Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!"
+      ctaText=""
+      ctaLink=""
+      />
+
       <TextAndImage 
       imagePostion="left"
       titleText="What We Offer?"
+      subHeading="our Motto"  
+      content="Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!"
+      ctaText=""
+      ctaLink=""    
       />  
       <TextAndImage 
       imagePostion="right"
       titleText="Why Us?"
+      subHeading="our Motto"
+      content="Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!"
+      ctaText=""
+      ctaLink=""
       />   
 
 
