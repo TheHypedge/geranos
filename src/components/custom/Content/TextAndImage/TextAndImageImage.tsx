@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-const TextAndImageImage = () => {
+const TextAndImageImage = (props:any) => {
   return (
     <div className={`w-full`}>
-    <Image src="/global/collage-4.png" width="800" height="800" alt="Image"/>
+    <Image src={props.imageLink} width="800" height="800" alt="Image"/>
 </div>
   )
 }

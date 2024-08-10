@@ -46,10 +46,10 @@ export default function SimpleSlider() {
       />
 
       <HeroHomeSlide
-        title="Rajasthan"
-        subTitle="Where Heritage Meets the Golden Sands"
-        bgImage="/global/banners/rajasthan.jpg"
-        cardLink="/destinations/punjab"
+        title="Uttarakhand"
+        subTitle="The Land of Indian Nature & Holy Mountains"
+        bgImage="/global/banners/uttarakhand-2.jpg"
+        cardLink="/destinations/uttarakhand"
       />
 
 

@@ -18,7 +18,14 @@ export default async function CarouselDemo() {
 
   return (
 
+    <>
+
+    <h2 className="text-4xl font-semibold text-center mb-8">Testimonials</h2>
+
     <div className="max-w-[1540px] px-[64px] flex m-auto w-full">
+
+
+
 
     <Carousel
     
@@ -53,5 +60,8 @@ export default async function CarouselDemo() {
     </Carousel>
 
     </div>
+
+
+    </>
   )
 }

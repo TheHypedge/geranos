@@ -13,6 +13,7 @@ export default function Home() {
 
 
       <TextAndImage 
+      imageLink="/global/collage-4.png"
       imagePostion="right"
       titleText="About Gerenos"
       subHeading="A subheading here"
@@ -22,6 +23,7 @@ export default function Home() {
       />
 
       <TextAndImage 
+      imageLink="/global/collage-5.png"      
       imagePostion="left"
       titleText="What We Offer?"
       subHeading="A subheading here"  
@@ -30,6 +32,7 @@ export default function Home() {
       ctaLink=""    
       />  
       <TextAndImage 
+      imageLink="/global/collage-7.png"      
       imagePostion="right"
       titleText="Why Us?"
       subHeading="A subheading here"
@@ -41,11 +44,11 @@ export default function Home() {
 
    
 
-        <div className="mb-12">  
-        <DestinationsCards acfPostTypeSlug="experiences" cardTitle="Rediscover Yourself Like a Local" />
+        <div className="mb-4">  
+        <DestinationsCards acfPostTypeSlug="experiences" cardTitle="Rediscover Yourself - Like a Local" />
         </div>
 
-        <div className="mb-8 w-full">  
+        <div className=" w-full">  
           <Testimonials/>
         </div>
 

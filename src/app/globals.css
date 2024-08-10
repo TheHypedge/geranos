@@ -130,3 +130,18 @@
   }
 }
  
+
+
+/* Footer CSS */
+
+.accCstmClsFtr {
+  display: flex;
+  gap:12px; 
+  justify-content: start;
+}
+.accCstmClsFtr:hover {
+  text-decoration: none !important;
+}
+.accCstmClsFtr svg{
+  order:-1;
+}
