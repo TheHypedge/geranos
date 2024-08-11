@@ -28,29 +28,15 @@ const BottomAccordion = () => {
 
 
 
-      <div className="w-full flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-4 ml-20">
 
-            <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ADVERTISE</p>
+            <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ADVERTISE & LIST ACCOMODATIONS</p>
             <p className="flex">
                 <Advertise/>
             </p>
 
       </div>
 
-
-
-
-
-
-
-      <div className="w-full flex flex-col gap-4">
-
-        <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">LIST ACCOMODATIONS</p>
-        <p className="flex">
-            <ListAccomodations/>
-        </p>
-
-        </div>
 
 
 

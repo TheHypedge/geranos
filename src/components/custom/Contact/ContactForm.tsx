@@ -111,7 +111,7 @@ const ContactForm = () => {
         ))}
             <Input type="hidden" className="hidden" name="_wpcf7_unit_tag" value="wpcf7-f784-p785-o1"/>
 
-            <Button type="submit" className="max-w-min">Submit</Button>
+            <Button type="submit" className="max-w-min">Send</Button>
 
             {finalMsg && <div className="text-md bg-green-700 text-white p-2 rounded">{finalMsg}</div>}
         </form>

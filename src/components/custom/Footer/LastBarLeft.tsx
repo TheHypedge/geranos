@@ -1,14 +1,10 @@
 import React from 'react'
 import { Separator } from "@/components/ui/separator"
 
-const LastBar = () => {
+const LastBarLeft = () => {
   return (
     <div className="mb-8">
       <div className="flex flex-wrap h-5 items-center space-x-4 text-sm font-medium uppercase tracking-wider">
-        <div className="ml-0">Privacy Policy</div>
-        <Separator orientation="vertical" />
-        <div>Terms Of Use</div>
-        <Separator orientation="vertical" />
         <div>Contact</div>
         <Separator orientation="vertical" />
         <div>Sitemap</div>        
@@ -17,4 +13,4 @@ const LastBar = () => {
   )
 }
 
-export default LastBar
+export default LastBarLeft
