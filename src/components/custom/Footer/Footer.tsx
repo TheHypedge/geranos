@@ -2,17 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import { Separator } from "@/components/ui/separator"
 import Link from 'next/link'
-import BottomAccordion from './BottomAccordion'
+import BottomAccordionDesktop from './BottomAccordionDesktop'
+import BottomAccordionMobile from './BottomAccordionMobile'
 import LastBar from './LastBar'
 
 const Footer = () => {
   return (
     <>
-    <div className="border-b-[10px] border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-6 py-8 pt-12 pb-4">
-        <div className="flex flex-row justify-between mb-12">
+    <div className="bg-slate-50 border-b-[10px] border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-4 sm:px-6 py-4 pb-8 sm:pt-12 sm:pb-4">
+        <div className="flex flex-col sm:flex-row justify-between mb-12">
 
 
-            <div className="mt-2">
+            <div className="mt-2 flex justify-center sm:justify-start">
 
               <Image src="/global/geranos-logo.png" height="100" width="140" alt="Geranos Logo" />
 
@@ -20,27 +21,32 @@ const Footer = () => {
 
 
 
-            <p className="flex gap-2">
+            <p className="flex gap-2 justify-center sm:justify-end">
               <Link href="https://x.com" className="flex flex-col align-middle justify-center">
-                <Image src="/global/social/x.png" className="rounded" alt="Social" width="40" height="40"/>
+                <Image src="/global/social/x.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
               <Link href="https://facebook.com" className="flex flex-col align-middle justify-center">
-                <Image src="/global/social/facebook.png" className="rounded" alt="Social" width="40" height="40"/>
+                <Image src="/global/social/facebook.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
               <Link href="https://instagram.com" className="flex flex-col align-middle justify-center">
-                <Image src="/global/social/instagram.png" className="rounded" alt="Social" width="40" height="40"/>
+                <Image src="/global/social/instagram.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
               <Link href="https://linkedin.com" className="flex flex-col align-middle justify-center">
-                <Image src="/global/social/linkedin.png" className="rounded" alt="Social" width="40" height="40"/>
+                <Image src="/global/social/linkedin.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
             </p>
 
         </div>
         <Separator className="mb-12"/>
 
-        <div className="flex flex-row justify-between mb-12 ">
-          <BottomAccordion/>
+        <div className="hidden xl:flex flex-row justify-between mb-12">
+          <BottomAccordionDesktop/>
         </div>
+        <div className="flex xl:hidden flex flex-row justify-between mb-12 ">
+          <BottomAccordionMobile/>
+        </div>
+
+
 
         <Separator className="mb-12"/>
 
