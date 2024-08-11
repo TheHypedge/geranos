@@ -1,13 +1,18 @@
 import React from 'react'
 import { Separator } from "@/components/ui/separator"
+import Link from 'next/link'
 
 const LastBarLeft = () => {
   return (
     <div className="mb-8">
       <div className="flex flex-wrap h-5 items-center space-x-4 text-sm font-medium uppercase tracking-wider">
-        <div>Contact</div>
+        <Link href="/contact">
+        <div>Contact Us</div>
+        </Link>
         <Separator orientation="vertical" />
+        <Link href="/sitemap">
         <div>Sitemap</div>        
+        </Link>
       </div>
     </div>
   )

@@ -1,28 +1,35 @@
 import ContactForm from '@/components/custom/Contact/ContactForm'
 import React from 'react'
-
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 const Page = () => {
   return (
     <div className="min-h-[400px] flex flex-col my-12 mb-0">
-        <div className="bg-cover bg-[url('/global/banners/contact-3.jpg')]  min-h-[320px]  bg-slate-50">
-            <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-4 text-center flex-col min-h-[320px] px-4 py-12">
+        <div className="bg-cover bg-[url('/global/banners/contact-3.jpg')]  min-h-[420px]  bg-slate-50">
+            <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[420px] px-4 py-12">
             <h1 className="text-white text-5xl font-semibold">Contact Us</h1>
-            <p className="text-white text-xl">We are happy to assist!</p>
+            <p className="text-white text-xl">We are happy to assist journeys and life experiences!</p>
+            
+            <Link href="#cstmContId" id="cstmContId" className="">
+              <Button className="max-w-min mx-auto font-normal text-2xl bg-transparent hover:bg-transparent border-2 border-white text-white p-6 rounded-full">
+                Message ↓
+              </Button>
+            </Link>
             </div>
         </div>
 
-        <div className="flex flex-row gap-12 justify-center">
+        <div  className="flex flex-row gap-12 justify-center">
           <div className="flex">
             <ul className="flex gap-4 text-left flex-col align-middle justify-center">
-                <li className="flex flex-row gap-2 justify-start align-middle text-xl font-semibold">
+                <li className="text-slate-600 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
                     <PhoneIcon className="h-6 w-6 mt-1" />
                     +91 81466 59314
                     </li>
-                <li className="flex flex-row gap-2 justify-start align-middle text-xl font-semibold">
+                <li className="text-slate-600 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
                     <MailIcon className="h-6 w-6 mt-1" />
                     hello@gerenosgetaways.com
                     </li>
-                <li className="flex flex-row gap-2 justify-start align-middle text-xl font-semibold">
+                <li className="text-slate-600 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
                     <WhatsappIcon className="h-6 w-6 mt-1" />
                     WhatsApp Us
                     </li>

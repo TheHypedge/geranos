@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${myFont.variable}`}>
+    <html lang="en" className={`${myFont.variable} scroll-smooth`}>
 
       <body className={inter.className}>
       <Header/>

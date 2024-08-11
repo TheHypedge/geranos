@@ -98,7 +98,7 @@ const ContactForm = () => {
   return (
     <div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-8 max-w-[600px] m-auto w-full my-12 p-6 bg-slate-50">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-8 max-w-[600px] m-auto w-full mt-12 mb-0 p-6 bg-slate-50">
 
         {fields.map(field => (
             <fieldset key={field.id}>
