@@ -138,3 +138,6 @@
   text-decoration: none !important;
 }
 
+.testContCstCls {
+  min-width:100% !important; 
+}

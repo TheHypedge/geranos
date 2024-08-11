@@ -19,7 +19,7 @@ export default function Component(props:any) {
       </div>
       <blockquote className="text-md leading-relaxed md:text-md">
      
-    <div
+    <div className="max-w-min testContCstCls"
       dangerouslySetInnerHTML={{__html: props.testimnlTestimonial}}
     />
         
