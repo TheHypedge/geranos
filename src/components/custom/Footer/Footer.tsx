@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between mb-12">
 
 
-            <div className="mt-2 flex justify-center sm:justify-start">
+            <div className="mt-2 flex mb-4 sm:mb-0 justify-center sm:justify-start">
 
               <Image src="/global/geranos-logo.png" height="100" width="140" alt="Geranos Logo" />
 
@@ -51,7 +51,7 @@ const Footer = () => {
         <Separator className="mb-12"/>
 
 
-        <div className="flex flex-row align-middle justify-between">
+        <div className="flex flex-col sm:flex-row align-middle justify-between">
           <LastBar/>
           <div>
             <p className="text-md mt-2 text-slate-600">© Gerenos Getaways 2024
