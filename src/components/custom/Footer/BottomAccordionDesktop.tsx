@@ -6,6 +6,10 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import ContactUsSmall from './ContactUsSmall'
+import TravelNews from './CommonComponenets/TravelNews'
+import ListAccomodations from './CommonComponenets/ListAccomodations'
+import Advertise from './CommonComponenets/Advertise'
+import AboutUs from './CommonComponenets/AboutUs'
 
 const BottomAccordion = () => {
   return (
@@ -14,9 +18,9 @@ const BottomAccordion = () => {
         <div className="w-full flex flex-col gap-4">
 
         <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ABOUT</p>
-        <p className="flex">
-        Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tipse. Plan your perfect Punjab trip with us
-        </p>
+        <div className="flex">
+            <AboutUs/>
+        </div>
 
         </div>
 
@@ -26,9 +30,9 @@ const BottomAccordion = () => {
 
       <div className="w-full flex flex-col gap-4">
 
-            <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ABOUT</p>
+            <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ADVERTISE</p>
             <p className="flex">
-            Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tipse. Plan your perfect Punjab trip with us
+                <Advertise/>
             </p>
 
       </div>
@@ -41,9 +45,9 @@ const BottomAccordion = () => {
 
       <div className="w-full flex flex-col gap-4">
 
-        <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ABOUT</p>
+        <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">LIST ACCOMODATIONS</p>
         <p className="flex">
-        Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tipse. Plan your perfect Punjab trip with us
+            <ListAccomodations/>
         </p>
 
         </div>
@@ -53,10 +57,10 @@ const BottomAccordion = () => {
 
         <div className="w-full flex flex-col gap-4">
 
-        <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ABOUT</p>
-        <p className="flex">
-        Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tipse. Plan your perfect Punjab trip with us
-        </p>
+        <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">TRAVEL NEWS</p>
+        <div className="flex">
+            <TravelNews/>
+        </div>
 
         </div>
 

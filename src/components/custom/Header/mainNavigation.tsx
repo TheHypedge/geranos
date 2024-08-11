@@ -66,7 +66,7 @@ export default function NavigationMenuDemo() {
     <>
 
     <NavigationMenu>
-      <NavigationMenuList className="flex flex-row">
+      <NavigationMenuList className="flex gap-0 xl:gap-8 flex-row">
        
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase tracking-wider">Destinations</NavigationMenuTrigger>
@@ -87,7 +87,7 @@ export default function NavigationMenuDemo() {
 
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="uppercase tracking-wider">Experiences</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="uppercase tracking-wider">Offerings</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {experiences.map((location) => (

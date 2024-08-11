@@ -9,7 +9,7 @@ import LastBar from './LastBar'
 const Footer = () => {
   return (
     <>
-    <div className="bg-slate-50 border-b-[10px] border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-4 sm:px-6 py-4 pb-8 sm:pt-12 sm:pb-4">
+    <div className="bg-slate-50 sm:bg-white border-b-[10px] border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-4 sm:px-6 py-4 pb-8 sm:pt-12 sm:pb-4">
         <div className="flex flex-col sm:flex-row justify-between mb-12">
 
 
@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="hidden xl:flex flex-row justify-between mb-12">
           <BottomAccordionDesktop/>
         </div>
-        <div className="flex xl:hidden flex flex-row justify-between mb-12 ">
+        <div className="flex xl:hidden flex-row justify-between mb-12 ">
           <BottomAccordionMobile/>
         </div>
 
