@@ -105,7 +105,7 @@ export default function NavigationMenuDemo() {
 
 
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/blogs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <p className="uppercase tracking-wider">
                 Blogs
@@ -116,7 +116,7 @@ export default function NavigationMenuDemo() {
 
 
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <p className="uppercase tracking-wider">
                 Contact us

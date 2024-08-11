@@ -39,7 +39,7 @@ const Header = () => {
       <AlgoliaBlueButton ctaText="+ Trip" ctaLink="/"/>
       </div>
       <div className="xl:flex hidden">
-      <AlgoliaBlueButton ctaText="Plan A Trip" ctaLink="/"/>
+      <AlgoliaBlueButton ctaText="Plan A Trip" ctaLink="/plan-a-trip"/>
       </div>
     </div>
 
