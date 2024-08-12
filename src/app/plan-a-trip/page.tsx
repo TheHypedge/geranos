@@ -1,17 +1,28 @@
 import React from 'react'
 import Image from 'next/image'
+import PlanATripForm3 from './PlanATripForm3'
 
 const PlanATrip = () => {
   return (
     <div className="flex flex-row">
 
-        <div className="basis-1/2">
+        <div className="basis-2/5 bg-slate-50">
 
-            <Image src="/global/banners/punjab.jpg" alt="Plan A Trip" height="1000" width="1000"/>
+            <Image className="" src="/global/banners/random-2.jpg" alt="Plan A Trip" height="1000" width="1000"/>
         </div>
-        <div className="basis-1/2 py-20 px-20 max-w-[600px] bg-slate-50">
+        <div className="basis-3/5 py-4 px-20 max-w-[760px]">
 
-            test the quick brwon fox jumps over hte laz the quick brwo fjumpx y dog
+
+
+            <div className="flex flex-col gap-8 max-w-[600px] m-auto w-full mt-12 mb-12 p-6 bg-slate-50">
+
+            <p className="text-3xl font-semibold leading-normal">Let Us Plan Your Getaway!</p>
+
+            <PlanATripForm3/>
+
+            </div>
+
+
         </div>
 
 
