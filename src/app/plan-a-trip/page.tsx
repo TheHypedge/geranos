@@ -6,9 +6,9 @@ const PlanATrip = () => {
   return (
     <div className="flex flex-row">
 
-        <div className="basis-2/5 bg-slate-50">
+        <div className="basis-2/5 bg-slate-50 p-12">
 
-            <Image className="" src="/global/banners/random-2.jpg" alt="Plan A Trip" height="1000" width="1000"/>
+            <Image className="sticky top-40 rounded-xl" src="/global/banners/random-4.jpg" alt="Plan A Trip" height="1000" width="1000"/>
         </div>
         <div className="basis-3/5 py-4 px-20 max-w-[760px]">
 
