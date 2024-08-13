@@ -141,3 +141,7 @@
 .testContCstCls {
   min-width:100% !important; 
 }
+
+.ff-powered-img {
+  display:none !important; 
+}

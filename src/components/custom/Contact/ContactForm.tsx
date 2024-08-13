@@ -66,13 +66,16 @@ const ContactForm = () => {
 
         const formData= new FormData(event.target);
 
+
+    
+
         const reqOptions = {
             method: 'POST', 
             body: formData,
         }
         const req = await fetch('https://grhealthy.in/wp-json/contact-form-7/v1/contact-forms/784/feedback', reqOptions);
         const response = await req.json();
-
+        await console.log("yes", formData);
 
         if(!response) return alert('An unexpected error'); 
 
