@@ -7,17 +7,12 @@ import { NetlifyWelcomeEmail } from '../../../components/custom/EmailTemplateTwo
 
 export async function POST(request:any) {
     
-
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-
-
     try {
-
-        
         const body = await request.json(); 
 
-        const { firstname } = body; 
+        const { fullName, emailAddress, mobileNumber, travelType } = body; 
 
         const { data } = await resend.emails.send({
             from: 'Geranos Getaways <onboarding@resend.dev>', 
@@ -25,7 +20,7 @@ export async function POST(request:any) {
             subject: 'Plan A Getaway Request',
             html: '<h1>TESTasdfadf asdfas</h1>', 
             text: 'TEST',
-            react: NetlifyWelcomeEmail({firstName: firstname}),
+            react: NetlifyWelcomeEmail({firstName: fullName, emailId: emailAddress, mobileNo: mobileNumber, travelTypeVal: travelType}),
         }); 
 
         return NextResponse.json({ data });
