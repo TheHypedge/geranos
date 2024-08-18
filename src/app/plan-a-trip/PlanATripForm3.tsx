@@ -25,20 +25,50 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Textarea } from "@/components/ui/textarea"
+import { Checkbox } from "@/components/ui/checkbox"
+
 import { X } from 'lucide-react';
 /* Form Schema */ 
 
 const formSchema = z.object({
-  fullName: z.string(),  
+  fullName: z.string({
+    required_error: 'Name is required',
+  }),  
   emailAddress: z.string().email(), 
   mobileNumber: z.number(),
-  travelType: z.string(), 
+  travelType: z.string(),
+  prefGetaway: z.string(),  
+  locIndia: z.string(),
+  locAbroad: z.string(),   
+  startDate: z.string(), 
+  endDate: z.string(), 
+  prefAccom: z.string(),  
+  specialReq: z.string(), 
+  metOfComm: z.string(), 
 });
 
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
+
+
+import { cn } from "@/lib/utils"
+import { Calendar } from "@/components/ui/calendar"
+import { Calendar as CalendarIcon } from "lucide-react"
+import { format } from "date-fns"
 
 
 const PlanATripForm = () => {
+
+
+  const [startDate, setStartDate] = React.useState<Date>()
+  const [endDate, setEndDate] = React.useState<Date>()
+
+
 
 
 
@@ -49,6 +79,14 @@ const PlanATripForm = () => {
       emailAddress: "",
       mobileNumber: 0,
       travelType: "", 
+      prefGetaway: "", 
+      locIndia: "", 
+      locAbroad: "",
+      startDate: "", 
+      endDate: "", 
+      prefAccom: "", 
+      specialReq: "", 
+      metOfComm: "", 
     }
   }) 
 
@@ -72,6 +110,14 @@ const handleFormSubmit = async (e:any) => {
       emailAddress: "",
       mobileNumber: "",
       travelType: "", 
+      prefGetaway: "", 
+      locIndia: "", 
+      locAbroad: "",
+      startDate: "", 
+      endDate: "", 
+      prefAccom: "",
+      specialReq: "",  
+      metOfComm: "",
     }); 
   }
   console.log("AFTER SUBMIT DATA SENT TO RESEND API"); 
@@ -86,12 +132,20 @@ let initialFormValues = {
   emailAddress: "",
   mobileNumber: "", 
   travelType: "", 
+  prefGetaway: "",
+  locIndia: "", 
+  locAbroad: "",
+  startDate: "", 
+  endDate: "", 
+  prefAccom: "", 
+  specialReq: "", 
+  metOfComm: "", 
 }
 
 const [FormData, setFormData] = useState(initialFormValues); 
 
 
-let nowValName, nowValEmail, nowValmobileNumber, nowValTravelType;
+let nowValName, nowValEmail, nowValmobileNumber, nowValTravelType, nowValPrefGetaway, nowValLocIndia, nowValLocAbroad, nowValStartDate, nowValEndDate, nowValPrefAccom, nowValSpecialReq, nowValMetOfComm;
 
 const  onFormUpdes = (e:any) => {
 
@@ -99,12 +153,34 @@ const  onFormUpdes = (e:any) => {
   nowValEmail = document.getElementById('emailIdVal').value; 
   nowValmobileNumber = document.getElementById('mobileNumberVal').value;
   nowValTravelType = document.querySelector('.travelTypeCstm button[data-state|="checked"]').value; 
+  nowValPrefGetaway = document.querySelector('.prefGetawaysCstm button[data-state|="checked"]').value; 
+  
+  nowValLocIndia = document.getElementById('locIndiaVal').value;
+  nowValLocAbroad = document.getElementById('locAbroadVal').value;
+  
+  
+  nowValStartDate = document.querySelector('.startDateCstm').innerText; 
+  nowValEndDate = document.querySelector('.endDateCstm').innerText; 
+
+  nowValPrefAccom = document.querySelector('.prefAccomCstm button[data-state|="checked"]').value; 
+
+  nowValSpecialReq =  document.getElementById('specialReqVal').value;
+  nowValMetOfComm = document.querySelector('.metOfCommCstm button[data-state|="checked"]').value; 
+
 
   setFormData({
     fullName: nowValName,
     emailAddress: nowValEmail,
     mobileNumber: nowValmobileNumber, 
     travelType: nowValTravelType, 
+    prefGetaway: nowValPrefGetaway, 
+    locIndia: nowValLocIndia,
+    locAbroad: nowValLocAbroad,
+    startDate: nowValStartDate, 
+    endDate: nowValEndDate, 
+    prefAccom: nowValPrefAccom, 
+    specialReq: nowValSpecialReq, 
+    metOfComm: nowValMetOfComm, 
   });
 
   console.log({
@@ -112,6 +188,14 @@ const  onFormUpdes = (e:any) => {
     emailAddress: nowValEmail,
     mobileNumber: nowValmobileNumber, 
     travelType: nowValTravelType, 
+    prefGetaway: nowValPrefGetaway, 
+    locIndia: nowValLocIndia,
+    locAbroad: nowValLocAbroad,        
+    startDate: nowValStartDate, 
+    endDate: nowValEndDate, 
+    prefAccom: nowValPrefAccom, 
+    specialReq: nowValSpecialReq, 
+    metOfComm: nowValMetOfComm, 
   });
 
 
@@ -120,7 +204,12 @@ const  onFormUpdes = (e:any) => {
 
 
   return (
+
+
     <div className="">
+
+    <div className="">
+
 
 
     <Form {...form}>
@@ -128,7 +217,7 @@ const  onFormUpdes = (e:any) => {
 
 
 
-      <p className="font-bold">Personal Information</p>
+      <p className="font-bold">Personal Information <span className="text-red-600">*</span></p>
 
       <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
 
@@ -206,22 +295,16 @@ const  onFormUpdes = (e:any) => {
       </div>
 
 
-      <p className="font-bold">Personal Information</p>
 
-
+      <p className="font-bold">Type of Travel <span className="text-red-600">*</span></p>
       <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
-
-
-
-
-
           <RadioGroup defaultValue="comfortable" onChange={onFormUpdes}>
           <div className="travelTypeCstm flex items-center space-x-2">
-            <RadioGroupItem value="solo-women" id="r1" />
+            <RadioGroupItem value="Solo Women" id="r1" />
             <Label htmlFor="r1">Solo Women</Label>
           </div>
           <div className="travelTypeCstm flex items-center space-x-2">
-            <RadioGroupItem value="solo-men" id="r2" />
+            <RadioGroupItem value="Solo Men" id="r2" />
             <Label htmlFor="r2">Solo Men</Label>
           </div>
           <div className="travelTypeCstm flex items-center space-x-2">
@@ -229,11 +312,292 @@ const  onFormUpdes = (e:any) => {
             <Label htmlFor="r3">Compact</Label>
           </div>
         </RadioGroup>
+      </div>
 
 
+
+      <p className="font-bold">Preferred Getaways <span className="text-red-600">*</span></p>
+      <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
+          <RadioGroup defaultValue="" onChange={onFormUpdes}>
+          <div className="prefGetawaysCstm flex items-center space-x-2">
+            <RadioGroupItem value="Excursion" id="pg1" />
+            <Label htmlFor="pg1">Excursion</Label>
+          </div>
+          <div className="prefGetawaysCstm flex items-center space-x-2">
+            <RadioGroupItem value="Countryside" id="pg2" />
+            <Label htmlFor="pg2">Countryside</Label>
+          </div>
+          <div className="prefGetawaysCstm flex items-center space-x-2">
+            <RadioGroupItem value="Weekend" id="pg3" />
+            <Label htmlFor="pg3">Weekend</Label>
+          </div>
+        </RadioGroup>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <p className="font-bold">Preferred Destinations <span className="text-red-600">*</span></p>
+      <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
+        
+
+      <FormField 
+            className="basis-3/7"
+            control={form.control} 
+            name="locIndia" 
+            render={({field}) => {
+                return (
+                  <FormItem className="w-full">
+                  <FormLabel>Within India - Name of Destination</FormLabel>
+                  <FormControl>
+                    <Input
+                      id="locIndiaVal"
+                      placeholder="" 
+                      type="text" 
+                      onChange={onFormUpdes}
+                      
+                    />
+                  </FormControl>
+                  <FormMessage/>
+                </FormItem>
+                );
+            }}
+            />
+
+
+            <p className="text-sm text-slate-600">Or</p>
+
+
+            <FormField 
+            className="basis-3/7"
+            control={form.control} 
+            name="locAbroad" 
+            render={({field}) => {
+                return (
+                  <FormItem className="w-full">
+                  <FormLabel>Others</FormLabel>
+                  <FormControl>
+                    <Input
+                      id="locAbroadVal"
+                      placeholder="" 
+                      type="text" 
+                      onChange={onFormUpdes}
+                      
+                    />
+                  </FormControl>
+                  <FormMessage/>
+                </FormItem>
+                );
+            }}
+            />
+      </div>
+
+
+
+
+
+
+
+
+
+      <p className="font-bold">Travel Dates <span className="text-red-600">*</span></p>
+
+      <div className="flex flex-row gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
+
+        <Popover>
+        <PopoverTrigger asChild>
+          <Button
+      
+            variant={"outline"}
+            className={cn(
+              "startDateCstm w-[280px] justify-start text-left font-normal",
+              !startDate && "text-muted-foreground"
+            )}
+          >
+            <CalendarIcon className="mr-2 h-4 w-4" />
+            {startDate ? format(startDate, "PPP") : <span>Pick a date</span>}
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-auto p-0">
+          <Calendar
+            mode="single"
+            selected={startDate}
+            onSelect={setStartDate}
+            initialFocus
+            onChange={onFormUpdes}
+            minDate={new Date()}
+          />
+        </PopoverContent>
+      </Popover>
+
+
+
+
+
+
+
+
+
+
+
+      <Popover>
+        <PopoverTrigger asChild>
+          <Button
+      
+            variant={"outline"}
+            className={cn(
+              "endDateCstm w-[280px] justify-start text-left font-normal",
+              !endDate && "text-muted-foreground"
+            )}
+          >
+            <CalendarIcon className="mr-2 h-4 w-4" />
+            {endDate ? format(endDate, "PPP") : <span>Pick a date</span>}
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-auto p-0">
+          <Calendar
+            mode="single"
+            selected={endDate}
+            onSelect={setEndDate}
+            initialFocus
+            onChange={onFormUpdes}
+            minDate={new Date()}
+          />
+        </PopoverContent>
+      </Popover>
 
 
       </div>
+
+
+
+
+
+
+
+
+      <p className="font-bold">Preferred Accomodations <span className="text-red-600">*</span></p>
+      <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
+          <RadioGroup defaultValue="" onChange={onFormUpdes}>
+          <div className="prefAccomCstm flex items-center space-x-2">
+            <RadioGroupItem value="hotel-3-4-5-star" id="pa1" />
+            <Label htmlFor="pa1">Hotel (3/4/5 Stars)</Label>
+          </div>
+          <div className="prefAccomCstm flex items-center space-x-2">
+            <RadioGroupItem value="homestay-farmstay" id="pa2" />
+            <Label htmlFor="pa2">Homestay/Farm stays</Label>
+          </div>
+          <div className="prefAccomCstm flex items-center space-x-2">
+            <RadioGroupItem value="Others" id="pa3" />
+            <Label htmlFor="pa3">Others</Label>
+          </div>
+        </RadioGroup>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <p className="font-bold">Special Request or Requirement</p>
+      <FormField 
+            control={form.control} 
+            name="fullName" 
+            render={({field}) => {
+                return (
+                  <FormItem>
+                  <FormLabel>Message</FormLabel>
+                  <FormControl>
+                    <Textarea
+                      className="border-2 rounded-xl"
+                      id="specialReqVal"
+                      placeholder="" 
+                      type="text" 
+                      onChange={onFormUpdes}
+                      
+                    />
+                  </FormControl>
+                  <FormMessage/>
+                </FormItem>
+                );
+            }}
+            />
+
+
+
+
+
+
+<p className="font-bold">Preferred Method of Communication <span className="text-red-600">*</span></p>
+      <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
+          <RadioGroup defaultValue="" onChange={onFormUpdes}>
+          <div className="metOfCommCstm flex items-center space-x-2">
+            <RadioGroupItem value="E-mail" id="moc1" />
+            <Label htmlFor="moc1">E-mail</Label>
+          </div>
+          <div className="metOfCommCstm flex items-center space-x-2">
+            <RadioGroupItem value="Whatsapp-Message" id="moc2" />
+            <Label htmlFor="moc2">WhatsApp Message</Label>
+          </div>
+          <div className="metOfCommCstm flex items-center space-x-2">
+            <RadioGroupItem value="Phone-Call" id="moc3" />
+            <Label htmlFor="moc3">Phone Call</Label>
+          </div>
+        </RadioGroup>
+      </div>
+
+
+
+
+
+
+
+          <div className="finalConcentCstm items-top flex space-x-2">
+                <Checkbox id="terms1" />
+                <div className="grid gap-1.5 leading-none">
+                  <label
+                    htmlFor="terms1"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Accept terms and conditions <span className="text-red-600">*</span>
+                  </label>
+                  <p className="text-sm text-muted-foreground">
+                    By submitting this form, you agree to our terms and conditions.
+                  </p>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -241,6 +605,8 @@ const  onFormUpdes = (e:any) => {
 
         </form>
       </Form>
+
+    </div>
 
     </div>
   )
