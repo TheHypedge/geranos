@@ -39,6 +39,7 @@ const formSchema = z.object({
   mobileNumber: z.number(),
   travelType: z.string(),
   prefGetaway: z.string(),  
+  otherGetaway: z.string(), 
   locIndia: z.string(),
   locAbroad: z.string(),   
   startDate: z.string(), 
@@ -80,6 +81,7 @@ const PlanATripForm = () => {
       mobileNumber: 0,
       travelType: "", 
       prefGetaway: "", 
+      otherGetaway: "",
       locIndia: "", 
       locAbroad: "",
       startDate: "", 
@@ -96,7 +98,13 @@ const PlanATripForm = () => {
 const handleFormSubmit = async (e:any) => {
   e.preventDefault();
 
-  console.log("test", FormData); 
+
+
+
+
+
+
+  console.log("Sending Data: ", FormData); 
   const response = await fetch('/api/newlead', {
     method: 'POST', 
     headers: {
@@ -104,6 +112,8 @@ const handleFormSubmit = async (e:any) => {
     },
     body: JSON.stringify(FormData),
   })
+
+
   if(response.status === 2000) {
     setFormData({
       fullName: "", 
@@ -111,6 +121,7 @@ const handleFormSubmit = async (e:any) => {
       mobileNumber: "",
       travelType: "", 
       prefGetaway: "", 
+      otherGetaway: "",
       locIndia: "", 
       locAbroad: "",
       startDate: "", 
@@ -120,7 +131,8 @@ const handleFormSubmit = async (e:any) => {
       metOfComm: "",
     }); 
   }
-  console.log("AFTER SUBMIT DATA SENT TO RESEND API"); 
+  console.log("Submit function executed!"); 
+  
 }
 
 
@@ -133,6 +145,7 @@ let initialFormValues = {
   mobileNumber: "", 
   travelType: "", 
   prefGetaway: "",
+  otherGetaway: "",
   locIndia: "", 
   locAbroad: "",
   startDate: "", 
@@ -145,16 +158,17 @@ let initialFormValues = {
 const [FormData, setFormData] = useState(initialFormValues); 
 
 
-let nowValName, nowValEmail, nowValmobileNumber, nowValTravelType, nowValPrefGetaway, nowValLocIndia, nowValLocAbroad, nowValStartDate, nowValEndDate, nowValPrefAccom, nowValSpecialReq, nowValMetOfComm;
+let nowValName, nowValEmail, nowValmobileNumber, nowValTravelType, nowValPrefGetaway, nowValOtherGetaway, nowValLocIndia, nowValLocAbroad, nowValStartDate, nowValEndDate, nowValPrefAccom, nowValSpecialReq, nowValMetOfComm;
 
-const  onFormUpdes = (e:any) => {
+const  onFormUpdes = (e:z.infer<typeof formSchema>) => {
 
   nowValName =  document.getElementById('fullNameVal').value;
   nowValEmail = document.getElementById('emailIdVal').value; 
   nowValmobileNumber = document.getElementById('mobileNumberVal').value;
   nowValTravelType = document.querySelector('.travelTypeCstm button[data-state|="checked"]').value; 
   nowValPrefGetaway = document.querySelector('.prefGetawaysCstm button[data-state|="checked"]').value; 
-  
+  nowValOtherGetaway = document.getElementById('otherGetawayVal').value;
+
   nowValLocIndia = document.getElementById('locIndiaVal').value;
   nowValLocAbroad = document.getElementById('locAbroadVal').value;
   
@@ -174,23 +188,9 @@ const  onFormUpdes = (e:any) => {
     mobileNumber: nowValmobileNumber, 
     travelType: nowValTravelType, 
     prefGetaway: nowValPrefGetaway, 
+    otherGetaway: nowValOtherGetaway,
     locIndia: nowValLocIndia,
     locAbroad: nowValLocAbroad,
-    startDate: nowValStartDate, 
-    endDate: nowValEndDate, 
-    prefAccom: nowValPrefAccom, 
-    specialReq: nowValSpecialReq, 
-    metOfComm: nowValMetOfComm, 
-  });
-
-  console.log({
-    fullName: nowValName,
-    emailAddress: nowValEmail,
-    mobileNumber: nowValmobileNumber, 
-    travelType: nowValTravelType, 
-    prefGetaway: nowValPrefGetaway, 
-    locIndia: nowValLocIndia,
-    locAbroad: nowValLocAbroad,        
     startDate: nowValStartDate, 
     endDate: nowValEndDate, 
     prefAccom: nowValPrefAccom, 
@@ -213,7 +213,7 @@ const  onFormUpdes = (e:any) => {
 
 
     <Form {...form}>
-      <form onSubmit={handleFormSubmit} className="flex flex-col p-6 gap-6 max-w-[600px] rounded-xl m-auto w-full mb-4 bg-slate-50">
+      <form onSubmit={handleFormSubmit} className="flex flex-col pt-2 px-2 gap-6 max-w-[600px] rounded-xl m-auto w-full mb-4 ]">
 
 
 
@@ -232,6 +232,7 @@ const  onFormUpdes = (e:any) => {
                   <FormControl>
                     <Input
                       id="fullNameVal"
+                      value=""
                       placeholder="" 
                       type="text" 
                       onChange={onFormUpdes}
@@ -308,9 +309,26 @@ const  onFormUpdes = (e:any) => {
             <Label htmlFor="r2">Solo Men</Label>
           </div>
           <div className="travelTypeCstm flex items-center space-x-2">
-            <RadioGroupItem value="compact" id="r3" />
-            <Label htmlFor="r3">Compact</Label>
+            <RadioGroupItem value="Couple" id="r3" />
+            <Label htmlFor="r3">Couple</Label>
           </div>
+          <div className="travelTypeCstm flex items-center space-x-2">
+            <RadioGroupItem value="Family" id="r4" />
+            <Label htmlFor="r4">Family</Label>
+          </div>
+          <div className="travelTypeCstm flex items-center space-x-2">
+            <RadioGroupItem value="Group" id="r5" />
+            <Label htmlFor="r5">Group</Label>
+          </div>
+          <div className="travelTypeCstm flex items-center space-x-2">
+            <RadioGroupItem value="Business" id="r6" />
+            <Label htmlFor="r6">Business</Label>
+          </div>
+          <div className="travelTypeCstm flex items-center space-x-2">
+            <RadioGroupItem value="Seniors" id="r7" />
+            <Label htmlFor="r7">Seniors</Label>
+          </div>
+
         </RadioGroup>
       </div>
 
@@ -331,7 +349,39 @@ const  onFormUpdes = (e:any) => {
             <RadioGroupItem value="Weekend" id="pg3" />
             <Label htmlFor="pg3">Weekend</Label>
           </div>
+          <div className="prefGetawaysCstm flex items-center space-x-2">
+            <RadioGroupItem value="Destination Packages" id="pg4" />
+            <Label htmlFor="pg4">Destination Packages</Label>
+          </div>
         </RadioGroup>
+
+        <p className="text-sm text-slate-600">Or</p>
+
+        <FormField 
+            className=""
+            control={form.control} 
+            name="otherGetaway" 
+            render={({field}) => {
+                return (
+                  <FormItem className="w-full">
+                  <FormLabel>Others</FormLabel>
+                  <FormControl>
+                    <Input
+                      id="otherGetawayVal"
+                      placeholder="" 
+                      type="text" 
+                      onChange={onFormUpdes}
+                      
+                    />
+                  </FormControl>
+                  <FormMessage/>
+                </FormItem>
+                );
+            }}
+            />
+
+
+
       </div>
 
 
@@ -487,11 +537,11 @@ const  onFormUpdes = (e:any) => {
       <div className="flex flex-col gap-6 bg-[rgba(255,255,255,0.4)] p-6 border-2 rounded-xl">
           <RadioGroup defaultValue="" onChange={onFormUpdes}>
           <div className="prefAccomCstm flex items-center space-x-2">
-            <RadioGroupItem value="hotel-3-4-5-star" id="pa1" />
+            <RadioGroupItem value="Hotel (3/4/5 Stars)" id="pa1" />
             <Label htmlFor="pa1">Hotel (3/4/5 Stars)</Label>
           </div>
           <div className="prefAccomCstm flex items-center space-x-2">
-            <RadioGroupItem value="homestay-farmstay" id="pa2" />
+            <RadioGroupItem value="Homestay/Farm stays" id="pa2" />
             <Label htmlFor="pa2">Homestay/Farm stays</Label>
           </div>
           <div className="prefAccomCstm flex items-center space-x-2">
