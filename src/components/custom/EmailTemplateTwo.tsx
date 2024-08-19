@@ -50,7 +50,7 @@ const baseUrl = 'https://demo.react.email/'
 
 
         
-        <Preview>Here's a New Plan a Tour request.</Preview>
+        <Preview>Here is a New Plan a Tour request.</Preview>
 
 
         <Heading className="text-black text-[24px] font-normal text-center p-0 my-[20px] mx-0">
@@ -120,7 +120,7 @@ const baseUrl = 'https://demo.react.email/'
         <Hr />
 
         <p className="text-center">Geranos Getaways ・ Chandigarh ❤️ IN</p>
-        <p className="text-center text-slate-400 max-w-[360px] m-auto">This email is sent from "Let Us Plan Your Getaway!" form from Geranos Getaways website.</p>
+        <p className="text-center text-slate-400 max-w-[360px] m-auto">This email is sent from &quot;Let Us Plan Your Getaway!&quot; form from Geranos Getaways website.</p>
 
         </Container>
         </Tailwind>
