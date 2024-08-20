@@ -45,7 +45,7 @@ const Page = () => {
   )
 }
 
-function WhatsappIcon(props) {
+function WhatsappIcon(props:any) {
   return (
       <svg 
       {...props}
@@ -62,7 +62,7 @@ function WhatsappIcon(props) {
   }
   
 
-function PhoneIcon(props) {
+function PhoneIcon(props:any) {
   return (
       <svg
       {...props}
@@ -81,7 +81,7 @@ function PhoneIcon(props) {
   )
   }
   
-  function MailIcon(props) {
+  function MailIcon(props:any) {
   return (
       <svg
       {...props}

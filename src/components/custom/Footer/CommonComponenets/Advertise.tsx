@@ -21,7 +21,7 @@ const Advertise = () => {
   )
 }
 
-function WhatsappIcon(props) {
+function WhatsappIcon(props:any) {
 return (
     <svg 
     {...props}
@@ -37,7 +37,7 @@ return (
 )
 }
 
-function PhoneIcon(props) {
+function PhoneIcon(props:any) {
 return (
     <svg
     {...props}
@@ -56,7 +56,7 @@ return (
 )
 }
 
-function MailIcon(props) {
+function MailIcon(props:any) {
 return (
     <svg
     {...props}
