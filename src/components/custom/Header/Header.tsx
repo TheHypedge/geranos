@@ -18,7 +18,7 @@ import MobileNavigation from './MobileNavigation';
 const Header = () => {
   return (
     <div className="w-full border-t-[10px] border-[#246BEB] fixed top-0 z-50 w-full bg-white min-h-[90px]">
-    <div className="  flex flex-row align-middle justify-between px-2 sm:px-6 py-2">
+    <div className="flex flex-row align-middle justify-between px-2 sm:px-6 py-2">
  
     <Link href="/" className="xl:min-w-[200px] flex flex-col align-start justify-center">
     <Image src="/global/geranos-logo.png" width="140" height="200" alt="logo" className=""/>        

@@ -32,7 +32,7 @@ const HeroHomeSlickSlide = (props:any) => {
         width="2000" 
         height="2000" 
         alt="Slider Background"
-        className="absolute top-0 left-0 z-0 h-full object-cover"
+        className="absolute top-0 left-0 z-0 h-full object-cover w-full"
         />
 
       </div>
