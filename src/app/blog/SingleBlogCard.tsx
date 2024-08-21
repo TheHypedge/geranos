@@ -3,13 +3,13 @@ import Image from 'next/image'
 import {Button} from '@/components/ui/button'
 import Link from 'next/link'
 
-const SingleBlogCard = ({title, key, date, excerpt, slug, image}:any) => {
+const SingleBlogCard = ({title, counter, date, excerpt, slug, image}:any) => {
 
 
   let d = new Date(date);
   
   return (
-    <div key={key} className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-4 sm:px-8 gap-8 border-b-2">
+    <div key={counter} className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-4 sm:px-8 gap-8 border-b-2">
 
         <div className="flex flex-col gap-4 align-middle justify-center">
             <h2 className="text-xl md:text-3xl font-bold">{title}</h2>
