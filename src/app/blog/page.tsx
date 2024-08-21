@@ -34,6 +34,7 @@ const BlogPage = async() => {
         blogs && blogs.map((blog:any) => {
           return (
             <SingleBlogCard 
+            key={blog.id}
             title={blog.title.rendered} 
             date={blog.date}
             excerpt={blog.excerpt.rendered}
