@@ -31,7 +31,7 @@ const SingleCard = (props:any) => {
 
         { (props.cardImageTitle || props.cardImageSubTitle) && 
             <div className=" flex flex-col gap-4 p-4">
-              <div className="text-[#246BEB] text-sm font-bold  w-full tracking-widest uppercase">{props.cardImageTitle}</div>
+              <div className="text-slate-800 text-xl font-bold  w-full tracking-widest uppercase">{props.cardImageTitle}</div>
               <div className="  w-full text-md ">{props.cardImageSubTitle}</div>
             </div>
         }

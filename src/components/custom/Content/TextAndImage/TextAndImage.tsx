@@ -8,7 +8,7 @@ import TextAndImageText from './TextAndImageText'
 
 const TextAndImage = (props:any) => {
   return (
-    <div className="max-w-[1500px] flex m-auto w-full">
+    <div className="max-w-[1800px] w-full flex m-auto w-full">
         <div className="flex gap-16 flex-col justify-between w-full xl:flex-row p-4 py-12 pb-0">
         {
           ((props.imagePostion) === "left") &&

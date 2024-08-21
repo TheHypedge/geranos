@@ -20,9 +20,9 @@ export default async function CarouselDemo() {
 
     <>
 
-    <h2 className="text-4xl font-semibold text-center mb-8">Testimonials</h2>
+    <h2 className="text-2xl md:text-4xl font-bold text-[#246BEB] text-center mb-8">Testimonials</h2>
 
-    <div className="max-w-[1540px] px-[64px] flex m-auto w-full">
+    <div className="max-w-[1800px] px-[64px] flex m-auto w-full">
 
 
 
