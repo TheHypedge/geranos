@@ -13,7 +13,7 @@ export default function Home() {
 
 
       <TextAndImage 
-      imageLink="/global/collage-4.png"
+      imageLink="/global/collage-8.png"
       imagePostion="right"
       titleText="About Gerenos"
       subHeading="A subheading here"
@@ -23,7 +23,7 @@ export default function Home() {
       />
 
       <TextAndImage 
-      imageLink="/global/collage-5.png"      
+      imageLink="/global/collage-9.png"      
       imagePostion="left"
       titleText="What We Offer?"
       subHeading="A subheading here"  
