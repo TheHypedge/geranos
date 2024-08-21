@@ -30,6 +30,7 @@ const BlogPage = async() => {
           </div>
       </div>
 
+      <div>
       {
         blogs && blogs.map((blog:any) => {
           return (
@@ -45,6 +46,7 @@ const BlogPage = async() => {
 
         })
       }
+      </div>
 
 
     </div>
