@@ -34,14 +34,15 @@ const BlogPage = async() => {
       {
         blogs && blogs.map((blog:any) => {
           return (
-            <SingleBlogCard 
-            counter={blog.id}
-            title={blog.title.rendered} 
-            date={blog.date}
-            excerpt={blog.excerpt.rendered}
-            slug={blog.slug}
-            image={blog.acf.mobile_featured_image}
-            />
+            <div key={blog.id}>
+              <SingleBlogCard 
+              title={blog.title.rendered} 
+              date={blog.date}
+              excerpt={blog.excerpt.rendered}
+              slug={blog.slug}
+              image={blog.acf.mobile_featured_image}
+              />
+            </div> 
           )
 
         })

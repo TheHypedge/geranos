@@ -3,16 +3,16 @@ import Image from 'next/image'
 import {Button} from '@/components/ui/button'
 import Link from 'next/link'
 
-const SingleBlogCard = ({counter, title, date, excerpt, slug, image}:any) => {
+const SingleBlogCard = ({title, date, excerpt, slug, image}:any) => {
 
 
   let d = new Date(date);
   
   return (
-    <div key={counter} className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-4 sm:px-8 gap-8 border-b-2">
+    <div className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-4 sm:px-8 gap-8 border-b-2">
 
         <div className="flex flex-col gap-4 align-middle justify-center">
-            <h2 className="text-xl md:text-3xl font-bold">{title} - {counter}</h2>
+            <h2 className="text-xl md:text-3xl font-bold">{title}</h2>
             <p className="text-slate-400 text-sm md:text-md">{d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()}</p>
             <div className="text-md md:text-md xl:text-xl"
             dangerouslySetInnerHTML={{__html: excerpt}}
