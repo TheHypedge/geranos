@@ -9,7 +9,7 @@ const Pages = async({ params } : {params:any}) => {
 
 
 
-    const req = await fetch(`https://geranosgetaways.com/wp-json/wp/v2/pages?_fields=id,slug,title,content&slug=${params.slug}`); 
+    const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/pages?_fields=id,slug,title,content&slug=${params.slug}`); 
     const pages = await req.json(); 
     const page = pages[0];
 
