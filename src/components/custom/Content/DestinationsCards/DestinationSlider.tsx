@@ -10,7 +10,7 @@ export const revalidate = 10
 
 export default async function CarouselSize(props:any) {
 
-  const req = await fetch(`https://geranosgetaways.com/wp-json/wp/v2/${props.acfPostTypeSlug}?acf_format=standard&_fields=id,slug,acf,thumbnail_title_1,thumbnail_title_2,slider_title_medium,slider_title_large,slider_title_small`, { cache: 'no-store' } ); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/${props.acfPostTypeSlug}?acf_format=standard&_fields=id,slug,acf,thumbnail_title_1,thumbnail_title_2,slider_title_medium,slider_title_large,slider_title_small`, { cache: 'no-store' } ); 
   const pages = await req.json(); 
 
   return (

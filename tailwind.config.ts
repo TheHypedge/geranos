@@ -20,8 +20,16 @@ const config = {
     },
 
 
+
+
+
+
+
+
+    
     fontFamily: {
-      myFont: ["var(--font-myFont)"]
+      myFont: ["var(--font-myFont)"],
+      dancingScript: ["var(--font-dancingScript)"],
     },
 
 
