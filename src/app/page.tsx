@@ -32,7 +32,7 @@ export default function Home() {
       ctaLink=""    
       />  
       <TextAndImage 
-      imageLink="/global/collage-7.png"      
+      imageLink="/global/collage-10.png"      
       imagePostion="right"
       titleText="Why Us?"
       subHeading="A subheading here"
