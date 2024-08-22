@@ -3,6 +3,7 @@ import BlogRenderModule from './BlogRenderModule'
 import { Button } from '@/components/ui/button';
 import NotFound from '@/components/custom/Global/PageNotFound'
 
+export const revalidate = 10;
 
 const Page = async({ params }:any) => {
 
