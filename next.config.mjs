@@ -1,10 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
+  reactStrictMode: true,
     images: {
 
 
-        domains: ['geranosgetaways.com', 'images.pexels.com'],
+          remotePatterns: [
+            {
+              protocol: 'https',
+              hostname: 'images.pexels.com'
+            },
+            {
+              protocol: 'https',
+              hostname: 'geranosgetaways.com'
+            },
+            {
+              protocol: 'https',
+              hostname: 'dashboard.geranosgetaways.com'
+            },
+          ],
+  
+      
+
 
       },    
 

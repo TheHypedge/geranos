@@ -8,7 +8,7 @@ export const revalidate = 10
 const BlogPage = async() => {
 
 
-  const req = await fetch(`https://geranosgetaways.com/wp-json/wp/v2/posts?acf_format=standard&_fields=id,title,slug,date,excerpt,acf`, { cache: 'no-store' } ); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/posts?acf_format=standard&_fields=id,title,slug,date,excerpt,acf`, { cache: 'no-store' } ); 
   const blogs = await req.json(); 
  
 

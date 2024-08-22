@@ -7,7 +7,7 @@ export const revalidate = 10;
 
 const Page = async({ params }:any) => {
 
-    const req = await fetch(`https://geranosgetaways.com/wp-json/wp/v2/posts?acf_format=standard&_fields=id,slug,title,content,acf&slug=${params.slug}`); 
+    const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/posts?acf_format=standard&_fields=id,slug,title,content,acf&slug=${params.slug}`); 
     const blogs = await req.json(); 
     const blog = blogs[0];
 
