@@ -7,7 +7,7 @@ const Page = () => {
     <div className="min-h-[400px] flex flex-col my-12 mb-0">
         <div className="bg-cover bg-[url('/global/banners/contact-3.jpg')]  min-h-[420px]  bg-slate-50">
             <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[420px] px-4 py-12">
-            <h1 className="font-dancingScript text-white text-7xl font-semibold">Contact Us</h1>
+            <h1 className="text-white text-5xl font-semibold">Contact Us</h1>
             <p className="text-white text-xl">We are happy to assist journeys and life experiences!</p>
             
             <Link href="#cstmContId" id="cstmContId" className="">
