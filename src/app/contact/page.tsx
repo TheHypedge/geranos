@@ -10,7 +10,7 @@ const Page = () => {
             <h1 className="text-white text-7xl font-EduVICWANTBeginner">Contact Us</h1>
             <p className="text-white text-xl">We are happy to assist!</p>
             
-            <Link href="#cstmContId" id="cstmContId" className="">
+            <Link href="#cstmContId" id="cstmContId" className="max-w-min mx-auto">
               <Button className="max-w-min mx-auto font-normal text-xl bg-transparent hover:bg-transparent border-2 border-white text-white p-6 rounded-full">
                 Message ↓
               </Button>

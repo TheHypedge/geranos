@@ -35,7 +35,7 @@ const PlanATrip = () => {
             <p className="text-white text-xl">Fill the form and we will get back to you in 24 hours!</p>
             
             <Link href="#cstmContId" id="cstmContId" className="">
-              <Button className="max-w-min mx-auto font-normal text-2xl bg-transparent hover:bg-transparent border-2 border-white text-white p-6 rounded-full">
+              <Button className="max-w-min mx-auto font-normal text-xl bg-transparent hover:bg-transparent border-2 border-white text-white p-6 rounded-full">
                 Fill the Form ↓
               </Button>
             </Link>

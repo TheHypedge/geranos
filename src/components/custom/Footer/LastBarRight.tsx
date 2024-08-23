@@ -5,7 +5,7 @@ import Link from 'next/link'
 const LastBarRight = () => {
   return (
     <div className="mb-8">
-      <div className="flex flex-wrap h-5 items-center space-x-4 text-sm font-medium uppercase tracking-wider">
+      <div className="flex flex-row align-middle justify-center flex-wrap h-5 items-center space-x-4 text-xs sm:text-sm font-medium uppercase tracking-wider">
         <Link href="/privacy-policy">
         <div className="ml-0">Privacy Policy</div>
         </Link>

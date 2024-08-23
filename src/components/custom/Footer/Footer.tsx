@@ -10,14 +10,14 @@ import LastBarRight from './LastBarRight'
 const Footer = () => {
   return (
     <>
-    <div className=" bg-slate-50 sm:bg-white border-b-[10px] border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-4 sm:px-6 py-4 pb-8 sm:pt-12 sm:pb-4">
+    <div className=" sm:bg-white border-b-[10px] border-[#246BEB] w-full  min-h-[90px] flex flex-col justify-around px-4 sm:px-6 pt-12 pb-8 sm:pt-12 sm:pb-4">
         <div className="max-w-[1800px] w-full mx-auto">
         <div className="flex flex-col sm:flex-row justify-between mb-12">
 
 
             <div className="mt-2 flex mb-4 sm:mb-0 justify-center sm:justify-start">
 
-              <div>
+            <div>
               <p className="text-md mt-2 text-slate-600">© Gerenos Getaways 2024</p>
               </div>
             </div>
