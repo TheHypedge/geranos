@@ -12,7 +12,7 @@ import TestimonialCard from "./TestimonialCard"
 
 export default async function CarouselDemo() {
 
-  const res = await fetch('https://geranosgetaways.com/wp-json/wp/v2/testimonials?acf_format=standard');
+  const res = await fetch('https://dashboard.geranosgetaways.com/wp-json/wp/v2/testimonials?acf_format=standard');
   const testimonials = await res.json();
 
 

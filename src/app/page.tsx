@@ -32,6 +32,7 @@ export default function Home() {
       ctaText="Learn More"
       ctaLink=""    
       />  
+      
       <TextAndImage 
       imageLink="/global/collage-13.png"      
       imagePostion="right"
