@@ -6,12 +6,14 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
+import { useToast } from "@/components/ui/use-toast"
+
 
 const MainContactUs = () => {
 
 
 
-
+  const { toast } = useToast()
 const [fullName, setFullName] = useState<string>("");
   const [phoneNo, setPhoneNo] = useState<string>("");
   const [emailId, setEmailId] = useState<string>("");
@@ -46,6 +48,15 @@ const [fullName, setFullName] = useState<string>("");
       }
 
       console.log("Form submitted successfully");
+
+
+      toast({
+        title: "Message Sent!",
+        description: "We've received your message. We'll reply via email in the next 24 hours.",
+      })
+
+
+
       // Handle success (e.g., clear form, show success message, etc.)
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -54,7 +65,7 @@ const [fullName, setFullName] = useState<string>("");
 
 
   return (
-    <div className="p-8 bg-[#f6f6f68f] rounded-xl">
+    <div className="p-4 md:p-8">
       <form onSubmit={handleFormSubmit} className="flex flex-col gap-6">
         <div className="grid w-full items-center gap-3">
           <Label htmlFor="fullName">Full Name</Label>
@@ -89,12 +100,6 @@ const [fullName, setFullName] = useState<string>("");
           />
         </div>
 
-
- 
-
-
-
-
         <div className="grid w-full gap-3">
             <Label htmlFor="message">Your message</Label>
             <Textarea 
@@ -105,7 +110,7 @@ const [fullName, setFullName] = useState<string>("");
         </div>
 
 
-        <Button className="max-w-min" type="submit">Submit</Button>
+        <Button className="max-w-min mx-auto sm:mx-0" type="submit">Submit</Button>
       </form>
     </div>
   );
