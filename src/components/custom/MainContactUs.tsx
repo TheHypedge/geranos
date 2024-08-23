@@ -31,35 +31,42 @@ const [fullName, setFullName] = useState<string>("");
       message,
     };
 
-    console.log("Form Data:", formData); // Log form data for debugging
-
-    try {
-      const response = await fetch("/api/newmessage", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        console.error("Failed to submit form data");
-        return;
-      }
-
-      console.log("Form submitted successfully");
-
-
+    if(fullName === "" || phoneNo === "" || emailId=== "" || message ==="") {
       toast({
-        title: "Message Sent!",
-        description: "We've received your message. We'll reply via email in the next 24 hours.",
+        variant: "destructive",
+        title: "Some details are missing!",
+        description: "Please enter all the details.",
       })
+    }
+    else{
+      try {
+        const response = await fetch("/api/newmessage", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          console.error("Failed to submit form data");
+          return;
+        }
+
+        console.log("Form submitted successfully");
+
+
+        toast({
+          title: "Message Sent!",
+          description: "We've received your message. We'll reply via email in the next 24 hours.",
+        })
 
 
 
-      // Handle success (e.g., clear form, show success message, etc.)
-    } catch (error) {
-      console.error("Error submitting form:", error);
+        // Handle success (e.g., clear form, show success message, etc.)
+      } catch (error) {
+        console.error("Error submitting form:", error);
+      }
     }
   };
 

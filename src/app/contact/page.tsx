@@ -10,9 +10,9 @@ import MainContactUs from '@/components/custom/MainContactUs'
 const Page = () => {
   return (
     <div className="min-h-[400px] flex flex-col my-12 mb-0">
-        <div className="bg-cover bg-[url('/global/banners/contact-3.jpg')]  min-h-[420px]  bg-slate-50">
-            <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[420px] px-4 py-12">
-            <h1 className="text-white text-5xl sm:text-5xl md:text-7xl font-EduVICWANTBeginner">Contact Us</h1>
+        <div className="bg-cover bg-[url('/global/banners/contact-3.jpg')] min-h-[380px] sm:min-h-[420px] bg-slate-50">
+            <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[380px] sm:min-h-[420px] px-4 py-12">
+            <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-EduVICWANTBeginner">Contact Us</h1>
             <p className="text-white text-xl">We are happy to assist!</p>
             
             <Link href="#cstmContId" id="cstmContId" className="max-w-min mx-auto">
@@ -23,19 +23,19 @@ const Page = () => {
             </div>
         </div>
 
-        <div  className="flex flex-col xl:flex-row max-w-[600px] w-full mx-auto xl:max-w-full gap-12 justify-center p-4 pt-8sm:p-4 md:pt-16 md:pb-4">
-          <div className="flex">
+        <div  className="flex flex-col xl:flex-row max-w-[600px] w-full mx-auto xl:max-w-full gap-12 justify-center p-4 pt-12 sm:p-4 sm:pt-16 md:pb-4">
+          <div className="flex justify-center">
             <ul className="flex gap-4 text-left flex-col align-middle justify-center">
-                <li className="text-slate-700 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
-                    <PhoneIcon className="h-6 w-6 mt-1" />
+                <li className="text-slate-700 flex flex-row gap-2 justify-start align-middle text-md sm:text-xl font-regular">
+                    <PhoneIcon className="h-5 w-5 sm:h-6 sm:w-6 mt-1" />
                     +91 81466 59314
                     </li>
-                <li className="text-slate-700 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
-                    <MailIcon className="h-6 w-6 mt-1" />
+                <li className="text-slate-700 flex flex-row gap-2 justify-start align-middle text-md sm:text-xl font-regular">
+                    <MailIcon className="h-5 w-5 sm:h-6 sm:w-6 mt-1" />
                     hello@gerenosgetaways.com
                     </li>
-                <li className="text-slate-700 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
-                    <WhatsappIcon className="h-6 w-6 mt-1" />
+                <li className="text-slate-700 flex flex-row gap-2 justify-start align-middle text-md sm:text-xl font-regular">
+                    <WhatsappIcon className="h-5 w-5 sm:h-6 sm:w-6 mt-1" />
                     WhatsApp Us
                     </li>
             </ul>

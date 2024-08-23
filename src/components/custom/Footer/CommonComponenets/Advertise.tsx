@@ -6,13 +6,13 @@ const Advertise = () => {
     <>
         <ul className="flex gap-2 text-left flex-col align-top justify-start">
             <li className="flex flex-row gap-2 justify-start align-middle">
-                <Link href="mailto:geranosgetaways@gmail.com" target="_blank" className=" flex flex-row gap-2 justify-start align-middle">
+                <Link href="tel:+918146659314" className=" flex flex-row gap-2 justify-start align-middle">
                     <PhoneIcon className="h-4 w-4 mt-1" />
                     +91 81466 59314
                 </Link>
                 </li>
             <li className="flex flex-row gap-2 justify-start align-middle">
-                <Link href="mailto:geranosgetaways@gmail.com" target="_blank" className=" flex flex-row gap-2 justify-start align-middle">
+                <Link href="mailto:geranosgetaways@gmail.com" className=" flex flex-row gap-2 justify-start align-middle">
                     <MailIcon className="h-4 w-4 mt-1" />
                     geranosgetaways@gmail.com
                 </Link> 
