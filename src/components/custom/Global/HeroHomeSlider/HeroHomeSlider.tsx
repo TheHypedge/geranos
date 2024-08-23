@@ -40,14 +40,14 @@ export default function SimpleSlider() {
 
       <HeroHomeSlide
         title="Punjab"
-        subTitle="The Land of Timeless Heritage living Forever"
+        subTitle="The Land of Timeless Heritage"
         bgImage="/global/banners/punjab.jpg"
         cardLink="/destinations/punjab"
       />
 
       <HeroHomeSlide
         title="Uttarakhand"
-        subTitle="The Land of Indian Nature & Holy Mountains"
+        subTitle="The Land of Nature & Holy Mountains"
         bgImage="/global/banners/uttarakhand-2.jpg"
         cardLink="/destinations/uttarakhand"
       />
