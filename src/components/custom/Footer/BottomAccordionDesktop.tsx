@@ -29,9 +29,9 @@ const BottomAccordion = () => {
       <div className="w-full flex flex-col gap-4">
 
             <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ADVERTISE & LIST ACCOMODATIONS</p>
-            <p className="flex">
+            <div className="flex">
                 <Advertise/>
-            </p>
+            </div>
 
       </div>
 
