@@ -5,38 +5,34 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Textarea } from "@/components/ui/textarea"
+
+const MainContactUs = () => {
 
 
-const PlanATripForm5 = () => {
-  const [fullName, setFullName] = useState<string>("");
-  const [phoneNo, setPhoneNo] = useState<string>(""); // Change to string for consistency
+
+
+const [fullName, setFullName] = useState<string>("");
+  const [phoneNo, setPhoneNo] = useState<string>("");
   const [emailId, setEmailId] = useState<string>("");
-  const [preMOC, setPreMOC] = useState<string>("comfortable");
+  const [message, setMessage] = useState<string>("");
 
-  const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPreMOC(event.target.value);
-  };
+ 
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const formData = {
-
-
-
-
-
-
       fullName,
       phoneNo,
-      emailAddress: emailId,
-      metOfComm: preMOC,
+      emailId,
+      message,
     };
 
     console.log("Form Data:", formData); // Log form data for debugging
 
     try {
-      const response = await fetch("/api/newlead", {
+      const response = await fetch("/api/newmessage", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,10 +52,11 @@ const PlanATripForm5 = () => {
     }
   };
 
+
   return (
-    <div>
+    <div className="p-8 bg-[#f6f6f68f] rounded-xl">
       <form onSubmit={handleFormSubmit} className="flex flex-col gap-6">
-        <div className="grid w-full items-center gap-1.5">
+        <div className="grid w-full items-center gap-3">
           <Label htmlFor="fullName">Full Name</Label>
           <Input
             type="text"
@@ -70,7 +67,7 @@ const PlanATripForm5 = () => {
           />
         </div>
 
-        <div className="grid w-full items-center gap-1.5">
+        <div className="grid w-full items-center gap-3">
           <Label htmlFor="phoneNo">Phone Number</Label>
           <Input
             type="text" // Changed to "text" for better handling of input
@@ -81,56 +78,40 @@ const PlanATripForm5 = () => {
           />
         </div>
 
-        <div className="grid w-full items-center gap-1.5">
+        <div className="grid w-full items-center gap-3">
           <Label htmlFor="email">Email Address</Label>
           <Input
             type="email"
             value={emailId}
             onChange={(e) => setEmailId(e.target.value)}
             id="email"
-            placeholder="Email"
+            placeholder=""
           />
         </div>
 
-        <div className="grid w-full items-center gap-1.5">
-          <Label>Select an option</Label>
 
-          <RadioGroup defaultValue="comfortable">
-
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem
-              type="radio"
-              id="comfortable"
-              name="preMOC"
-              value="comfortable"
-              checked={preMOC === "comfortable"}
-              onChange={handleOptionChange}
-            />
-            <Label htmlFor="comfortable">Comfortable</Label>
-          </div>
+ 
 
 
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem
-              type="radio"
-              id="compact"
-              name="preMOC"
-              value="compact"
-              checked={preMOC === "compact"}
-              onChange={handleOptionChange}
-            />
-            <Label htmlFor="compact">Compact</Label>
-          </div>
 
 
-          </RadioGroup>
-
+        <div className="grid w-full gap-3">
+            <Label htmlFor="message">Your message</Label>
+            <Textarea 
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Type your message here." 
+            id="message" />
         </div>
 
-        <Button type="submit">Submit</Button>
+
+        <Button className="max-w-min" type="submit">Submit</Button>
       </form>
     </div>
   );
-};
 
-export default PlanATripForm5;
+  
+  
+}
+
+export default MainContactUs

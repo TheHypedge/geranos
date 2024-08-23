@@ -2,6 +2,7 @@ import ContactForm from '@/components/custom/Contact/ContactForm'
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import MainContactUs from '@/components/custom/MainContactUs'
 const Page = () => {
   return (
     <div className="min-h-[400px] flex flex-col my-12 mb-0">
@@ -18,7 +19,7 @@ const Page = () => {
             </div>
         </div>
 
-        <div  className="flex flex-row gap-12 justify-center">
+        <div  className="flex flex-row gap-12 justify-center pt-16 pb-4">
           <div className="flex">
             <ul className="flex gap-4 text-left flex-col align-middle justify-center">
                 <li className="text-slate-600 flex flex-row gap-2 justify-start align-middle text-xl font-regular">
@@ -37,7 +38,7 @@ const Page = () => {
           </div>
 
             <div className="min-w-[480px]">
-              <ContactForm/>
+              <MainContactUs/>
             </div>
         </div>
 
