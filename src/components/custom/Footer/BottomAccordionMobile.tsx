@@ -5,71 +5,52 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
-import ContactUsSmall from './ContactUsSmall'
+import AboutUs from './CommonComponenets/AboutUs'
+import ListAccomodations from './CommonComponenets/ListAccomodations'
+import TravelNews from './CommonComponenets/TravelNews'
 
 const BottomAccordion = () => {
   return (
-    <div className="w-full flex flex-col align-middle justify-between gap-4">
+    <div className="w-full flex flex-col align-middle justify-between gap-2 px-8">
 
       <div className="w-full">
         <Accordion type="single" collapsible className="">
-          <AccordionItem value="about" className="xl:border-none">
-            <AccordionTrigger className="w-full accCstmClsFtr text-sm sm:text-sm hover:decoration-none tracking-wider">ABOUT</AccordionTrigger>
-            <AccordionContent>
-            Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tipse. Plan your perfect Punjab trip with us</AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </div>
+          <AccordionItem value="about" className="border-none">
+            <AccordionTrigger className="w-full text-sm sm:text-sm hover:decoration-none tracking-wider">ABOUT</AccordionTrigger>
+            <AccordionContent className="pb-0 border-none">
 
+              <AboutUs/>
 
-
-
-
-      <div className="w-full">
-        <Accordion type="single" collapsible className="">
-          <AccordionItem value="advertize" className="xl:border-none">
-            <AccordionTrigger className="w-full accCstmClsFtr text-sm sm:text-sm hover:decoration-none tracking-wider">ADVERTIZE</AccordionTrigger>
-            <AccordionContent>
-              <ContactUsSmall/>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
 
-
-
-
-
-
-
       <div className="w-full">
         <Accordion type="single" collapsible className="">
-          <AccordionItem value="accomodation" className="xl:border-none">
-            <AccordionTrigger className="w-full accCstmClsFtr text-sm sm:text-sm hover:decoration-none tracking-wider">LIST ACCOMODATIONS</AccordionTrigger>
-            <AccordionContent>
-              <ContactUsSmall/>            
+          <AccordionItem value="advertize" className="border-none">
+            <AccordionTrigger className="w-full text-sm sm:text-sm hover:decoration-none tracking-wider">ADVERTIZE</AccordionTrigger>
+            <AccordionContent className="pb-0 border-none">
+
+              <ListAccomodations/>
+
             </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
 
-
       <div className="w-full">
         <Accordion type="single" collapsible className="">
-          <AccordionItem value="news" className="xl:border-none">
-            <AccordionTrigger className="w-full accCstmClsFtr text-sm sm:text-sm hover:decoration-none tracking-wider">TRAVEL NEWS</AccordionTrigger>
-            <AccordionContent>
-            Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple
+          <AccordionItem value="news" className="border-none">
+            <AccordionTrigger className="w-full text-sm sm:text-sm hover:decoration-none tracking-wider">TRAVEL NEWS</AccordionTrigger>
+            <AccordionContent className="pb-0 border-none">
+
+              <TravelNews/>
+
             </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
-
-
-
-
-
-
 
     </div>
   )
