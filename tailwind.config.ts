@@ -30,7 +30,11 @@ const config = {
     fontFamily: {
       myFont: ["var(--font-myFont)"],
       dancingScript: ["var(--font-dancingScript)"],
+      SedgwickAve: ["var(--font-SedgwickAve)"],
+      BethEllen: ["var(--font-BethEllen)"],
+      EduVICWANTBeginner: ["var(--font-EduVICWANTBeginner)"],
     },
+    
 
 
     extend: {

@@ -31,7 +31,7 @@ const PlanATrip = () => {
 
 <div className="bg-cover bg-[url('/global/banners/contact-5.jpg')] bg-center min-h-[420px]  bg-slate-50">
             <div className="bg-[rgba(0,0,0,0.3)]min-h-[520px] flex aling-middle justify-center gap-6 text-center flex-col min-h-[420px] px-4 py-12 bg-[rgba(0,0,0,0.2)]">
-            <h1 className=" text-white text-5xl font-semibold">Let Us Plan Your Getaway!</h1>
+            <h1 className="font-EduVICWANTBeginner text-white text-7xl font-semibold">Let Us Plan Your Getaway!</h1>
             <p className="text-white text-xl">Fill the form and we will get back to you in 24 hours!</p>
             
             <Link href="#cstmContId" id="cstmContId" className="">

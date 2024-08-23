@@ -29,6 +29,7 @@ export default async function CarouselSize(props:any) {
     
           <SingleCard
           key={destination.id}
+          mainSlugValue={props.acfPostTypeSlug}
           indexId={destination.id}
           destinationSlug={destination.slug}
           thumbnailImage={destination.acf.thumbnail.url}

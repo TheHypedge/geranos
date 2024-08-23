@@ -35,6 +35,38 @@ const myFont = localfont({
 });  
 
 
+const SedgwickAve = localfont({
+  src: [
+    {
+    path: "../../public/fonts/SedgwickAve-Regular.ttf",
+    weight: "500",
+    }
+  ], 
+  variable: "--font-SedgwickAve",
+});  
+
+
+const BethEllen = localfont({
+  src: [
+    {
+    path: "../../public/fonts/BethEllen-Regular.ttf",
+    weight: "500",
+    }
+  ], 
+  variable: "--font-BethEllen",
+});  
+
+const EduVICWANTBeginner = localfont({
+  src: [
+    {
+    path: "../../public/fonts/EduVICWANTBeginner-VariableFont_wght.ttf",
+    weight: "700",
+    }
+  ], 
+  variable: "--font-EduVICWANTBeginner",
+});  
+
+
 
 
 export default function RootLayout({
@@ -43,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${myFont.variable} ${dancingScript.variable} scroll-smooth`}>
+    <html lang="en" className={`${myFont.variable} ${dancingScript.variable} ${SedgwickAve.variable} ${BethEllen.variable} ${EduVICWANTBeginner.variable} scroll-smooth`}>
 
       <body className={inter.className}>
       <Header/>
