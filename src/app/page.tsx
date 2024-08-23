@@ -15,28 +15,29 @@ export default function Home() {
       <TextAndImage 
       imageLink="/global/collage-8.png"
       imagePostion="right"
-      titleText="About Gerenos"
-      subHeading="A subheading here"
-      content="Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!"
+      titleText="About Geranos Getaways"
+      subHeading="Your Gateway to Authentic Cultural and Luxurious Journeys"
+      content="At Geranos Getaways, we believe in appreciating culture through tourism. Travelling is about visiting new places and experiencing new ways of life, traditions, and values. By immersing ourselves in local culture, we can better understand and appreciate the world around us.
+              Our motto, 'rediscover yourself', speaks to the essence of travelling and the motivation to escape from our comfort zones and experience tourism responsibly. Our mission is to provide travellers with an authentic and immersive cultural experience that allows them to appreciate the diversity of our world and rediscover themselves in the process."
       ctaText="Learn More"
       ctaLink=""
       />
 
       <TextAndImage 
-      imageLink="/global/collage-9.png"      
+      imageLink="/global/collage-11.png"      
       imagePostion="left"
       titleText="What We Offer?"
-      subHeading="A subheading here"  
-      content="Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!"
+      subHeading="Curated, Immersive Experiences Designed Just for You"  
+      content="At Geranos Getaways, we take pride in curating deeply personal and tailored luxury tours in Punjab Uttarakhand and other parts of India, designed to immerse you in authentic local experiences that seamlessly blend historical and religious cultural excursions with eco-friendly and sustainable accommodations. Our meticulously planned itineraries foster genuine connections with rural communities, providing opportunities for farm stays, immersive village experiences, traditional culinary and craft workshops, local food discovery, and nature trail adventures. These exceptional offerings promise an enriching and unforgettable exploration of these regions' diverse heritage, natural wonders, and vibrant local culture."
       ctaText="Learn More"
       ctaLink=""    
       />  
       <TextAndImage 
-      imageLink="/global/collage-10.png"      
+      imageLink="/global/collage-13.png"      
       imagePostion="right"
       titleText="Why Us?"
-      subHeading="A subheading here"
-      content="Discover Punjab with our tourism website, your guide to its rich heritage and scenic beauty. Explore top attractions like the Golden Temple, Shivalik hills, and more. Get curated itineraries, insider tips, and detailed guides for an authentic experience. Plan your perfect Punjab trip with us!"
+      subHeading="Responsible Travel, Personalized Service, and Unforgettable Memories"
+      content="We understand the value of responsible travel and are committed to providing personalized journeys that align with your ethical principles. Our expert companions will accompany you on an immersive exploration of Punjab, Uttarakhand, and other regions of India. We prioritise luxurious yet eco-friendly and responsible local accommodations and travel, ensuring that your journey is enriching and sustainable, allowing you to deeply connect with the nature, cultures and heritage of these regions."
       ctaText="Learn More"
       ctaLink=""
       />   
@@ -45,7 +46,7 @@ export default function Home() {
    
 
         <div className="mb-4">  
-        <DestinationsCards acfPostTypeSlug="experiences" cardTitle="Rediscover Yourself - Like a Local" />
+        <DestinationsCards acfPostTypeSlug="offering" cardTitle="Rediscover Yourself - Like a Local" />
         </div>
 
         <div className=" w-full">  

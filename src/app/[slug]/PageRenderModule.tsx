@@ -38,7 +38,7 @@ const PageRenderModule = (props: any) => {
 
         <div className="flex flex-col gap-8 max-w-[800px] m-auto px-4 pt-16 pb-8">
 
-        <h1 className="text-4xl xl:text-5xl  text-[#2F6BEB] leading-loose">{props.pageData.title.rendered}</h1>
+        <h1 className="text-4xl xl:text-5xl font-semibold  text-[#2F6BEB] leading-loose">{props.pageData.title.rendered}</h1>
         <Separator />
 
         <div className="postContParaFixCstm text-left" dangerouslySetInnerHTML={{__html: props.pageData.content.rendered}}/>
