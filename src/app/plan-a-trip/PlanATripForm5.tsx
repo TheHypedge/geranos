@@ -99,7 +99,6 @@ const PlanATripForm5 = () => {
 
           <div className="flex items-center space-x-2">
             <RadioGroupItem
-              type="radio"
               id="comfortable"
               name="preMOC"
               value="comfortable"
@@ -112,7 +111,6 @@ const PlanATripForm5 = () => {
 
           <div className="flex items-center space-x-2">
             <RadioGroupItem
-              type="radio"
               id="compact"
               name="preMOC"
               value="compact"
