@@ -46,9 +46,6 @@ export default function Home() {
 
    
 
-        <div className="mb-4">  
-        <DestinationsCards acfPostTypeSlug="offerings" cardTitle="Rediscover Yourself - Like a Local" />
-        </div>
 
         <div className=" w-full">  
           <Testimonials/>
