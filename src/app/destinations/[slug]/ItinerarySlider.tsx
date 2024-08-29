@@ -11,8 +11,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image'
 
 
-import ItinerarySlide from './ItinerarySlide'
-import ItineraryApiHit from "./ItineraryApiHit";
 
 import SingleCard2 from "./SingleCard2"
 
