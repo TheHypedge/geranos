@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ItinerarySlider from "./ItinerarySlider"
+
 import HeroBanner from '../HeroBanner'
 import ShortDescription from '../ShortDescription'
 import DataCards from '../DataCards'
