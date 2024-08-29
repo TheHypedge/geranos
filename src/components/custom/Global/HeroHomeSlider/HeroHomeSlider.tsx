@@ -9,9 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './SlickSlider.css'
 import Image from 'next/image'
 import HeroHomeSlide from "./HeroHomeSlide";
-import ApiWork from "./ApiWork";
 
-import { useState } from "react";
 
 export default function SimpleSlider() {
 
@@ -24,7 +22,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay:true,
-    pauseOnHover: false,
+    pauseOnHover: true,
     waitForAnimate: false,
     nextArrow: <ChevronRightIcon />,
     prevArrow: <ChevronLeftIcon />
