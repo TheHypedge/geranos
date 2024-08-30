@@ -59,6 +59,9 @@ const MainContactUsFields = (props:any) => {
   return (
     <>
         <div className="p-8">
+
+<p className="text-center text-2xl mb-8 md:text-4xl font-bold text-[#246BEB] font-EduVICWANTBeginner">{props.offeringFilterSlug}</p>
+
     <Slider {...test}>
 
 
@@ -67,26 +70,15 @@ const MainContactUsFields = (props:any) => {
         ((itinerary.acf.offerings === props.offeringFilterSlug) && (itinerary.acf.destination.post_name === props.destinationFilterSlug)) && (
 
         <div key={itinerary.id} className=" p-4">
-          <div className="bg-slate-50 p-4">
-
-
+          <div className="bg-slate-50 p-4 rounded-3xl hover:shadow-md">
 
           <SingleCard2
           key={itinerary.id}
-          mainSlugValue={itinerary.id}
-          indexId={itinerary.id}
-          destinationSlug={itinerary.id}
-          thumbnailImage={itinerary.id}
-          cardImageTitle={itinerary.id}
-          cardImageSubTitle={itinerary.id}
+          mainSlugValue={itinerary.slug}
+          thumbnailImage={itinerary.acf.thumbnail}
+          cardImageTitle={itinerary.acf.slider_settings.title}
+          cardImageSubTitle={itinerary.acf.slider_settings.sub_title}
           />
-
-
-          <p>{itinerary.title.rendered}</p>
-          <p>{itinerary.acf.offerings}</p>
-          <p>{props.destinationFilterSlug}</p>
-          <p>{itinerary.acf.destination.post_name}</p>
-          <p>{props.destinationFilterSlug}</p>
           
           </div>
         </div>
