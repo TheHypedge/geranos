@@ -7,7 +7,7 @@ const LeftMenuItems = () => {
     <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">
     ABOUT
   </p>
-  <ul className="flex flex-col gap-2 text-left">
+  <ul className="flex flex-col gap-2 text-left font-UrbanistLight tracking-wide">
     <Link href="/our-vision" className="flex">
         <li>Vision</li>
     </Link>

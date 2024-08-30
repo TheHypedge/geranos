@@ -15,12 +15,12 @@ const SingleBlogCard = ({title, date, excerpt, slug, image}:any) => {
           <Link href={`/blog/${slug}`}>
             <h2 className="text-xl md:text-3xl font-bold">{title}</h2>
           </Link>
-          <p className="text-slate-400 text-sm md:text-md">{d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()}</p>
-          <div className="text-md md:text-md xl:text-xl"
+          <p className="text-slate-400  text-sm sm:text-xl font-UrbanistLight tracking-wide">{d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()}</p>
+          <div className="text-sm sm:text-xl font-UrbanistLight tracking-wide"
             dangerouslySetInnerHTML={{__html: excerpt}}
           />
           <Link href={`/blog/${slug}`}>
-            <Button className="bg-[#2F6BEB]">Read Blog</Button>
+            <Button className="bg-[#2F6BEB] text-justify text-sm sm:text-base font-UrbanistLight tracking-wide">Read Blog</Button>
           </Link>
         </div>
 

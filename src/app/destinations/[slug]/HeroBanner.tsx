@@ -8,7 +8,7 @@ export const revalidate = 10
 const HeroBanner = async(props:any) => {
 
 
-  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=id,title,acf`, { cache: 'no-store' } ); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=id,title,acf&_filter${props.slug}`, { cache: 'no-store' } ); 
   const destinations = await req.json(); 
   const destination = destinations[0];
 
@@ -22,7 +22,7 @@ const HeroBanner = async(props:any) => {
       />
       </h1>
       <p className="text-xl text-white z-10">
-        {destination.acf.sub_heading}
+        {destination.acf.sub_heading}test{props.slug}
       </p>
     </div>
 

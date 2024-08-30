@@ -15,13 +15,13 @@ const ShortDescription = async(props:any) => {
   return (
     <div className="relative w-full sm:p-4 mt-8">
 
-    <div className="bg-slate-50  rounded-3xl max-w-[600px] mx-auto flex aling-middle justify-center gap-6 text-center flex-col  px-4 py-12">
+    <div className="bg-slate-50  rounded-3xl max-w-[800px] mx-auto flex aling-middle justify-center gap-6 text-center flex-col  px-16 py-12">
     <h1 className="text-3xl font-EduVICWANTBeginner">{destination.acf.short_description.title}</h1>
-      <p className="text-sm sm:text-md">
+      <p className="text-sm sm:text-base">
         {destination.acf.short_description.short_description}
       </p>
       <Link href="/destinations/uttarakhand/deep-dive">
-      <Button variant="outline" className="max-w-min mx-auto bg-none">Read More</Button>
+      <Button variant="outline" className="max-w-min mx-auto bg-none">Explore More</Button>
       </Link>
     </div>
 

@@ -4,8 +4,8 @@ import Link from 'next/link'
 const Advertise = () => {
   return (
     <>
-        <ul className="flex gap-2 text-left flex-col align-top justify-start">
-            <li className="flex flex-row gap-2 justify-start align-middle">
+        <ul className="flex gap-2 text-left flex-col align-top justify-start font-UrbanistLight tracking-wide">
+            <li className="flex flex-row gap-2 justify-start align-middle ">
                 <Link href="tel:+918146659314" className=" flex flex-row gap-2 justify-start align-middle">
                     <PhoneIcon className="h-4 w-4 mt-1" />
                     +91 81466 59314
