@@ -13,10 +13,10 @@ const HeroBanner = async(props:any) => {
   const destination = destinations[0];
 
   return (
-    <div className="relative w-full min-h-[380px] sm:min-h-[420px] bg-slate-50">
+    <div className="relative w-full min-h-[380px] sm:min-h-[520px] bg-slate-50">
 
-    <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[380px] sm:min-h-[420px] px-4 py-12">
-      <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-EduVICWANTBeginner z-10">
+    <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[380px] sm:min-h-[520px] px-4 py-12">
+      <h1 className="text-white text-5xl sm:text-5xl md:text-7xl font-EduVICWANTBeginner z-10">
       <div
       dangerouslySetInnerHTML={{__html: destination.title.rendered}}
       />
@@ -31,7 +31,7 @@ const HeroBanner = async(props:any) => {
     width="1920" 
     height="1080" 
     alt="background"
-    className="absolute top-0 left-0 w-full h-full object-cover max-h-[420px] z-0"
+    className="absolute top-0 left-0 w-full h-full object-cover max-h-[520px] z-0"
     />
 
     </div>

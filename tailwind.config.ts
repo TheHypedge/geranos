@@ -33,6 +33,7 @@ const config = {
       SedgwickAve: ["var(--font-SedgwickAve)"],
       BethEllen: ["var(--font-BethEllen)"],
       EduVICWANTBeginner: ["var(--font-EduVICWANTBeginner)"],
+      UrbanistLight: ["var(--font-UrbanistLight)"],
     },
     
 

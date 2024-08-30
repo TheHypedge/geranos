@@ -22,7 +22,7 @@ export default async function CarouselDemo() {
 
     <h2 className="text-2xl md:text-4xl font-bold text-[#246BEB] text-center mb-8">Testimonials</h2>
 
-    <div className="max-w-[1800px] px-[64px] flex m-auto w-full">
+    <div className="max-w-[1800px] px-[16px] md:px-[64px] flex m-auto w-full">
 
 
 
@@ -38,7 +38,7 @@ export default async function CarouselDemo() {
       <CarouselContent>
         {testimonials && testimonials.map((testimonial:any) => (
 
-          <CarouselItem key={testimonial.id} className="basis-1/1 md:basis-1/3">
+          <CarouselItem key={testimonial.id} className=" md:basis-1/3">
             <div className="p-1 h-full">
               <Card className="rounded-3xl h-full">
                 <CardContent className="flex items-center justify-center p-6">

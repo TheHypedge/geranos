@@ -67,7 +67,15 @@ const EduVICWANTBeginner = localfont({
   variable: "--font-EduVICWANTBeginner",
 });  
 
-
+const UrbanistLight = localfont({
+  src: [
+    {
+    path: "../../public/fonts/Urbanist-Light.ttf",
+    weight: "300",
+    }
+  ], 
+  variable: "--font-UrbanistLight",
+});  
 
 
 export default function RootLayout({
@@ -76,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${myFont.variable} ${dancingScript.variable} ${SedgwickAve.variable} ${BethEllen.variable} ${EduVICWANTBeginner.variable} scroll-smooth`}>
+    <html lang="en" className={`${myFont.variable} ${dancingScript.variable} ${SedgwickAve.variable} ${BethEllen.variable} ${EduVICWANTBeginner.variable} ${UrbanistLight.variable} scroll-smooth`}>
 
       <body className={inter.className}>
       <Header/>
