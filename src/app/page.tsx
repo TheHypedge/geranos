@@ -47,7 +47,7 @@ export default function Home() {
    
 
 
-        <div className=" w-full">  
+        <div className="mt-8 md:mt-0 w-full">  
           <Testimonials/>
         </div>
 
