@@ -8,7 +8,7 @@ export const revalidate = 10
 const FullDescription = async(props:any) => {
 
 
-  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=id,title,acf`, { cache: 'no-store' } ); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=id,title,acf&slug=`, { cache: 'no-store' } ); 
   const destinations = await req.json(); 
   const destination = destinations[0];
 

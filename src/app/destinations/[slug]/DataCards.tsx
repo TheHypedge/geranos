@@ -13,32 +13,32 @@ const DataCards = async(props:any) => {
   const destination = destinations[0];
 
   return (
-    <div className="relative w-full sm:p-4">
-        <div className="bg-slate-50 max-w-[1200px] mx-auto flex aling-middle justify-center gap-6 text-center   px-4 py-12">
+    <div className="relative w-full sm:p-4 mt-4">
+        <div className="bg-slate-50 max-w-[1200px] mx-auto flex aling-middle justify-center gap-6 text-center rounded-3xl  px-4 py-12">
 
 
         <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
-            <DataCardImage url="/global/cards/card1.png" alt="Travel For"/>
+            <DataCardImage url="/global/cards/about-1.png" alt="Travel For"/>
             <p className="font-bold mt-2">Travel For</p>
-            <p>{destination.acf.cards.travel_for}</p>
+            <p className="mx-8 text-sm">{destination.acf.cards.travel_for}</p>
         </div>
 
         <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
-            <DataCardImage url="/global/cards/card1.png" alt="Travel For"/>
+            <DataCardImage url="/global/cards/about-2.png" alt="Travel For"/>
             <p className="font-bold mt-2">Best Time To Visit</p>
-            <p>{destination.acf.cards.best_time}</p>
+            <p className="mx-8 text-sm">{destination.acf.cards.best_time}</p>
         </div>
 
         <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
-            <DataCardImage url="/global/cards/card1.png" alt="Travel For"/>
+            <DataCardImage url="/global/cards/about-3.png" alt="Travel For"/>
             <p className="font-bold mt-2">Speak</p>
-            <p>{destination.acf.cards.speak}</p>
+            <p className="mx-8 text-sm">{destination.acf.cards.speak}</p>
         </div>
 
         <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
-            <DataCardImage url="/global/cards/card1.png" alt="Travel For"/>
+            <DataCardImage url="/global/cards/about-4.png" alt="Travel For"/>
             <p className="font-bold mt-2">Currency</p>
-            <p>{destination.acf.cards.currency}</p>
+            <p className="mx-8 text-sm">{destination.acf.cards.currency}</p>
         </div>
 
 
@@ -55,7 +55,7 @@ function DataCardImage(props:any) {
         alt={props.alt} 
         width="512" 
         height="512"
-        className="max-w-[80px] mx-auto"
+        className="max-w-[80px] mx-auto rounded-3xl"
         />
       
     )

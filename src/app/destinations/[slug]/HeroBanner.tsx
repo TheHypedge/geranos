@@ -16,7 +16,11 @@ const HeroBanner = async(props:any) => {
     <div className="relative w-full min-h-[380px] sm:min-h-[420px] bg-slate-50">
 
     <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[380px] sm:min-h-[420px] px-4 py-12">
-    <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-EduVICWANTBeginner z-10">{destination.title.rendered}</h1>
+      <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-EduVICWANTBeginner z-10">
+      <div
+      dangerouslySetInnerHTML={{__html: destination.title.rendered}}
+      />
+      </h1>
       <p className="text-xl text-white z-10">
         {destination.acf.sub_heading}
       </p>
