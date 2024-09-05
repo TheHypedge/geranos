@@ -11,7 +11,7 @@ export const revalidate = 10;
 
 const Destinations = async({params}:any) => {
 
-  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/itineraries?acf_format=standard&_fields=id,slug,title,acf`, { cache: 'no-store' }); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/itineraries?acf_format=standard`, { cache: 'no-store' }); 
   const itineraries = await req.json(); 
 
 
@@ -30,6 +30,7 @@ const Destinations = async({params}:any) => {
 
 
           <ItinerarySlider 
+          cstmClass="u-tp-cstm"
           itineraries={itineraries} 
           destinationFilterSlug={params.slug}
           offeringFilterSlug="Tour Packages"
@@ -37,6 +38,7 @@ const Destinations = async({params}:any) => {
 
 
           <ItinerarySlider 
+          cstmClass="u-wg-cstm"
           itineraries={itineraries} 
           destinationFilterSlug={params.slug}
           offeringFilterSlug="Weekend Getaways"
@@ -44,6 +46,7 @@ const Destinations = async({params}:any) => {
 
 
           <ItinerarySlider 
+          cstmClass="u-exp-cstm"
           itineraries={itineraries} 
           destinationFilterSlug={params.slug}
           offeringFilterSlug="Experiences"

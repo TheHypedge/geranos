@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react';
-import React from "react";
+import React, { useState } from 'react';
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
@@ -16,8 +16,45 @@ import SingleCard2 from "./SingleCard2"
 
 const MainContactUsFields = (props:any) => {
 
+  const [fullVisibility, setFullVisibility] = useState("hidden");
+  const [btnVisibility, setBtnVisibility] = useState("hidden");
+  let counter=0;
 
 
+
+  useEffect(() => {
+    return () => {
+      
+   
+      console.log(props.itineraries)
+
+     props.itineraries.map((itinerary:any) => {
+
+
+
+
+      if((itinerary.acf.offerings === props.offeringFilterSlug) && (itinerary.acf.destination.post_name === props.destinationFilterSlug)) {
+        setFullVisibility("");
+        counter++;
+        if(counter>4) {
+          setBtnVisibility("");
+          console.log("yes");
+        }
+
+      }
+      
+ 
+      
+
+
+
+    });
+        
+
+ 
+
+    };
+  }, []);
 
 
 
@@ -31,8 +68,8 @@ const MainContactUsFields = (props:any) => {
         autoplay:false,
         pauseOnHover: false,
         waitForAnimate: false,
-        nextArrow: <ChevronRightIcon />,
-        prevArrow: <ChevronLeftIcon />,
+        nextArrow: <ChevronRightIcon btnVisibility={btnVisibility}/>,
+        prevArrow: <ChevronLeftIcon  btnVisibility={btnVisibility}/>,
         responsive: [
           {
             breakpoint: 1280,
@@ -56,9 +93,12 @@ const MainContactUsFields = (props:any) => {
       };
 
 
+
+      
+
   return (
     <>
-        <div className="p-8">
+        <div className={`p-8 ${fullVisibility} ${props.cstmClass}`}>
 
 <p className="text-center text-2xl mb-8 md:text-4xl font-bold text-[#246BEB] font-EduVICWANTBeginner">{props.offeringFilterSlug}</p>
 
@@ -68,6 +108,7 @@ const MainContactUsFields = (props:any) => {
     {props.itineraries && props.itineraries.map((itinerary:any) => (
 
         ((itinerary.acf.offerings === props.offeringFilterSlug) && (itinerary.acf.destination.post_name === props.destinationFilterSlug)) && (
+
 
         <div key={itinerary.id} className=" p-4">
           <div className="bg-slate-50 p-4 rounded-3xl hover:shadow-md">
@@ -100,19 +141,20 @@ const MainContactUsFields = (props:any) => {
 }
 
 
-
-
 function ChevronLeftIcon(props:any) {
-    return (
-        <Image {...props} src="/global/banners/left.png" width="160" height="160" alt="Left Slide Icon"/>
-    )
-  }
-  
-  
-  function ChevronRightIcon(props:any) {
-    return (
-        <Image {...props} src="/global/banners/right.png" width="160" height="160" alt="Right Slide Icon"/>
-    )
-  }
+  return (
+      <Image {...props} className={`${props.btnVisibility} bg-[#2F6BEB] max-w-[60px] shadow rounded-xl absolute top-[47%]  left-[0px] z-10`} src="/global/banners/left.png" width="160" height="160" alt="Left Slide Icon"/>
+  )
+}
+
+
+function ChevronRightIcon(props:any) {
+  return (
+        <Image  {...props}  className={` bg-[#2F6BEB] max-w-[60px] shadow rounded-xl absolute top-[47%]  right-[0px] z-10`} src="/global/banners/right.png" width="160" height="160" alt="Right Slide Icon"/>
+  )
+}
+
+
+
 
 export default MainContactUsFields

@@ -147,3 +147,11 @@
 .ff-powered-img {
   display:none !important; 
 }
+
+
+
+
+
+img[btnvisibility="hidden"] {
+  display: none !important;
+}
