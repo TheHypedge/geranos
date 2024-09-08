@@ -53,12 +53,14 @@ const Footer = () => {
 
         <Separator className="mb-12"/>
 
-
+        {/*
         <div className="flex flex-col sm:flex-row align-middle justify-between">
           <LastBarLeft/>
           <LastBarRight/>
 
         </div>
+        */}
+
 
         </div>
 
