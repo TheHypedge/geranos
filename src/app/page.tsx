@@ -1,3 +1,13 @@
+/*
+
+<ItinerarySlider 
+          itineraries={itineraries} 
+          destinationFilterSlug="uttarakhand"
+          offeringFilterSlug="Tour Packages"
+          />
+
+*/ 
+
 import TextAndImage from "@/components/custom/Content/TextAndImage/TextAndImage";
 import DestinationsCards from "@/components/custom/Content/DestinationsCards/DestinationsCards";
 import Testimonials from '@/components/custom/Testimonials/Testimonials'
@@ -58,11 +68,7 @@ export default async function Home() {
 
 
 
-<ItinerarySlider 
-          itineraries={itineraries} 
-          destinationFilterSlug="uttarakhand"
-          offeringFilterSlug="Tour Packages"
-          />
+
 
 
 
