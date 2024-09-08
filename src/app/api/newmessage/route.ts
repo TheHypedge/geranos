@@ -16,7 +16,7 @@ export async function POST(request:any) {
 
         const { data } = await resend.emails.send({
             from: 'Geranos Getaways <onboarding@resend.dev>', 
-            to: 'hkashyap.connect@gmail.com', 
+            to: 'sashank@geranosgetaways.com', 
             subject: 'New Message | Geranos Getaways',
             html: '', 
             text: '',
