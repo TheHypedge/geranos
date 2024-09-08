@@ -20,14 +20,14 @@ const locations: { title: string; href: string; description: string }[] = [
  
   {
     title: "Punjab",
-    href: "/docs/primitives/scroll-area",
-    description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
+    href: "",
+    description: "",
   },
   {
     title: "Uttarakhand",
-    href: "/docs/primitives/tabs",
+    href: "",
     description:
-      "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
+      "",
   },
 ]
 
@@ -35,26 +35,19 @@ const locations: { title: string; href: string; description: string }[] = [
 const experiences: { title: string; href: string; description: string }[] = [
  
   {
-    title: "Cultural",
-    href: "/docs/primitives/scroll-area",
-    description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
+    title: "Tour Packages",
+    href: "",
+    description: "",
   },
   {
-    title: "Farmstay",
-    href: "/docs/primitives/tabs",
-    description:
-      "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
+    title: "Weekend Getaways",
+    href: "",
+    description: "",
   },
   {
-    title: "Village life",
-    href: "/docs/primitives/scroll-area",
-    description: "Explore the Vibrant Culture and Scenic Beauty of Punjab!",
-  },
-  {
-    title: "Nature Trails",
-    href: "/docs/primitives/tabs",
-    description:
-      "Discover the Landscapes and Spiritual Serenity of Uttarakhand!",
+    title: "Experiences",
+    href: "",
+    description:"",
   },  
 ]
 
@@ -76,7 +69,7 @@ export default function NavigationMenuDemo() {
                 <ListItem
                   key={location.title}
                   title={location.title}
-                  href={location.href}
+             
                 >
                   {location.description}
                 </ListItem>
@@ -94,7 +87,6 @@ export default function NavigationMenuDemo() {
                 <ListItem
                   key={location.title}
                   title={location.title}
-                  href={location.href}
                 >
                   {location.description}
                 </ListItem>
