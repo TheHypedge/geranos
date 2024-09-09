@@ -64,13 +64,14 @@ export default async function Home() {
 
 
 
-
+          <div className="mb-8">
           <ItinerarySlider 
           mainTitle="Experiences"
           itineraries={itineraries} 
           destinationFilterSlug="home-page"
           offeringFilterSlug="Tour Packages"
           />
+          </div>
 
 
 
