@@ -13,7 +13,7 @@ export default function Component(props:any) {
 
       <blockquote className="text-md leading-relaxed md:text-md">
      
-    <div className="max-w-min testContCstCls font-UrbanistLight tracking-wide text-sm sm:text-md"
+    <div className="max-w-min testContCstCls font-UrbanistLight tracking-wide text-sm sm:text-base"
       dangerouslySetInnerHTML={{__html: props.testimnlTestimonial}} 
     />
         </blockquote>
