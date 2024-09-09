@@ -19,8 +19,6 @@ const MobileNavigation = () => {
           <ul className="flex flex-col gap-4 text-[#246BEB] font-semibold">
             <li>Punjab</li>
             <li>Uttarakhand</li>
-            <li>Rajasthan</li>
-            <li>Kerala</li>
           </ul>
         </AccordionContent>
       </AccordionItem>
@@ -28,10 +26,9 @@ const MobileNavigation = () => {
         <AccordionTrigger>Experiences</AccordionTrigger>
         <AccordionContent>
           <ul className="flex flex-col gap-4 text-[#246BEB] font-semibold">
-            <li>Cultural Tour</li>
-            <li>Farm Stay</li>
-            <li>Village Life</li>
-            <li>Nature Trails</li>
+            <li>Tour Packages</li>
+            <li>Weekend Getaways</li>
+            <li>Experiences</li>
           </ul>
         </AccordionContent>
       </AccordionItem>
