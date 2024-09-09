@@ -131,8 +131,17 @@
       right: 12% !important;
   }
 }
+
+
+
+@media(max-width:620px) {
+  .cstmClsTestiminial button
+  {
+      display: none !important;
+  }  
+}
  
- 
+
 
 /* Footer CSS */
 
