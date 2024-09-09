@@ -21,7 +21,7 @@ const Header = () => {
     <div className="flex flex-row align-middle justify-between px-2 sm:px-6 py-2">
  
     <Link href="/" className="xl:min-w-[200px] flex flex-col align-start justify-center">
-    <Image src="/global/geranos-logo.png" width="140" height="60" alt="logo" className=""/>        
+    <Image src="/global/geranos-logo.png" width="140" height="80" alt="logo" className=""/>        
     </Link>
 
 
