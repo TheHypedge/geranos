@@ -100,7 +100,7 @@ const MainContactUsFields = (props:any) => {
 
   return (
     <>
-        <div className={`p-8 ${fullVisibility} ${props.cstmClass}`}>
+        <div className={`px-[16px] pb-16 md:p-8 ${fullVisibility} ${props.cstmClass}`}>
 
       <p className="text-center text-2xl mb-8 md:text-4xl font-bold text-[#246BEB] font-EduVICWANTBeginner">{props.mainTitle}</p>
 
@@ -112,8 +112,8 @@ const MainContactUsFields = (props:any) => {
         ((itinerary.acf.offerings === props.offeringFilterSlug) && (itinerary.acf.destination.post_name === props.destinationFilterSlug)) && (
 
 
-        <div key={itinerary.id} className=" p-4">
-          <div className="bg-slate-50 p-4 rounded-3xl hover:shadow-md">
+        <div key={itinerary.id} className="p-0 md:p-4">
+          <div className="bg-slate-50 p-4 rounded-3xl md:hover:shadow-md">
 
           <SingleCard2
           key={itinerary.id}
