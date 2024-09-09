@@ -74,13 +74,13 @@ const MainContactUsFields = (props:any) => {
         prevArrow: <ChevronLeftIcon  btnVisibility={btnVisibility}/>,
         responsive: [
           {
-            breakpoint: 1280,
+            breakpoint: 1600,
             settings: {
               slidesToShow: 3,
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 1200,
             settings: {
               slidesToShow: 2,
             }

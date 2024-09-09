@@ -38,7 +38,7 @@ export default async function CarouselDemo() {
       <CarouselContent>
         {testimonials && testimonials.map((testimonial:any) => (
 
-          <CarouselItem key={testimonial.id} className=" md:basis-1/3">
+          <CarouselItem key={testimonial.id} className=" md:basis-1/2 xl:basis-1/3">
             <div className="p-1 h-full">
               <Card className="rounded-3xl h-full">
                 <CardContent className="flex items-center justify-center p-6">
