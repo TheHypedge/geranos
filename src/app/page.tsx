@@ -65,8 +65,6 @@ export default async function Home() {
 
 
 
-test
-
           <ItinerarySlider 
           mainTitle="Experiences"
           itineraries={itineraries} 
@@ -75,7 +73,7 @@ test
           />
 
 
-test
+
 
 
 

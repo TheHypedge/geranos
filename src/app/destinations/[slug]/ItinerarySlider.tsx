@@ -1,3 +1,5 @@
+
+
 'use client'
 
 import { useEffect } from 'react';
@@ -16,7 +18,7 @@ import SingleCard2 from "./SingleCard2"
 
 const MainContactUsFields = (props:any) => {
 
-  const [fullVisibility, setFullVisibility] = useState("hidden");
+  const [fullVisibility, setFullVisibility] = useState("");
   const [btnVisibility, setBtnVisibility] = useState("hidden");
   let counter=0;
 
