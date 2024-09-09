@@ -13,7 +13,7 @@ export default function Component(props:any) {
 
       <blockquote className="text-md leading-relaxed md:text-md">
      
-    <div className="max-w-min testContCstCls font-UrbanistLight tracking-wide text-xsm sm:text-md"
+    <div className="max-w-min testContCstCls font-UrbanistLight tracking-wide text-sm sm:text-md"
       dangerouslySetInnerHTML={{__html: props.testimnlTestimonial}} 
     />
         </blockquote>
@@ -23,8 +23,8 @@ export default function Component(props:any) {
           <Image src={props.testimnlPersonImage} className="rounded-full shadow-sm bg-[#246BEB]" alt="Testimonial Image" width="80" height="80"/> 
         }
 
-        <div className="grid gap-2">
-          <div className="font-semibold font-UrbanistLight tracking-wide text-xsm sm:text-md">- {props.testimnlName}</div>
+        <div className="grid">
+          <div className="font-semibold font-UrbanistLight tracking-wide text-sm sm:text-base">- {props.testimnlName}</div>
           <div className="text-sm text-muted-foreground">{props.testimnlDesignation}</div>
         </div>
       </div>
