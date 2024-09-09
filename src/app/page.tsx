@@ -64,7 +64,7 @@ export default async function Home() {
 
 
 
-          <div className="mb-8">
+          <div className="mb-12">
           <ItinerarySlider 
           mainTitle="Experiences"
           itineraries={itineraries} 
