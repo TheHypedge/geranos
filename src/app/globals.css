@@ -122,11 +122,13 @@
 @media(max-width:620px) {
   .slick-prev
   {
-    display: none;
+      top: 90% !important;
+      left: 12% !important;
   }  
   .slick-next
   {
-    display: none;
+      top: 90% !important;
+      right: 12% !important;
   }
 }
  
