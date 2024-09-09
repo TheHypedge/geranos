@@ -25,16 +25,19 @@ const Footer = () => {
 
 
             <p className="flex gap-2 justify-center sm:justify-end">
+              {/*
               <Link href="https://x.com" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/x.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
-              <Link href="https://facebook.com" className="flex flex-col align-middle justify-center">
+              */}
+
+              <Link target="_blank" href="https://www.facebook.com/Geranosgetaways/" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/facebook.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
-              <Link href="https://instagram.com" className="flex flex-col align-middle justify-center">
+              <Link target="_blank" href="https://www.instagram.com/geranosgetaways/" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/instagram.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
-              <Link href="https://linkedin.com" className="flex flex-col align-middle justify-center">
+              <Link target="_blank" href="https://www.linkedin.com/company/geranos-getaways/" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/linkedin.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
             </p>
