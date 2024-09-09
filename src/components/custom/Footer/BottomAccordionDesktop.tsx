@@ -16,13 +16,17 @@ const BottomAccordion = () => {
   return (
     <div className="w-full flex flex-row align-middle justify-between gap-20">
 
-        <div className="w-full flex flex-col gap-8">
 
+
+
+        <div className="w-full flex flex-col gap-4">
+
+          <p className="flex w-full accCstmClsFtr text-sm font-semibold tracking-wider">ADVERTISE & LIST ACCOMODATIONS</p>
+          <div className="flex">
               <LeftMenuItems/>
+          </div>
 
         </div>
-
-
 
 
 
