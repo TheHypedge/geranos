@@ -22,9 +22,14 @@ const HeroHomeSlickSlide = (props:any) => {
                 {props.title}
             </h2>
             <p className="max-w-[320px] sm:max-w-full mx-auto px-8 text-white text-xl sm:text-3xl z-50 font-UrbanistLight">{props.subTitle}</p>
+            
+            {/*
             <Link href={props.cardLink} className="z-50">
               <Button className="font-UrbanistLight tracking-wide max-w-min mx-auto font-normal text-xl sm:text-2xl bg-transparent hover:bg-transparent border-2 border-white text-white p-6 rounded-full">Explore</Button>
             </Link>
+            */}
+
+
         </div>
 
         <Image 
