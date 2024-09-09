@@ -6,7 +6,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import LeftMenuItems from './CommonComponenets/LeftMenuItems'
-import ListAccomodations from './CommonComponenets/ListAccomodations'
+import Advertise from './CommonComponenets/Advertise'
 import TravelNews from './CommonComponenets/TravelNews'
 
 const BottomAccordion = () => {
@@ -32,7 +32,7 @@ const BottomAccordion = () => {
             <AccordionTrigger className="w-full text-sm sm:text-sm hover:decoration-none tracking-wider">ADVERTIZE</AccordionTrigger>
             <AccordionContent className="pb-0 border-none">
 
-              <ListAccomodations/>
+              <Advertise/>
 
             </AccordionContent>
           </AccordionItem>
