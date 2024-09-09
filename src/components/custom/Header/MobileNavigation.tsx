@@ -7,6 +7,7 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import Link from 'next/link'
 
 const MobileNavigation = () => {
   return (
@@ -34,12 +35,16 @@ const MobileNavigation = () => {
       </AccordionItem>
       <AccordionItem value="item-3">
         <p className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180">
+            <Link href="/blogs">
             Blogs
+            </Link>
         </p>
       </AccordionItem>
       <AccordionItem value="item-4">
         <p className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180">
+            <Link href="/contact">
             Contact
+            </Link>
         </p>
       </AccordionItem>
 
