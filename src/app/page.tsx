@@ -29,6 +29,7 @@ export default async function Home() {
 
     <HeroSlickSlider/>
 
+      <div className="min-h-[40px] block xl:hidden"></div>
 
       <TextAndImage 
       imageLink="/global/collage-8.png"
