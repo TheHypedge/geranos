@@ -134,7 +134,7 @@
 
 
 
-@media(max-width:620px) {
+@media(max-width:767px) {
   .cstmClsTestiminial button
   {
       display: none !important;
