@@ -19,7 +19,9 @@ const SingleCard = (props:any) => {
 
     <div  key={props.indexId} className=" md:basis-1/2 lg:basis-1/4">
     <div className="p-1">
+    {/*
     <Link href={`/itineraries/${props.mainSlugValue}`}>
+    */}
       <Card className={`bg-slate-50 bg-cover rounded-3xl shadow-none`} >
 
         <div className="w-full height-full">
@@ -43,7 +45,10 @@ const SingleCard = (props:any) => {
     </div>
 
               </Card>
+              
+              {/*
               </Link>
+              */}
            
 
 
