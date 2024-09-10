@@ -35,16 +35,16 @@ const MobileNavigation = () => {
       </AccordionItem>
       <AccordionItem value="item-3">
         <p className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180">
-            <Link href="/blog">
+            <a href="/blog">
             Blogs
-            </Link>
+            </a>
         </p>
       </AccordionItem>
       <AccordionItem value="item-4">
         <p className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180">
-            <Link href="/contact">
+            <a href="/contact">
             Contact
-            </Link>
+            </a>
         </p>
       </AccordionItem>
 
