@@ -29,7 +29,7 @@ const BottomAccordion = () => {
       <div className="w-full">
         <Accordion type="single" collapsible className="">
           <AccordionItem value="advertize" className="border-none">
-            <AccordionTrigger className="w-full text-sm sm:text-sm hover:decoration-none tracking-wider">ADVERTIZE</AccordionTrigger>
+            <AccordionTrigger className="w-full text-sm sm:text-sm hover:decoration-none tracking-wider">ADVERTISE & LIST ACCOMODATIONS</AccordionTrigger>
             <AccordionContent className="pb-0 border-none">
 
               <Advertise/>
