@@ -9,6 +9,7 @@ import { Separator } from "@/components/ui/separator"
 
 
 import { useState } from 'react'
+import InnerHeroOne from '@/components/custom/Global/InnerHeroOne'
 
 const PlanATrip = () => {
 
@@ -22,24 +23,17 @@ const PlanATrip = () => {
     <>
 
 
+      <InnerHeroOne
+
+        bgImgUrl="/global/banners/blog-main-final.jpg"
+        title="Let Us Plan Your Getaway!"
+        subtitle="Fill the form and we will get back to you in 24 hours!"
+        ctaText="Fill The Form"
+      />
 
 
 
 
-
-
-        <div className="bg-cover bg-[url('/global/banners/contact-5.jpg')] bg-center min-h-[420px]  bg-slate-50">
-            <div className="bg-[rgba(0,0,0,0.3)]min-h-[520px] flex aling-middle justify-center gap-6 text-center flex-col min-h-[420px] px-4 py-12 bg-[rgba(0,0,0,0.2)]">
-            <h1 className="font-EduVICWANTBeginner text-white text-7xl font-semibold">Let Us Plan Your Getaway!</h1>
-            <p className="text-white text-xl">Fill the form and we will get back to you in 24 hours!</p>
-            
-            <Link href="#cstmContId" id="cstmContId" className="">
-              <Button className="max-w-min mx-auto font-normal text-xl bg-transparent hover:bg-transparent border-2 border-white text-white p-6 rounded-full">
-                Fill the Form ↓
-              </Button>
-            </Link>
-            </div>
-        </div>
 
 
 
