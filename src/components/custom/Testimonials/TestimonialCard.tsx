@@ -13,7 +13,7 @@ export default function Component(props:any) {
 
       <blockquote className="text-md leading-relaxed md:text-md">
      
-    <div className="max-w-min testContCstCls font-UrbanistLight tracking-wide text-sm sm:text-base"
+    <div className="max-w-min testContCstCls font-UrbanistLight tracking-wide text-md sm:text-base"
       dangerouslySetInnerHTML={{__html: props.testimnlTestimonial}} 
     />
         </blockquote>
@@ -24,7 +24,7 @@ export default function Component(props:any) {
         }
 
         <div className="grid">
-          <div className="font-semibold font-UrbanistLight tracking-wide text-sm sm:text-base">- {props.testimnlName}</div>
+          <div className="font-bold font-UrbanistLight tracking-wide text-md sm:text-base">- {props.testimnlName}</div>
           <div className="text-sm text-muted-foreground">{props.testimnlDesignation}</div>
         </div>
       </div>
