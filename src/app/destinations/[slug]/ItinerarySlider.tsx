@@ -102,7 +102,7 @@ const MainContactUsFields = (props:any) => {
     <>
         <div className={`px-[16px] md:p-8 ${fullVisibility} ${props.cstmClass}`}>
 
-      <p className=" text-2xl md:text-5xl font-bold text-[#246BEB] font-EduVICWANTBeginner text-center mb-8">{props.mainTitle}</p>
+      <p className=" text-3xl md:text-5xl font-bold text-[#246BEB] font-EduVICWANTBeginner text-center mb-8">{props.mainTitle}</p>
 
     <Slider {...test}>
 
