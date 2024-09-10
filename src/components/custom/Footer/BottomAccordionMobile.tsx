@@ -11,7 +11,7 @@ import TravelNews from './CommonComponenets/TravelNews'
 
 const BottomAccordion = () => {
   return (
-    <div className="w-full flex flex-col align-middle justify-between gap-2 px-8">
+    <div className="w-full flex flex-col align-middle justify-between gap-2 px-2">
 
       <div className="w-full">
         <Accordion type="single" collapsible className="">
