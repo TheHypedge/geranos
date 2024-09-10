@@ -11,9 +11,9 @@ const SingleBlogCard = ({title, date, excerpt, slug, image}:any) => {
   return (
     <div className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-4 sm:px-8 gap-8 border-b-2">
 
-        <div className="flex flex-col gap-4 align-middle justify-center">
+        <div className="flex flex-col gap-4 align-middle justify-center text-center md:text-left">
           <Link href={`/blog/${slug}`}>
-            <h2 className="text-xl md:text-3xl font-bold">{title}</h2>
+            <h2 className="text-xl sm:text-2xl xl:text-3xl font-bold">{title}</h2>
           </Link>
           <p className="text-slate-400  text-sm sm:text-xl font-UrbanistLight tracking-wide">{d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()}</p>
           <div className="text-sm sm:text-xl font-UrbanistLight tracking-wide"
