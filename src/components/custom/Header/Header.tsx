@@ -61,7 +61,7 @@ const Header = () => {
     <SheetHeader className="mb-8">
       <SheetTitle className="text-left mt-4">Gerenos Getaways</SheetTitle>
       <SheetDescription className="text-left mb-8">
-      your guide to its rich heritage and scenic beauty. Explore the top tourist attractions!
+      Immersing you in the rich culture and breathtaking landscapes of Punjab and Uttarakhand.
       </SheetDescription>
 
     </SheetHeader>
