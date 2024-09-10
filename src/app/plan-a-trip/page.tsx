@@ -26,7 +26,7 @@ const PlanATrip = () => {
       <InnerHeroOne
 
         bgImgUrl="/global/banners/blog-main-final.jpg"
-        title="Let Us Plan Your Getaway!"
+        title="Plan A Getaway!"
         subtitle="Fill the form and we will get back to you in 24 hours!"
         ctaText="Fill The Form"
       />
@@ -50,7 +50,7 @@ const PlanATrip = () => {
 
 
 
-    <div className="flex flex-col justify-between md:flex-row">
+    <div className="flex flex-col justify-center md:flex-row">
 
         <div className="max-w-[360px] w-full py-8 pl-4">
 
@@ -89,7 +89,6 @@ const PlanATrip = () => {
 
 
 
-              <Image className="sticky top-40 rounded-xl" src="/global/banners/random-4.jpg" alt="Plan A Trip" height="1000" width="1000"/>
         
 
 
