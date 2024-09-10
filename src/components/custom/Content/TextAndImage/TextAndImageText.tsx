@@ -11,7 +11,7 @@ const TextAndImageText = (props:any) => {
 
     <div
       className="text-justify text-[16px] sm:text-xl font-UrbanistLight tracking-wide"
-      dangerouslySetInnerHTML={{__html: props.content}}test
+      dangerouslySetInnerHTML={{__html: props.content}}
     />
 
 
