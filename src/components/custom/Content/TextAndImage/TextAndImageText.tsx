@@ -10,8 +10,8 @@ const TextAndImageText = (props:any) => {
     <h3 className="text-xl md:text-2xl text-slate-700 font-bold font-UrbanistLight">{props.subHeading}</h3>
 
     <div
-      className="text-justify text-sm sm:text-base font-UrbanistLight tracking-wide"
-      dangerouslySetInnerHTML={{__html: props.content}}
+      className="text-justify text-md sm:text-xl font-UrbanistLight tracking-wide"
+      dangerouslySetInnerHTML={{__html: props.content}}test
     />
 
 
