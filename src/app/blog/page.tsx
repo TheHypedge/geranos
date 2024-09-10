@@ -19,7 +19,7 @@ const BlogPage = async() => {
 
       <div className="bg-cover bg-[url('/global/banners/contact-6.jpg')] bg-top min-h-[320px] md:min-h-[420px] bg-slate-50">
           <div className="bg-[rgba(0,0,0,0.4)] flex aling-middle justify-center gap-6 text-center flex-col min-h-[320px] md:min-h-[420px] px-4 py-12">
-          <h1 className="text-white text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-EduVICWANTBeginner">Our Blogs</h1>
+          <h1 className="text-white text-5xl sm:text-5xl md:text-6xl xl:text-7xl font-EduVICWANTBeginner">Our Blogs</h1>
           <p className="text-white text-xl">Read and learn more about us.</p>
           
           <Link href="#cstmContId" id="cstmContId" className="max-w-min mx-auto">
