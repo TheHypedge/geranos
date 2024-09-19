@@ -2,7 +2,8 @@
 
 import React from 'react'
 import Image from 'next/image'
-import PlanATripForm3 from './PlanATripForm5'
+import PlanATripForm3 from './PlanATripForm4'
+import PlanATripForm4 from './PlanATripForm5'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Separator } from "@/components/ui/separator"
@@ -104,10 +105,12 @@ const PlanATrip = () => {
             <div className="p-8 flex flex-col gap-8  m-auto w-full mt-4 bg-[rgba(255,255,255,1)">
 
 
-
+            <PlanATripForm4/>
+            <PlanATripForm3/>
            
 
-            <PlanATripForm3/>
+  
+  
 
             </div>
 
@@ -118,7 +121,7 @@ const PlanATrip = () => {
 
 
 
-        <div className="py-4 px-[80px] max-w-[360px] w-full">
+        <div className="py-4 px-[80px] max-w-[360px] w-full hidden 2xl:block">
         
       
         </div>
