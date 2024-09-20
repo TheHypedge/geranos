@@ -31,13 +31,13 @@ const Footer = () => {
               </Link>
               */}
 
-              <Link target="_blank" href="https://www.facebook.com/Geranosgetaways/" className="flex flex-col align-middle justify-center">
+              <Link target="_blank" href="https://www.facebook.com/Geranosgetaways" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/facebook.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
               <Link target="_blank" href="https://www.instagram.com/geranosgetaways/" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/instagram.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
-              <Link target="_blank" href="https://www.linkedin.com/company/geranos-getaways/" className="flex flex-col align-middle justify-center">
+              <Link target="_blank" href="https://www.linkedin.com/company/79039053/admin/dashboard/" className="flex flex-col align-middle justify-center">
                 <Image src="/global/social/linkedin.png" className="rounded max-w-[32px] sm:max-w-[40px]" alt="Social" width="40" height="40"/>
               </Link>
             </p>
