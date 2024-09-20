@@ -20,7 +20,7 @@ export default async function CarouselDemo() {
 
     <div className="cstmClsTestiminial">
 
-    <h2 className=" text-3xl md:text-5xl font-bold text-[#246BEB] font-EduVICWANTBeginner text-center mb-8">Testimonials</h2>
+    <h2 className=" text-3xl md:text-5xl font-bold text-[#246BEB] font-EduVICWANTBeginner text-center mb-8">Traveller&apos;s Reviews</h2>
 
     <div className="max-w-[1800px] px-[16px] md:px-[64px] flex m-auto w-full">
 
@@ -40,8 +40,8 @@ export default async function CarouselDemo() {
 
           <CarouselItem key={testimonial.id} className=" md:basis-1/2 xl:basis-1/3">
             <div className="p-1 h-full">
-              <Card className="rounded-3xl h-full">
-                <CardContent className="flex items-center justify-center p-6">
+              <Card className="rounded-3xl h-full bg-[#246BEB]">
+                <CardContent className="flex items-center justify-center p-6 ">
                   <TestimonialCard 
                     testimnlName={testimonial.title.rendered}
                     testimnlDesignation={testimonial.acf.designation}

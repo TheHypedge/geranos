@@ -64,7 +64,7 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase tracking-wider">Destinations</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className=" grid w-[400px] gap-3 p-4 md:w-[330px] md:grid-cols-1 lg:w-[330px] ">
               {locations.map((location) => (
                 <ListItem
                   key={location.title}
@@ -82,7 +82,7 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className="uppercase tracking-wider">Offerings</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className=" grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className=" grid w-[400px] gap-3 p-4 md:w-[330px] md:grid-cols-1 lg:w-[330px] ">
               {experiences.map((location) => (
                 <ListItem
                   key={location.title}

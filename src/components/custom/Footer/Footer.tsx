@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="mt-2 flex mb-4 sm:mb-0 justify-center sm:justify-start">
 
             <div>
-              <p className="text-md mt-2 text-slate-600">© Gerenos Getaways 2024</p>
+              <p className="text-md mt-2 text-slate-600">© Geranos Getaways 2024</p>
               </div>
             </div>
 
