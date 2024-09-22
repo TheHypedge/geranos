@@ -12,7 +12,7 @@ export async function POST(request:any) {
     try {
         const body = await request.json(); 
 
-        const { fullName, emailAddress, mobileNumber, travelType, prefGetaway, otherGetaway, locIndia, locAbroad, startDate, endDate, prefAccom, specialReq, metOfComm } = body; 
+        const { MethodOfComnctn, PreferdAcmdn, destinationIndia, destinationOther, eMail, fromDate, fullName, msgForUs, phone, preferredGetaways, preferredGetawaysOther, toDate, typeOfTravel } = body; 
 
         const { data } = await resend.emails.send({
             from: 'Geranos Getaways <onboarding@resend.dev>', 
@@ -20,10 +20,10 @@ export async function POST(request:any) {
             subject: 'Plan A Getaway Request',
             html: '<h1>TESTasdfadf asdfas</h1>', 
             text: 'TEST',
-            react: NetlifyWelcomeEmail({firstName: fullName, emailId: emailAddress, mobileNo: mobileNumber, travelTypeVal: travelType, prefGetawayVal: prefGetaway, otherGetawayVal: otherGetaway, locIndiaVal: locIndia, locAbroadVal: locAbroad,  startDateVal: startDate, endDateVal: endDate, prefAccomVal: prefAccom, specialReqVal: specialReq, metOfCommVal: metOfComm}),
+            react: NetlifyWelcomeEmail({MethodOfComnctn, PreferdAcmdn, destinationIndia, destinationOther, eMail, fromDate, fullName, msgForUs, phone, preferredGetaways, preferredGetawaysOther, toDate, typeOfTravel}), 
         }); 
-
         return NextResponse.json({ data });
+        console.log(data); 
 
     } catch (error) {
         return NextResponse.json({error});

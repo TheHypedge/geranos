@@ -13,19 +13,20 @@ import {
 } from "@react-email/components";
   
 interface NetlifyWelcomeEmailProps {
-  firstName: string; 
-  emailId: string; 
-  mobileNo: string; 
-  travelTypeVal: string; 
-  prefGetawayVal: string; 
-  otherGetawayVal: string; 
-  locIndiaVal: string; 
-  locAbroadVal: string; 
-  startDateVal: string; 
-  endDateVal: string; 
-  prefAccomVal: string;
-  specialReqVal: string; 
-  metOfCommVal: string;
+
+  MethodOfComnctn: string; 
+  PreferdAcmdn: string; 
+  destinationIndia: string; 
+  destinationOther: string; 
+  eMail: string; 
+  fromDate: string; 
+  fullName: string; 
+  msgForUs: string; 
+  phone: string; 
+  preferredGetaways: string;
+  preferredGetawaysOther: string; 
+  toDate: string;
+  typeOfTravel: string;
 }
   
 const baseUrl = 'https://demo.react.email/'
@@ -33,7 +34,7 @@ const baseUrl = 'https://demo.react.email/'
 
   
   export const NetlifyWelcomeEmail = ({
-    firstName, emailId, mobileNo, travelTypeVal, prefGetawayVal, otherGetawayVal, locIndiaVal, locAbroadVal, startDateVal, endDateVal, prefAccomVal, specialReqVal, metOfCommVal 
+    MethodOfComnctn, PreferdAcmdn, destinationIndia, destinationOther, eMail, fromDate, fullName, msgForUs, phone, preferredGetaways, preferredGetawaysOther, toDate, typeOfTravel  
   }: NetlifyWelcomeEmailProps) => {
     return (
       <Html>
@@ -62,45 +63,45 @@ const baseUrl = 'https://demo.react.email/'
         <div className="gap-8 px-2 py-8 max-w-[440px] m-auto">
 
         <div className="py-2 px-4 mb-4 border-2 bg-slate-50 rounded-xl">
-          <p>Full Name: {firstName}</p>
-          <p>Email ID: {emailId}</p>
-          <p>Phone No: {mobileNo}</p>
+          <p>Full Name: {fullName}</p>
+          <p>Email ID: {eMail}</p>
+          <p>Phone No: {phone}</p>
         </div>
 
         <div className="py-2 px-4 mb-4 border-2 bg-slate-50 rounded-xl">
-          <p>Preferred Method of Communication: {metOfCommVal}</p>
+          <p>Preferred Method of Communication: {MethodOfComnctn}</p>
         </div>
 
 
         <div className="py-2 px-4 mb-4 border-2 bg-slate-50 rounded-xl">
-          { locIndiaVal !== "" &&   
-            <p>Location | India: {locIndiaVal}</p>
+          { destinationIndia !== "" &&   
+            <p>Location | India: {destinationIndia}</p>
           }
-          { locAbroadVal !== "" &&
-            <p>Location | Other: {locAbroadVal}</p>
+          { destinationOther !== "" &&
+            <p>Location | Other: {destinationOther}</p>
           }
-          <p>Travel Type: {travelTypeVal}</p>
+          <p>Travel Type: {typeOfTravel}</p>
           
           
-          <p>Preferred Getaway: {prefGetawayVal}</p>
+          <p>Preferred Getaway: {preferredGetaways}</p>
 
-          { (otherGetawayVal !== "") &&
-            <p>Other Getaway: {otherGetawayVal}</p>
+          { (preferredGetawaysOther !== "") &&
+            <p>Other Getaway: {preferredGetawaysOther}</p>
           }
 
-          <p>Preferred Accomodation: {prefAccomVal}</p>
+          <p>Preferred Accomodation: {PreferdAcmdn}</p>
         </div>
         
         <div className="py-2 px-4 mb-4 border-2 bg-slate-50 rounded-xl">
-          <p>Start Date: <span className="font-bold">{startDateVal}</span></p>
-          <p>End Date: <span className="font-bold">{endDateVal}</span></p>
+          <p>Start Date: <span className="font-bold">{fromDate}</span></p>
+          <p>End Date: <span className="font-bold">{toDate}</span></p>
         </div>
 
 
  
       
         <div className="py-2 px-4 border-2 bg-slate-50 rounded-xl">
-        <p>Special Request: {specialReqVal}</p>
+        <p>Special Request: {msgForUs}</p>
         </div>
 
 
@@ -110,7 +111,7 @@ const baseUrl = 'https://demo.react.email/'
         <div className="flex align-middle justify-center">
    
           <Button 
-          href={`tel:${mobileNo}`} 
+          href={`tel:${phone}`} 
           className="bg-[#000000] max-w-min min-w-[120px] rounded text-white text-[12px] font-semibold no-underline text-center px-5 py-4 mb-2 mx-auto">        
           Call The Prospect
           </Button>

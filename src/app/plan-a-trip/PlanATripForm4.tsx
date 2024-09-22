@@ -27,7 +27,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 
-import { X } from "lucide-react";
+import Link from "next/link";
+
 /* Form Schema */
 
 const formSchema = z.object({
@@ -231,8 +232,12 @@ const PlanATripForm = () => {
         <Form {...form}>
           <form
             onSubmit={handleFormSubmit}
-            className="flex flex-col pt-2 px-2 gap-6 max-w-[600px] rounded-xl m-auto w-full mb-4 ]"
+            className="flex flex-col mx-auto pt-2 px-2 gap-6 max-w-[600px] rounded-xl m-auto w-full mb-4 ]"
           >
+
+
+
+
             <p className="font-bold">
               Personal Information <span className="text-red-600">*</span>
             </p>
@@ -302,6 +307,11 @@ const PlanATripForm = () => {
               />
             </div>
 
+
+
+
+
+
             <p className="font-bold">
               Type of Travel <span className="text-red-600">*</span>
             </p>
@@ -337,6 +347,10 @@ const PlanATripForm = () => {
                 </div>
               </RadioGroup>
             </div>
+
+
+
+
 
             <p className="font-bold">
               Preferred Getaways <span className="text-red-600">*</span>
@@ -385,6 +399,9 @@ const PlanATripForm = () => {
                 }}
               />
             </div>
+
+
+
 
             <p className="font-bold">
               Preferred Destinations <span className="text-red-600">*</span>
@@ -436,6 +453,9 @@ const PlanATripForm = () => {
                 }}
               />
             </div>
+
+
+
 
             <p className="font-bold">
               Travel Dates <span className="text-red-600">*</span>
@@ -501,6 +521,9 @@ const PlanATripForm = () => {
               </Popover>
             </div>
 
+
+
+
             <p className="font-bold">
               Preferred Accomodations <span className="text-red-600">*</span>
             </p>
@@ -520,6 +543,9 @@ const PlanATripForm = () => {
                 </div>
               </RadioGroup>
             </div>
+
+
+
 
             <p className="font-bold">Special Request or Requirement</p>
             <FormField
@@ -544,6 +570,8 @@ const PlanATripForm = () => {
               }}
             />
 
+
+
             <p className="font-bold">
               Preferred Method of Communication{" "}
               <span className="text-red-600">*</span>
@@ -565,6 +593,9 @@ const PlanATripForm = () => {
               </RadioGroup>
             </div>
 
+
+
+
             <div className="finalConcentCstm items-top flex space-x-2">
               <Checkbox id="terms1" />
               <div className="grid gap-1.5 leading-none">
@@ -572,19 +603,23 @@ const PlanATripForm = () => {
                   htmlFor="terms1"
                   className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                 >
-                  Accept terms and conditions{" "}
+                  Accepting terms and conditions{" "}
                   <span className="text-red-600">*</span>
                 </label>
                 <p className="text-sm text-muted-foreground">
-                  By submitting this form, you agree to our terms and
-                  conditions.
+                  By filling this form, you agree to our <Link href="terms-of-use">terms and
+                  conditions</Link>.
                 </p>
               </div>
             </div>
 
+
+
             <Button type="submit" className="max-w-min">
               Send Me A Plan
             </Button>
+
+
           </form>
         </Form>
       </div>
