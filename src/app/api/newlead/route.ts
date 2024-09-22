@@ -16,10 +16,10 @@ export async function POST(request:any) {
 
         const { data } = await resend.emails.send({
             from: 'Geranos Getaways <onboarding@resend.dev>', 
-            to: 'hkashyap.developer@gmail.com', 
+            to: 'sashank@geranosgetaways.com', 
             subject: 'Plan A Getaway Request',
-            html: '<h1>TESTasdfadf asdfas</h1>', 
-            text: 'TEST',
+            html: '', 
+            text: '',
             react: NetlifyWelcomeEmail({MethodOfComnctn, PreferdAcmdn, destinationIndia, destinationOther, eMail, fromDate, fullName, msgForUs, phone, preferredGetaways, preferredGetawaysOther, toDate, typeOfTravel}), 
         }); 
         return NextResponse.json({ data });

@@ -12,12 +12,12 @@ const InnerHeroOne = (props:any) => {
         <Image 
         
         src="/global/banners/contact-5.jpg" alt="" width="1920" height="600"
-        className="absolute object-cover max-h-[320px] md:max-h-[420px] xl:max-h-[420px] z-[-1]"
+        className="h-full absolute object-cover max-h-[320px] md:max-h-[420px] xl:max-h-[420px] z-[-1]"
         />
 
 
-        <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-4 md:gap-6 text-center flex-col min-h-[320px] md:min-h-[420px] xl:min-h-[420px] px-4 py-12 z-10">
-        <h1 className="text-white text-[2.5rem] sm:text-5xl md:text-6xl xl:text-6xl font-EduVICWANTBeginner mb-[-8px] md:mb-[0px] z-10">{props.title}</h1>
+        <div className="bg-[rgba(0,0,0,0.3)] flex aling-middle justify-center gap-6 md:gap-6 text-center flex-col min-h-[320px] md:min-h-[420px] xl:min-h-[420px] px-4 py-12 z-10">
+        <h1 className="leading-10 text-white text-[2.5rem] sm:text-5xl md:text-6xl xl:text-6xl font-EduVICWANTBeginner mb-[-8px] md:mb-[0px] z-10">{props.title}</h1>
         <p className="text-white text-xl z-10">{props.subtitle}</p>
         
         <Link href="#cstmContId" id="cstmContId" className="max-w-min mx-auto z-10">
