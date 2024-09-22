@@ -17,7 +17,7 @@ const MobileNavigation = () => {
       <AccordionItem value="item-1">
         <AccordionTrigger>Destinations</AccordionTrigger>
         <AccordionContent>
-          <ul className="flex flex-col gap-4 text-[#246BEB] font-semibold">
+          <ul className="flex flex-col gap-4 text-[#000000] font-semibold">
             <li>Punjab</li>
             <li>Uttarakhand</li>
           </ul>
@@ -26,7 +26,7 @@ const MobileNavigation = () => {
       <AccordionItem value="item-2">
         <AccordionTrigger>Experiences</AccordionTrigger>
         <AccordionContent>
-          <ul className="flex flex-col gap-4 text-[#246BEB] font-semibold">
+          <ul className="flex flex-col gap-4 text-[#000000] font-semibold">
             <li>Tour Packages</li>
             <li>Weekend Getaways</li>
             <li>Experiences</li>
