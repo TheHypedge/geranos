@@ -7,12 +7,12 @@ const InnerHeroOne = (props:any) => {
 
 
   return (
-    <div className={`min-h-[320px] md:min-h-[420px] xl:min-h-[420px]`}>
+    <div className={`min-h-[420px] md:min-h-[420px] xl:min-h-[420px]`}>
 
         <Image 
         
         src="/global/banners/contact-5.jpg" alt="" width="1920" height="600"
-        className="h-full absolute object-cover max-h-[320px] md:max-h-[420px] xl:max-h-[420px] z-[-1]"
+        className="h-full absolute object-cover max-h-[420px] md:max-h-[420px] xl:max-h-[420px] z-[-1]"
         />
 
 
