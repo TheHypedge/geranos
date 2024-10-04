@@ -20,13 +20,11 @@ const Destinations = async({params}:any) => {
   return (
     <div>
         
-        
- 
-
         <HeroBanner slug={params.slug}/>
  
-        <ShortDescription/>
-        <DataCards/>
+        <ShortDescription slug={params.slug}/>
+
+        <DataCards slug={params.slug}/>
 
 
           <ItinerarySlider 
@@ -51,12 +49,6 @@ const Destinations = async({params}:any) => {
           destinationFilterSlug={params.slug}
           offeringFilterSlug="Experiences"
           />
-
-
-
-
-    
-
 
     </div>
   )

@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
-import {Button} from '@/components/ui/button'
 import Image from 'next/image'
 
 export const revalidate = 10
@@ -8,7 +6,7 @@ export const revalidate = 10
 const DataCards = async(props:any) => {
 
 
-  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=id,title,acf`, { cache: 'no-store' } ); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=acf&slug=${props.slug}`, { cache: 'no-store' } ); 
   const destinations = await req.json(); 
   const destination = destinations[0];
 

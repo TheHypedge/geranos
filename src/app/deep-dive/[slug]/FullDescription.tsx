@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export const revalidate = 10
 
-const ShortDescription = async(props:any) => {
+const FullDescription = async(props:any) => {
 
 
   const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/destinations?acf_format=standard&_fields=id,title,acf&slug=${props.slug}`, { cache: 'no-store' } ); 
@@ -16,12 +16,16 @@ const ShortDescription = async(props:any) => {
     <div className="relative w-full sm:p-4 mt-8">
 
     <div className="bg-slate-50  rounded-3xl max-w-[800px] mx-auto flex aling-middle justify-center gap-6 text-center flex-col  px-16 py-12">
-    <h1 className="text-4xl font-EduVICWANTBeginner">{destination.acf.short_description.title}</h1>
-      <p className="text-sm sm:text-base">
-        {destination.acf.short_description.short_description}
-      </p>
-      <Link href={`/deep-dive/${props.slug}`}>
-      <Button variant="outline" className="max-w-min mx-auto bg-none">Explore More</Button>
+    <h1 className="text-4xl font-EduVICWANTBeginner">{destination.acf.full_description.title}</h1>
+
+
+      
+        <div className="postContParaFixCstm text-justify" dangerouslySetInnerHTML={{__html: destination.acf.full_description.full_description}}/>
+
+      
+
+      <Link href={`/destinations/${props.slug}`}>
+      <Button variant="outline" className="max-w-min mx-auto bg-none">Back To Details</Button>
       </Link>
     </div>
 
@@ -29,4 +33,4 @@ const ShortDescription = async(props:any) => {
   )
 }
 
-export default ShortDescription
+export default FullDescription
