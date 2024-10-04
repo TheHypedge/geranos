@@ -18,17 +18,18 @@ import SingleCard2 from "./SingleCard2"
 
 const MainContactUsFields = (props:any) => {
 
-  const [fullVisibility, setFullVisibility] = useState("");
+  const [fullVisibility, setFullVisibility] = useState("hidden");
   const [btnVisibility, setBtnVisibility] = useState("hidden");
   let counter=0;
-
 
 
   useEffect(() => {
     return () => {
       
    
+      console.log("YOYO1"); 
       console.log(props.itineraries)
+      console.log("YOYO2"); 
 
      props.itineraries.map((itinerary:any) => {
 
@@ -36,11 +37,18 @@ const MainContactUsFields = (props:any) => {
 
 
       if((itinerary.acf.offerings === props.offeringFilterSlug) && (itinerary.acf.destination.post_name === props.destinationFilterSlug)) {
+        
         setFullVisibility("");
         counter++;
+        
         if(counter>4) {
           setBtnVisibility("");
-          console.log("yes");
+          console.log("BUTTON VIS TRIGGER");
+        }
+        
+        if(counter>0) {
+          setFullVisibility("");
+          console.log("FULL VIS TRIGGER");
         }
 
       }
@@ -100,31 +108,36 @@ const MainContactUsFields = (props:any) => {
 
   return (
     <>
-        <div className={`px-[16px] md:p-8 ${fullVisibility} ${props.cstmClass}`}>
+    
+    <div className={`px-[16px] md:p-8 ${fullVisibility} ${props.cstmClass}`}>
 
-      <p className=" text-3xl md:text-5xl font-bold text-[#246BEB] font-EduVICWANTBeginner text-center mb-8">{props.mainTitle}</p>
+    <p className=" text-3xl md:text-5xl font-bold text-[#246BEB] font-EduVICWANTBeginner text-center mb-8">{props.mainTitle}</p>
 
     <Slider {...test}>
 
 
     {props.itineraries && props.itineraries.map((itinerary:any) => (
 
+
         ((itinerary.acf.offerings === props.offeringFilterSlug) && (itinerary.acf.destination.post_name === props.destinationFilterSlug)) && (
 
 
         <div key={itinerary.id} className="p-0 md:p-4">
+
           <div className="bg-slate-50 p-0 md:p-4 rounded-3xl md:hover:shadow-md">
 
-          <SingleCard2
-          key={itinerary.id}
-          mainSlugValue={itinerary.slug}
-          thumbnailImage={itinerary.acf.thumbnail}
-          cardImageTitle={itinerary.acf.slider_settings.title}
-          cardImageSubTitle={itinerary.acf.slider_settings.sub_title}
-          />
+            <SingleCard2
+            key={itinerary.id}
+            mainSlugValue={itinerary.slug}
+            thumbnailImage={itinerary.acf.thumbnail}
+            cardImageTitle={itinerary.acf.slider_settings.title}
+            cardImageSubTitle={itinerary.acf.slider_settings.sub_title}
+            />
           
           </div>
         </div>
+
+
         )
         
 
@@ -152,11 +165,9 @@ function ChevronLeftIcon(props:any) {
 
 function ChevronRightIcon(props:any) {
   return (
-        <Image  {...props}  className={` bg-[#2F6BEB] max-w-[60px] shadow rounded-xl absolute top-[47%]  right-[0px] z-10`} src="/global/banners/right.png" width="160" height="160" alt="Right Slide Icon"/>
+        <Image  {...props}  className={`bg-[#2F6BEB] max-w-[60px] shadow rounded-xl absolute top-[47%]  right-[0px] z-10`} src="/global/banners/right.png" width="160" height="160" alt="Right Slide Icon"/>
   )
 }
-
-
 
 
 export default MainContactUsFields

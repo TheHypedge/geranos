@@ -14,10 +14,14 @@ export default async function Home() {
 
 
 
-  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/itineraries?acf_format=standard&_fields=id,slug,title,acf`, { cache: 'no-store' }); 
+  const req = await fetch(`https://dashboard.geranosgetaways.com/wp-json/wp/v2/itineraries?acf_format=standard&per_page=100`, { cache: 'no-store' }); 
   const itineraries = await req.json(); 
 
 
+
+
+
+  
   return (
     <main className="flex min-h-screen flex-col">
 
