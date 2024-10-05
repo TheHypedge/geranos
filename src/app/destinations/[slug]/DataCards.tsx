@@ -18,25 +18,25 @@ const DataCards = async(props:any) => {
         <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-1.png" alt="Travel For"/>
             <p className="font-bold mt-2 text-sm md:text-base">Travel For</p>
-            <p className="mx-8 text-sm">{destination.acf.cards.travel_for}</p>
+            <p className="mx-2 md:mx-8 text-sm">{destination.acf.cards.travel_for}</p>
         </div>
 
         <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-2.png" alt="Travel For"/>
             <p className="font-bold mt-2 text-sm md:text-base">Best Time To Visit</p>
-            <p className="mx-8 text-sm">{destination.acf.cards.best_time}</p>
+            <p className="mx-2 md:mx-8 text-sm">{destination.acf.cards.best_time}</p>
         </div>
 
         <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-3.png" alt="Travel For"/>
             <p className="font-bold mt-2 text-sm md:text-base">Speak</p>
-            <p className="mx-8 text-sm">{destination.acf.cards.speak}</p>
+            <p className="mx-2 md:mx-8 text-sm">{destination.acf.cards.speak}</p>
         </div>
 
         <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-4.png" alt="Travel For"/>
             <p className="font-bold mt-2 text-sm md:text-base">Currency</p>
-            <p className="mx-8 text-sm">{destination.acf.cards.currency}</p>
+            <p className="mx-2 md:mx-8 text-sm">{destination.acf.cards.currency}</p>
         </div>
 
 
