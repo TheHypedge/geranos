@@ -12,7 +12,7 @@ const DataCards = async(props:any) => {
 
   return (
     <div className="relative w-full sm:p-4 mt-4 px-2">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-slate-50 max-w-[1200px] mx-auto aling-middle justify-center text-center rounded-3xl  px-4 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-slate-50 max-w-[1200px] mx-auto aling-middle justify-center text-center rounded-3xl  p-2 py-6 md:px-16 md:py-12">
 
 
         <div className="flex flex-col gap-2">
