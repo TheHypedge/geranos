@@ -18,15 +18,16 @@ import SingleCard2 from "./SingleCard2"
 
 const MainContactUsFields = (props:any) => {
 
-  const [fullVisibility, setFullVisibility] = useState("");
-  const [btnVisibility, setBtnVisibility] = useState("hidden");
-  let counter=0;
+
 
 
   useEffect(() => {
     return () => {
       
-   
+      const [fullVisibility, setFullVisibility] = useState("");
+      const [btnVisibility, setBtnVisibility] = useState("hidden");
+      let counter=0;
+      
       console.log("YOYO1"); 
       console.log(props.itineraries)
       console.log("YOYO2"); 
