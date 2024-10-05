@@ -124,13 +124,11 @@
   {
       top: 90% !important;
       left: 12% !important;
-      max-width: 34px;
   }  
   .slick-next
   {
       top: 90% !important;
       right: 12% !important;
-      max-width: 34px;
   }
 }
 

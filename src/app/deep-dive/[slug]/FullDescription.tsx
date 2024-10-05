@@ -13,14 +13,14 @@ const FullDescription = async(props:any) => {
   const destination = await destinations[0];
 
   return (
-    <div className="relative w-full sm:p-4 mt-8">
+    <div className="relative w-full sm:p-4 mt-8 px-2">
 
-    <div className="bg-slate-50  rounded-3xl max-w-[800px] mx-auto flex aling-middle justify-center gap-6 text-center flex-col  px-16 py-12">
+    <div className="bg-slate-50  rounded-3xl max-w-[800px] mx-auto flex aling-middle justify-center gap-6 text-center flex-col  p-2 py-6 md:px-16 md:py-12">
     <h1 className="text-4xl font-EduVICWANTBeginner">{destination.acf.full_description.title}</h1>
 
 
       
-        <div className="postContParaFixCstm text-justify" dangerouslySetInnerHTML={{__html: destination.acf.full_description.full_description}}/>
+        <div className="postContParaFixCstm text-justify text-sm md:text-xl" dangerouslySetInnerHTML={{__html: destination.acf.full_description.full_description}}/>
 
       
 
