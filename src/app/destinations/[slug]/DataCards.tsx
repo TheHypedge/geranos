@@ -12,30 +12,30 @@ const DataCards = async(props:any) => {
 
   return (
     <div className="relative w-full sm:p-4 mt-4">
-        <div className="bg-slate-50 max-w-[1200px] mx-auto flex aling-middle justify-center gap-6 text-center rounded-3xl  px-4 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-slate-50 max-w-[1200px] mx-auto aling-middle justify-center text-center rounded-3xl  px-4 py-12">
 
 
-        <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-1.png" alt="Travel For"/>
-            <p className="font-bold mt-2">Travel For</p>
+            <p className="font-bold mt-2 text-sm md:text-base">Travel For</p>
             <p className="mx-8 text-sm">{destination.acf.cards.travel_for}</p>
         </div>
 
-        <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-2.png" alt="Travel For"/>
-            <p className="font-bold mt-2">Best Time To Visit</p>
+            <p className="font-bold mt-2 text-sm md:text-base">Best Time To Visit</p>
             <p className="mx-8 text-sm">{destination.acf.cards.best_time}</p>
         </div>
 
-        <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-3.png" alt="Travel For"/>
-            <p className="font-bold mt-2">Speak</p>
+            <p className="font-bold mt-2 text-sm md:text-base">Speak</p>
             <p className="mx-8 text-sm">{destination.acf.cards.speak}</p>
         </div>
 
-        <div className="basis-1/2 md:basis-1/4 flex flex-col gap-2">
+        <div className="flex flex-col gap-2">
             <DataCardImage url="/global/cards/about-4.png" alt="Travel For"/>
-            <p className="font-bold mt-2">Currency</p>
+            <p className="font-bold mt-2 text-sm md:text-base">Currency</p>
             <p className="mx-8 text-sm">{destination.acf.cards.currency}</p>
         </div>
 
