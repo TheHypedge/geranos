@@ -20,7 +20,7 @@ const FullDescription = async(props:any) => {
 
 
       
-        <div className="postContParaFixCstm text-justify text-sm md:text-xl" dangerouslySetInnerHTML={{__html: destination.acf.full_description.full_description}}/>
+        <div className="postContParaFixCstm text-justify" dangerouslySetInnerHTML={{__html: destination.acf.full_description.full_description}}/>
 
       
 
