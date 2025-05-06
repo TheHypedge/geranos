@@ -9,7 +9,7 @@ const SingleBlogCard = ({title, date, excerpt, slug, image}:any) => {
   let d = new Date(date);
   
   return (
-    <div className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-4 sm:px-8 gap-8 border-b-2">
+    <div className="flex flex-col md:flex-row max-w-6xl m-auto py-8 px-8 sm:px-8 gap-8 border-b-2">
 
         <div className="flex flex-col gap-4 align-middle justify-center text-center md:text-left">
           <Link href={`/blog/${slug}`}>
